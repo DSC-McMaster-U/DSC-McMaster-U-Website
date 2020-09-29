@@ -1,0 +1,41 @@
+{
+  "name": "dsc-mcmaster-u-website",
+  "version": "1.0.0",
+  "description": "Website for McMaster DSC Chapter",
+  "main": "index.js",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DSC-McMaster-U/DSC-McMaster-U-Website.git"
+  },
+  "author": "McMaster DSC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DSC-McMaster-U/DSC-McMaster-U-Website/issues"
+  },
+  "homepage": "https://github.com/DSC-McMaster-U/DSC-McMaster-U-Website#readme",
+  "dependencies": {
+    "gatsby": "^2.24.66",
+    "gatsby-link": "^2.4.15",
+    "gatsby-plugin-manifest": "^2.4.32",
+    "gatsby-plugin-react-helmet": "^3.3.12",
+    "gatsby-plugin-sharp": "^2.6.37",
+    "gatsby-source-filesystem": "^2.3.31",
+    "gatsby-transformer-sharp": "^2.5.16",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  }
+}
