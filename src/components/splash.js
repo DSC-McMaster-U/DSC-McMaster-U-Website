@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Particles from 'react-particles-js';
+
 import SplashGraph from "./../asset/image/splash.png";
 
 const Splash = ({ title, subTitle }) => (
@@ -32,6 +34,35 @@ const Splash = ({ title, subTitle }) => (
         }}
       >
         <img src= {SplashGraph}/>
+      </div>
+      <div
+        style={{
+        float: "right",
+        width: `500px`,
+        height: `280px`
+        }}>
+      <Particles
+        params={{
+	        "particles": {
+	            "number": {
+	                "value": 10
+                },
+                "color" : {
+                    "value": ["#FBBC04", "#4285F4", "#34A853", "#EA4335"]
+                },
+	            "size": {
+	                "value": 10
+	            }
+	        },
+	        "interactivity": {
+	            "events": {
+	                "onhover": {
+	                    "enable": true,
+	                    "mode": "repulse"
+	                }
+	            }
+	        }
+	    }} />
       </div>
     </div>
   );
