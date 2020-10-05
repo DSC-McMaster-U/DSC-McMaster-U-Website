@@ -1,0 +1,11 @@
+.photo{
+    top:0;
+    position:relative;
+    left:-75px;
+    width:300px;
+    height: auto;
+}
+
+.navbar{
+    background-image: linear-gradient(#fdfbfb, #ebedee);
+}
