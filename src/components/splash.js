@@ -19,22 +19,29 @@ const Splash = ({ title, subTitle }) => (
     >
 
     <Container>
+        {/* particle div position */}
         <div
             style={{
-            //float: "right",
-            width: "800px",
-            height: "30px"
+                position: "absolute",
+                right: "200px",
+                width: "700px",
+                height: "30px"
             }}
         >
             <SplashParticle />
         </div>
+
+        {/* splash content */}
         <Row>
+
+            {/* splash title, sub title content, button */}
             <Col>
-                <h2 style={{ margin: 0 }}>
+                <h2 style={{ margin: 0}}>
                     {title}
                 </h2>
                 <p style={{
-                    marginTop: `10px`,
+                    marginTop: `40px`,
+                    width: `300px`,
                     color: `#868686`,
                     fontSize: `16px`
                 }}>
@@ -47,10 +54,16 @@ const Splash = ({ title, subTitle }) => (
                     <Button block="false" variant="outline-primary">contact us</Button>
                 </div>
             </Col>
+
+            {/* splash graphic image */}
             <Col>
                 <img src= {SplashGraph}/>
             </Col>
         </Row>
+
+        <div style={{height: `100px`}}></div>
+
+        {/* splash footer */}
         <Row>
             <Col><hr style={{backgroundColor: `#1967D2`, height: `2px`}}/></Col>
             <Col><hr style={{backgroundColor: `#C5221F`, height: `2px`}}/></Col>
