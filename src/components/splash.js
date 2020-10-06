@@ -1,6 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Particles from 'react-particles-js';
+import SplashParticle from './splashParticle';
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 import SplashGraph from "./../asset/image/splash.png";
 
@@ -12,58 +17,47 @@ const Splash = ({ title, subTitle }) => (
       padding: `1.45rem 1.0875rem`,
       }}
     >
-      <div
-        style={{
-        float: `left`,
-        width: `40%`,
-        height: `280px`,
-        }}
-      >
-        <h2 style={{ margin: 0 }}>
-          {title}
-        </h2>
-        <h6 style={{marginTop: `10px`}}>
-          {subTitle}
-        </h6>
-      </div>
-      <div
-        style={{
-        float: `right`,
-        width: `50%`,
-        height: `280px`
-        }}
-      >
-        <img src= {SplashGraph}/>
-      </div>
-      <div
-        style={{
-        float: "right",
-        width: `500px`,
-        height: `280px`
-        }}>
-      <Particles
-        params={{
-	        "particles": {
-	            "number": {
-	                "value": 10
-                },
-                "color" : {
-                    "value": ["#FBBC04", "#4285F4", "#34A853", "#EA4335"]
-                },
-	            "size": {
-	                "value": 10
-	            }
-	        },
-	        "interactivity": {
-	            "events": {
-	                "onhover": {
-	                    "enable": true,
-	                    "mode": "repulse"
-	                }
-	            }
-	        }
-	    }} />
-      </div>
+
+    <Container>
+        <div
+            style={{
+            //float: "right",
+            width: "800px",
+            height: "30px"
+            }}
+        >
+            <SplashParticle />
+        </div>
+        <Row>
+            <Col>
+                <h2 style={{ margin: 0 }}>
+                    {title}
+                </h2>
+                <p style={{
+                    marginTop: `10px`,
+                    color: `#868686`,
+                    fontSize: `16px`
+                }}>
+                    {subTitle}
+                </p>
+                <div style={{ width: `30%`, display: `inline-block`, marginRight: `10px`}}>
+                    <Button block="false" variant="primary" href="https://docs.google.com/forms/d/e/1FAIpQLScjcm8b9ay0-JFcANSH_-A19zO7-KZK40_ppwO2Pno88eTh7A/viewform">  join us  </Button>
+                </div>
+                <div style={{ width: `30%`,display: `inline-block`, marginLeft: `10px`}}>
+                    <Button block="false" variant="outline-primary">contact us</Button>
+                </div>
+            </Col>
+            <Col>
+                <img src= {SplashGraph}/>
+            </Col>
+        </Row>
+        <Row>
+            <Col><hr style={{backgroundColor: `#1967D2`, height: `2px`}}/></Col>
+            <Col><hr style={{backgroundColor: `#C5221F`, height: `2px`}}/></Col>
+            <Col><hr style={{backgroundColor: `#F29900`, height: `2px`}}/></Col>
+            <Col><hr style={{backgroundColor: `#188038`, height: `2px`}}/></Col>
+        </Row>
+    </Container>
     </div>
   );
 
