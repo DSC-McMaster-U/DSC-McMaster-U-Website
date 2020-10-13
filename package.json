@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/DSC-McMaster-U/DSC-McMaster-U-Website#readme",
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^2.24.66",
     "gatsby-link": "^2.4.15",
     "gatsby-plugin-manifest": "^2.4.32",
