@@ -1,3 +1,5 @@
+const { green, blue, red, yellow } = require("./src/asset/colors");
+
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
@@ -5,7 +7,14 @@ module.exports = {
   },
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        green,
+        blue,
+        red,
+        yellow,
+      },
+    },
   },
   variants: {},
   plugins: [],

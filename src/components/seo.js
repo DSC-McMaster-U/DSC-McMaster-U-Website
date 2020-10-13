@@ -62,7 +62,13 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link
+        href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Material+Icons"
+        rel="stylesheet"
+        type="text/css"
+      ></link>
+    </Helmet>
   );
 }
 
