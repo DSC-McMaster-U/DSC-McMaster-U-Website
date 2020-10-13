@@ -1,4 +1,4 @@
-const { green, blue, red, yellow } = require("./src/asset/colors");
+const { green, blue, red, yellow } = require("./src/utils/colors");
 
 module.exports = {
   future: {
