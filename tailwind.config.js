@@ -16,6 +16,12 @@ module.exports = {
       8: "8px",
     },
     extend: {
+      boxShadow: {
+        "outline-red": "0 0 0 3px rgba(92, 26, 21, 0.2)",
+        "outline-green": "0 0 0 3px rgba(30, 142, 62, 0.5)",
+        "outline-blue": "0 0 0 3px rgba(66, 153, 225, 0.5)",
+        "outline-yellow": "0 0 0 3px rgba(249, 171, 0, 0.5)",
+      },
       colors: {
         green,
         blue,

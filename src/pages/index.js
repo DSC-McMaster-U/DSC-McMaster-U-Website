@@ -10,7 +10,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <h1>Hello World!</h1>
       <p>Welcome to the site.</p>
-      <Button size="sm" size="lg" className="mr-8" float>
+      <Button size="md" bg="red" variant="outline" float>
         Press Me
       </Button>
     </Layout>

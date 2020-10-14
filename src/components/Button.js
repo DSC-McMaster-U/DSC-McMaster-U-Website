@@ -24,7 +24,7 @@ const Button = React.forwardRef((props, ref) => {
     base: [
       "rounded-sm",
       "uppercase",
-      "focus:shadow-outline",
+      `focus:shadow-outline-${bg}`,
       "focus:outline-none",
       "cursor-pointer",
     ],
