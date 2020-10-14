@@ -3,11 +3,12 @@ import PropTypes from "prop-types";
 import cx from "classnames";
 import idgen from "../utils/idgen";
 
-export const Select = props => {
+export const TextField = props => {
   const {
     children,
     className,
     focusColor,
+    iconClasses,
     id,
     label,
     onChange,
@@ -49,7 +50,7 @@ export const Select = props => {
         </label>
       )}
       <div className="relative">
-        <select
+        <input
           onChange={e => {
             onChange && onChange(e);
           }}
@@ -60,24 +61,22 @@ export const Select = props => {
           onFocus={handleFocus}
           className={selectClasses}
           {...other}
-        >
-          {children}
-        </select>
+        ></input>
         <div className={postfixClasses}>
-          <i className="fas fa-chevron-down"></i>
+          <i class={iconClasses}></i>
         </div>
       </div>
     </div>
   );
 };
 
-Select.defaultProps = {
+TextField.defaultProps = {
   className: "",
   value: "",
   focusColor: "blue",
 };
 
-Select.propTypes = {
+TextField.propTypes = {
   /**
    * ClassNames to apply to root element
    */
@@ -101,4 +100,4 @@ Select.propTypes = {
    */
 };
 
-export default Select;
+export default TextField;
