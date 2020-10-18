@@ -9,23 +9,25 @@ import freepik from "../images/media_freepik.jpg";
 
 function Media(){
 
+    const logoStyle = {height: "20%", width: "20%", display: "inline-block"};
+
     return (
         <section className="relative">
                 <div className="container mx-auto">
                     <div class="flex">
                         <div class="w-1/6 mt-20">
                             <h1>Follow Us</h1>
-                            <p className="mb-2 ml-5"><img className="h-8 w-8 inline-block" src={fbLogo} alt="facebook_logo" /> DSC_McMaster</p>
-                            <p className="mb-2 ml-5"><img className="h-8 w-8 inline-block" src={linkedinLogo} alt="linkedin_logo" /> DSC_McMaster</p>
-                            <p className="mb-2 ml-5"><img className="h-8 w-8 inline-block" src={discordLogo} alt="discord_logo" /> DSC_McMaster</p>
-                            <p className="mb-2 ml-5"><img className="h-8 w-8 inline-block" src={githubLogo} alt="github_logo" /> DSC_McMaster</p>
-                            <p className="mb-2 ml-5"><img className="h-8 w-8 inline-block" src={instaLogo} alt="instagram_logo" /> DSC_McMaster</p>
-                            <p className="mb-2 ml-5"><img className="h-8 w-8 inline-block" src={twitterLogo} alt="twitter_logo" /> DSC_McMaster</p>
+                            <p className="mb-2 ml-5"><img style={logoStyle} src={fbLogo} alt="facebook_logo" /> DSC_McMaster</p>
+                            <p className="mb-2 ml-5"><img style={logoStyle} src={linkedinLogo} alt="linkedin_logo" /> DSC_McMaster</p>
+                            <p className="mb-2 ml-5"><img style={logoStyle} src={discordLogo} alt="discord_logo" /> DSC_McMaster</p>
+                            <p className="mb-2 ml-5"><img style={logoStyle} src={githubLogo} alt="github_logo" /> DSC_McMaster</p>
+                            <p className="mb-2 ml-5"><img style={logoStyle} src={instaLogo} alt="instagram_logo" /> DSC_McMaster</p>
+                            <p className="mb-2 ml-5"><img style={logoStyle} src={twitterLogo} alt="twitter_logo" /> DSC_McMaster</p>
                         </div>
                         <div class="w-5/6 ml-5">
                             <div class="flex">
                                 <div class="w-1/2 mt-0">
-                                    <img className="transform scale-75" src={freepik} alt="Designed by slidesgo / Freepik"></img>
+                                    <img className="min-h-50" src={freepik} alt="Designed by slidesgo / Freepik"></img>
                                 </div>
                                 <div class="w-1/2 mt-20">
                                     <h1>Stay Connected</h1>
