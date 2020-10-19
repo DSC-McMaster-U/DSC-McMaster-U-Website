@@ -1,0 +1,110 @@
+.form-color {
+    background-color: white;
+}
+
+.form-props {
+    @apply flex flex-wrap rounded overflow-hidden shadow-lg box-border p-4 border-4;
+    box-shadow: 0.25vw 0.3vw 0.25vw 0.3vw #888888;
+}
+
+.input-border-outline {
+    border-color: black;
+}
+
+.big-label {
+    @apply flex-wrap w-10/12 text-xl mr-32 h-32 p-4 ;
+  } 
+  
+.big-input {
+    @apply flex-wrap w-4/5 input-border-outline border-2 h-12 p-1 bg-gray-300 overflow-hidden shadow-lg;
+}
+
+.small-label {
+    @apply text-xl h-32 w-5/12 p-4 ;
+    display: block;
+    float: left;
+}
+
+.extra-small-label {
+    @apply text-xl h-32 w-4/12 p-4;
+    display: block;
+    float: left;
+}
+
+.extra-small-input {
+    @apply w-11/12 input-border-outline border-2 p-1 h-12 bg-gray-300 max-w-sm overflow-hidden shadow-lg;
+    display: block;
+    float: left;
+}
+
+.small-input {
+    @apply w-11/12 input-border-outline border-2 p-1 h-12 bg-gray-300 max-w-sm overflow-hidden shadow-lg;
+}
+
+.submit {
+    @apply text-white font-bold w-6/12 py-2 h-12 px-4 border rounded;
+    background-color: #0D652D;    
+    float: left; 
+    display: block;
+}
+
+.submit:hover {
+    @apply text-white font-bold py-2 h-12 px-4 border rounded;
+    background-color: #0D652D;  
+    float: left;
+    display: block;
+}
+
+
+.team-preferences {
+  @apply h-24 text-white text-xl;
+  background-color: #185ABC;
+  display: block;
+  width: 100%;
+}
+
+#tp-text {  
+  text-align: center;
+  margin: auto;
+  padding: 4% 0; 
+}
+
+.red-asterisk {
+  color: red;
+}
+
+
+
+@media only screen and (max-width: 2000px) {
+    
+    
+    
+  }
+
+@media only screen and (max-width: 880px) {
+    [class*="big-input"] {        
+        width: 100%;
+        margin: none;
+      }
+
+      [class*="big-label"] {
+        @apply p-0 w-11/12;
+        width: 100%;
+        margin-right: 0;
+      }
+
+      [class*="small-label"] {
+        @apply p-0 w-11/12;
+        width: 100%;
+        margin-right: 0;
+      }
+
+      [class*="small-input"] {
+        width: 100%;        
+        margin: none;
+      }
+
+      [class*="team-preferences"] {              
+        margin-bottom: 3vw;
+      }
+  }
