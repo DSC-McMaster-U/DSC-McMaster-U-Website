@@ -1,5 +1,5 @@
 import React from "react";
-import GForm from '../components/GForm'
+import GForm from "../components/GForm";
 import Layout from "../layouts";
 import SEO from "../components/seo";
 
@@ -11,7 +11,6 @@ const IndexPage = () => {
       <p>Welcome to the site.</p>
       <GForm></GForm>
     </Layout>
-    
   );
 };
 
