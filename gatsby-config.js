@@ -2,7 +2,7 @@ const { blue } = require("./src/utils/colors");
 module.exports = {
   siteMetadata: {
     title: `McMaster Developer Student Club`,
-    description: `McMaster Student Developer Club, An inclusive and collaborative environment that helps students bridge the gap between theory and practice`,
+    description: `McMaster Student Developer Club, an inclusive and collaborative environment that helps students bridge the gap between theory and practice.`,
     author: `McMaster DSC`,
   },
   plugins: [
