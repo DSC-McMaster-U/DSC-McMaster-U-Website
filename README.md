@@ -8,8 +8,7 @@
   - [Development Workflow](#Development-Workflow)
 - [Contributing](#Contributing)
   - [Commit Etiquette](#Commit-Etiquette)
-  - [Pull Request Checklist & Etiquette](#Pull-Request-Checklist-&-Etiquette)
-  - [Contributing](#Contributing)
+  - [Pull Request Checklist & Etiquette](#Pull-Request-Checklist-and-Etiquette)
 
 ## Installation
 
@@ -70,7 +69,7 @@ This section outlines how to properly contribute your work to the repository.
 
 While developing on a feature branch, try to keep commits frequent and avoid committing large chunks of unrelated changes. Each commit should have a purpose that is briefly explained in the commit message. Commit messages should talk about **what** changed, and **why**. **Not how** – how is the diff, and you don’t need to repeat it.
 
-### Pull Request Checklist & Etiquette
+### Pull Request Checklist and Etiquette
 
 When developing a feature, it is encouraged that you create a `draft` pull request right after the first commit. This will let you easily track your progress, and more importantly allows you to get early feedback from team members. More visibility is always better for the team.
 
@@ -108,6 +107,6 @@ git merge development
 
 #### 4. Describe the request
 
-Including a useful description for your pr is helpful to guide the reviewer through the code as much as possible; highlighting related files and grouping them into concepts or problems that are being solved or implemented.
+Including a useful description for your PR is helpful to guide the reviewer through the code as much as possible; highlighting related files and grouping them into concepts or problems that are being solved or implemented.
 
 Once you have completed your changes and completed everything on the checklist it's time to put your PR up for review!
