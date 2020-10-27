@@ -1,10 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from "../components/header";
-import Splash from "../components/splash";
 import Content from './../asset/content.json';
 
 import "./index.css";
@@ -30,9 +28,6 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Splash title={Content.splashTitle} 
-                subTitle={Content.splashSubTitle}
-                />
         <footer
           style={{
             marginTop: `2rem`,
