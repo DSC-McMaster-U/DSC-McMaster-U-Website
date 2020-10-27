@@ -9,7 +9,6 @@
 - [Contributing](#Contributing)
   - [Commit Etiquette](#Commit-Etiquette)
   - [Pull Request Checklist & Etiquette](#Pull-Request-Checklist-&-Etiquette)
-  - [Contributing](#Contributing)
 
 ## Installation
 
@@ -108,6 +107,6 @@ git merge development
 
 #### 4. Describe the request
 
-Including a useful description for your pr is helpful to guide the reviewer through the code as much as possible; highlighting related files and grouping them into concepts or problems that are being solved or implemented.
+Including a useful description for your PR is helpful to guide the reviewer through the code as much as possible; highlighting related files and grouping them into concepts or problems that are being solved or implemented.
 
 Once you have completed your changes and completed everything on the checklist it's time to put your PR up for review!
