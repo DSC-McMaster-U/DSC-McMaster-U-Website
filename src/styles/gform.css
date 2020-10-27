@@ -3,8 +3,8 @@
 }
 
 .form-props {
-    @apply flex flex-wrap rounded overflow-hidden shadow-lg box-border p-4 border-4;
-    box-shadow: 0.25vw 0.3vw 0.25vw 0.3vw #888888;
+    @apply flex flex-wrap rounded overflow-hidden shadow-2xl box-border p-4 border-4;
+    
 }
 
 .input-border-outline {
@@ -73,13 +73,10 @@
   color: red;
 }
 
-
-
-@media only screen and (max-width: 2000px) {
-    
-    
-    
-  }
+input::placeholder, textarea::placeholder {
+  color: black !important;
+  opacity: 0.7;
+}
 
 @media only screen and (max-width: 880px) {
     [class*="big-input"] {        
