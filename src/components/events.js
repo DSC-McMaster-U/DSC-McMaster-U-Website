@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import Img from "gatsby-image/withIEPolyfill";
+import Img from "gatsby-image";
 import Button from "./Button"
 import EventData from "../content/events.json"
 
@@ -41,7 +41,7 @@ function Events ({ siteTitle }) {
                     View Events
                   </Button>
                 </a>
-                <Img fixed={data.image.childImageSharp.fixed} alt="" objectFit="cover" className="" objectPosition="100% 100%" />           
+                <Img fluid={data.image.childImageSharp.fluid} alt="" objectPosition="100% 100%" />           
           </div>
           <div className="py-8 w-6/12">
             <div className="pl-8">
