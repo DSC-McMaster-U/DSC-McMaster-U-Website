@@ -51,16 +51,16 @@ const Splash = ({ title, subTitle }) => (
             <div><hr style={{backgroundColor: color.green[500], height: `2px`}}/></div>
         </div>
     </div>
-  );
+);
 
-  Splash.propTypes = {
-    title: PropTypes.string,
-    subTitle: PropTypes.string
-  };
-  
-  Splash.defaultProps = {
-    title: ``,
-    subTitle: ``
-  };
-  
-  export default Splash;
+Splash.propTypes = {
+  title: PropTypes.string,
+  subTitle: PropTypes.string,
+};
+
+Splash.defaultProps = {
+  title: ``,
+  subTitle: ``,
+};
+
+export default Splash;
