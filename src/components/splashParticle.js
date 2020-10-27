@@ -14,14 +14,10 @@ const SplashParticle = () => (
                 },
 	            "size": {
 	                "value": 10
-                },
-                // "line_linked": {
-                //     "enable": true,
-                //     "distance": 150,
-                //     "color": "#c8c8c8",
-                //     "opacity": 0.4,
-                //     "width": 1
-                // },
+				},
+				"line_linked": {
+					"enable": false
+				}
             },
 	        "interactivity": {
 	            "events": {

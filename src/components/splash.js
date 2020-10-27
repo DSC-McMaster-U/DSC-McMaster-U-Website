@@ -1,44 +1,54 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SplashParticle from './splashParticle';
+import Button from './Button';
 
-import SplashGraph from "./../asset/image/splash.png";
+import SplashGraph from "./../images/splash.png";
+import color from './../utils/colors';
 
 const Splash = ({ title, subTitle }) => (
     <div className="lg:container md:container sm:container">
 
-        {/* splash content */}
-        <div className="grid lg:grid-cols-2 sm:grid-cols-1">
+        {/* first row - splash content */}
+        <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-20">
             {/* splash text */}
-            <div>
-                <h2>{title}</h2>
-                <p>{subTitle}</p>
-                <div className="grid grid-cols-2">
+            <div className="grid grid-rows-3">
+                <div><h1>{title}</h1></div>
+                <div><p>{subTitle}</p></div>
+                <div className="grid grid-cols-2 gap-10">
                     <div>
-                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="https://docs.google.com/forms/d/e/1FAIpQLScjcm8b9ay0-JFcANSH_-A19zO7-KZK40_ppwO2Pno88eTh7A/viewform">
-                            join us
-                        </button>
+                        <Button bg="blue"
+                                children="Register Here"
+                                className="font-bold rounded-lg"
+                                size="sm"
+                                type="button"
+                                variant="fill"
+                        />
                     </div>
                     <div>
-                        <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            contact us
-                        </button>
+                        <Button bg="blue"
+                                children="contact us..."
+                                className="font-bold rounded-lg"
+                                size="sm"
+                                type="button"
+                                variant="outline"
+                        />
                     </div>
                 </div>
             </div>
             {/* splash graphic image */}
-            <div>
-                <div className="z-10"><SplashParticle /></div>
-                <div className="z-0"><img src= {SplashGraph}/></div>
+            <div className="relative">
+                <div className="z-20 absolute ml-1 mt-0 bg-local"><SplashParticle /></div>
+                <div className="z-10"><img src= {SplashGraph}/></div>
             </div>
         </div>
 
-        {/* splash footer */}
-        <div className="grid grid-cols-4">
-            <div><hr style={{backgroundColor: `#1967D2`, height: `2px`}}/></div>
-            <div><hr style={{backgroundColor: `#C5221F`, height: `2px`}}/></div>
-            <div><hr style={{backgroundColor: `#F29900`, height: `2px`}}/></div>
-            <div><hr style={{backgroundColor: `#188038`, height: `2px`}}/></div>
+        {/* second row - splash footer */}
+        <div className="grid grid-cols-4 gap-20">
+            <div><hr style={{backgroundColor: color.blue[500], height: `2px`}}/></div>
+            <div><hr style={{backgroundColor: color.red[500], height: `2px`}}/></div>
+            <div><hr style={{backgroundColor: color.yellow[500], height: `2px`}}/></div>
+            <div><hr style={{backgroundColor: color.green[500], height: `2px`}}/></div>
         </div>
     </div>
   );
