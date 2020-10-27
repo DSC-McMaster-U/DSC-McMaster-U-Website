@@ -82,6 +82,7 @@ const ExtraSmallTeamSelect = ({ name, alt, func }) => (
 const ExtraSmallYearSelect = ({ name, alt, func }) => (
   <label className="extra-small-label" htmlFor="year">
     {alt}
+    <span className="red-asterisk"> *</span>
     <br></br>
     <select className="extra-small-input" name={name} alt={alt} onBlur={func}>      
       <option>1</option>
@@ -133,6 +134,8 @@ export default class GForm extends Component {
       third_choice_team,
     } = this.state;
 
+    document.getElementById('gform').reset()
+
     axios({
       method: "get",
       url:
@@ -181,7 +184,7 @@ export default class GForm extends Component {
           <div>
             <h1>Fill out the form to become a general member!</h1>
             <p>No expiry date.</p>
-            <form className="form-color form-props" onSubmit={this.onSubmit}>
+            <form className="form-color form-props" id="gform" onSubmit={this.onSubmit}>
               <BigInputField
                 name="email"
                 alt="Email"
