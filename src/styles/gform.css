@@ -79,9 +79,8 @@ input::placeholder, textarea::placeholder {
 }
 
 @media only screen and (max-width: 880px) {
-    [class*="big-input"] {        
-        width: 100%;
-        margin: none;
+    [class*="big-input"] {       
+      @apply w-11/12 input-border-outline border-2 p-1 h-12 bg-gray-300 max-w-sm overflow-hidden shadow-lg;
       }
 
       [class*="big-label"] {
@@ -103,5 +102,7 @@ input::placeholder, textarea::placeholder {
 
       [class*="team-preferences"] {              
         margin-bottom: 3vw;
+        padding-top: 4vw;
+        @apply w-11/12 max-w-sm overflow-hidden shadow-lg;
       }
   }
