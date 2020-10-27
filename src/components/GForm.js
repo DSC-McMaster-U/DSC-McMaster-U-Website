@@ -13,6 +13,87 @@ const ThankYou = () => (
   </div>
 );
 
+const BigInputField = ({ name, alt, placeholder = "", func }) => (
+  <label className="big-label">
+    {alt}
+    <span className="red-asterisk"> *</span>
+    <br></br>
+    <input
+      className="big-input"
+      type="text"
+      name={name}
+      alt={alt}
+      placeholder={placeholder}
+      onBlur={func}
+      required
+    />
+  </label>
+);
+
+const SmallInputField = ({ name, alt, placeholder = "", func }) => (
+  <label className="small-label">
+    {alt}
+    <span className="red-asterisk"> *</span>
+    <br></br>
+    <input
+      className="small-input"
+      type="text"
+      name={name}
+      alt={alt}
+      placeholder={placeholder}
+      onBlur={func}
+      required
+    />
+  </label>
+);
+
+const ExtraSmallInputField = ({ name, alt, placeholder = "", func }) => (
+  <label className="extra-small-label">
+    {alt}
+    <span className="red-asterisk"> *</span>
+    <br></br>
+    <input
+      className="extra-small-input"
+      type="text"
+      name={name}
+      alt={alt}
+      placeholder={placeholder}
+      onBlur={func}
+      required
+    />
+  </label>
+);
+
+const ExtraSmallTeamSelect = ({ name, alt, func }) => (
+  <label className="extra-small-label" htmlFor="year">
+    {alt}
+    <br></br>
+    <select className="extra-small-input" name={name} alt={alt} onBlur={func}>
+      <option>Choose an option</option>
+      <option>Outreach</option>
+      <option>Marketing & Branding</option>
+      <option>External Relations</option>
+      <option>Workshops & Talks</option>
+      <option>Community & Code</option>
+    </select>
+  </label>
+);
+
+const ExtraSmallYearSelect = ({ name, alt, func }) => (
+  <label className="extra-small-label" htmlFor="year">
+    {alt}
+    <br></br>
+    <select className="extra-small-input" name={name} alt={alt} onBlur={func}>      
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>Grad school</option>
+    </select>
+  </label>
+);
+
 export default class GForm extends Component {
   constructor(props) {
     super(props);
@@ -23,7 +104,7 @@ export default class GForm extends Component {
       last_name: "",
       mac_id: "",
       program: "a",
-      academic_year: "",
+      academic_year: "1",
       graduation: "",
       first_choice_team: "",
       second_choice_team: "",
@@ -101,163 +182,68 @@ export default class GForm extends Component {
             <h1>Fill out the form to become a general member!</h1>
             <p>No expiry date.</p>
             <form className="form-color form-props" onSubmit={this.onSubmit}>
-              <label className="big-label">
-                Email<span className="red-asterisk"> *</span>
-                <br></br>
-                <input
-                  type="text"
-                  name="email"
-                  className="big-input"
-                  placeholder="@gmail.com, @mcmaster.ca, etc."
-                  alt="Email"
-                  onBlur={this.onChange}
-                  required
-                />
-              </label>
+              <BigInputField
+                name="email"
+                alt="Email"
+                placeholder="@gmail.com, @mcmaster.ca, etc."
+                func={this.onChange}
+              />
+              <SmallInputField
+                name="first_name"
+                alt="First name"
+                func={this.onChange}
+              />
+              <SmallInputField
+                name="last_name"
+                alt="Last name"
+                func={this.onChange}
+              />
+              <BigInputField
+                name="mac_id"
+                alt="Mac ID"
+                placeholder="e.g. muske7"
+                func={this.onChange}
+              />
+              <ExtraSmallInputField
+                name="program"
+                alt="Program"
+                func={this.onChange}
+              />
 
-              <label className="small-label">
-                First name<span className="red-asterisk"> *</span>
-                <br></br>
-                <input
-                  className="small-input"
-                  type="text"
-                  name="first_name"
-                  alt="First name"
-                  onBlur={this.onChange}
-                  required
-                />
-              </label>
-              <label className="small-label">
-                Last name<span className="red-asterisk"> *</span>
-                <br></br>
-                <input
-                  className="small-input"
-                  type="text"
-                  name="last_name"
-                  alt="Last name"
-                  onBlur={this.onChange}
-                  required
-                />
-              </label>
+              <ExtraSmallYearSelect
+                name="academic_year"
+                alt="Academic year"
+                func={this.onChange}
+              />
 
-              <label className="big-label">
-                Mac ID<span className="red-asterisk"> *</span>
-                <br></br>
-                <input
-                  type="text"
-                  name="mac_id"
-                  placeholder="e.g. muske7"
-                  className="big-input"
-                  alt="Mac ID"
-                  onBlur={this.onChange}
-                  required
-                />
-              </label>
-
-              <label className="extra-small-label">
-                Program<span className="red-asterisk"> *</span>
-                <br></br>
-                <input
-                  className="extra-small-input"
-                  type="text"
-                  name="program"
-                  alt="Program"
-                  onBlur={this.onChange}
-                  required
-                />
-              </label>
-
-              <label className="extra-small-label" htmlFor="year">
-                Academic year<span className="red-asterisk"> *</span>
-                <br></br>
-                <select
-                  className="extra-small-input"
-                  name="academic_year"
-                  alt="Academic year"
-                  onBlur={this.onChange}
-                  required
-                >
-                  <option value="">Choose an option</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="Grad school">Grad school</option>
-                </select>
-              </label>
-
-              <label className="extra-small-label">
-                Expected graduation<span className="red-asterisk"> *</span>
-                <br></br>
-                <input
-                  className="extra-small-input"
-                  type="text"
-                  name="graduation"
-                  placeholder="e.g. 2023"
-                  alt="Expected graduation"
-                  onBlur={this.onChange}
-                  required
-                />
-              </label>
+              <ExtraSmallInputField
+                name="graduation"
+                alt="Expected graduation"
+                placeholder="e.g. 2023"
+                func={this.onChange}
+              />
 
               <div className="team-preferences">
                 <p id="tp-text">Select your top three team preferences</p>
               </div>
 
-              <label className="extra-small-label" htmlFor="year">
-                1st choice
-                <br></br>
-                <select
-                  className="extra-small-input"
-                  name="first_choice_team"
-                  alt="1st choice"
-                  onBlur={this.onChange}
-                >
-                  <option>Choose an option</option>
-                  <option>Outreach</option>
-                  <option>Marketing & Branding</option>
-                  <option>External Relations</option>
-                  <option>Workshops & Talks</option>
-                  <option>Community & Code</option>
-                </select>
-              </label>
+              <ExtraSmallTeamSelect
+                name="first_choice_team"
+                alt="1st choice"
+                func={this.onChange}
+              />
 
-              <label className="extra-small-label" htmlFor="year">
-                2nd choice
-                <br></br>
-                <select
-                  className="extra-small-input"
-                  name="second_choice_team"
-                  alt="2nd choice"
-                  onBlur={this.onChange}
-                >
-                  <option>Choose an option</option>
-                  <option>Outreach</option>
-                  <option>Marketing & Branding</option>
-                  <option>External Relations</option>
-                  <option>Workshops & Talks</option>
-                  <option>Community & Code</option>
-                </select>
-              </label>
+              <ExtraSmallTeamSelect
+                name="second_choice_team"
+                alt="2nd choice"
+                func={this.onChange}
+              />
 
-              <label className="extra-small-label" htmlFor="year">
-                3rd choice
-                <br></br>
-                <select
-                  className="extra-small-input"
-                  name="third_choice_team"
-                  alt="3rd choice"
-                  onBlur={this.onChange}
-                >
-                  <option>Choose an option</option>
-                  <option>Outreach</option>
-                  <option>Marketing & Branding</option>
-                  <option>External Relations</option>
-                  <option>Workshops & Talks</option>
-                  <option>Community & Code</option>
-                </select>
-              </label>
+              <ExtraSmallTeamSelect
+                name="third_choice_team"
+                alt="3rd choice"
+                func={this.onChange}
+              />
               <br></br>
 
               <Button bg="green" type="submit" alt="Submit" className="submit">
