@@ -1,5 +1,4 @@
 import React from "react";
-import { red, yellow, green, blue } from "../asset/colors";
 import Particles from "react-particles-js";
 
 const SplashParticle = () => (
