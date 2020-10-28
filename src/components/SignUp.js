@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import Button from "./Button";
 
-// npm run format     to run prettier
-
 const formUrl =
   "https://script.google.com/macros/s/AKfycbxaAM3uyL_avJPMm4SsjXUVs-TqorvKLFohkKy2cP1J2hZ14ZQ3/exec";
 
@@ -95,7 +93,7 @@ const ExtraSmallYearSelect = ({ name, alt, func }) => (
   </label>
 );
 
-export default class GForm extends Component {
+export default class SignUp extends Component {
   constructor(props) {
     super(props);
 
@@ -157,7 +155,7 @@ export default class GForm extends Component {
         `&Select your top 3 team preferences. [3rd choice]=${encodeURIComponent(
           third_choice_team
         )}`,
-    }).catch(error => console.log("FAIL"));
+    }).catch(error => console.log("The form did not submit"));
 
     this.setState({
       email: "",

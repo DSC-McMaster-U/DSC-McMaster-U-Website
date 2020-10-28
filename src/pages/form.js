@@ -1,5 +1,5 @@
 import React from "react";
-import GForm from "../components/GForm";
+import SignUp from "../components/SignUp";
 import Layout from "../layouts";
 import SEO from "../components/seo";
 
@@ -7,7 +7,7 @@ const FormPage = () => {
   return (
     <Layout>
       <SEO title="Sign Up" />
-      <GForm></GForm>
+      <SignUp></SignUp>
     </Layout>
   );
 };
