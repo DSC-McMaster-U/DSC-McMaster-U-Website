@@ -30,7 +30,14 @@ const ThankYou = () => (
   </div>
 );
 
-const InputField = ({ name, placeholder, onBlur, required, label }) => {
+const InputField = ({
+  name,
+  placeholder,
+  onChange,
+  required,
+  label,
+  value,
+}) => {
   return (
     <div className="w-full">
       <label className={cx(labelClasses.base)}>{label}</label>
@@ -39,16 +46,17 @@ const InputField = ({ name, placeholder, onBlur, required, label }) => {
         className={cx(inputClasses.base)}
         type="text"
         name={name}
+        value={value}
         alt={label}
         placeholder={placeholder}
-        onBlur={onBlur}
+        onChange={onChange}
         required={required}
       ></input>
     </div>
   );
 };
 
-const Select = ({ name, label, onBlur, children, required }) => (
+const Select = ({ name, label, onChange, children, required, value }) => (
   <div className="w-full">
     <label className={cx(labelClasses.base)} htmlFor={name}>
       {label}
@@ -58,8 +66,9 @@ const Select = ({ name, label, onBlur, children, required }) => (
     <select
       className={cx(inputClasses.base)}
       name={name}
+      value={value}
       alt={label}
-      onBlur={onBlur}
+      onChange={onChange}
     >
       {children}
     </select>
@@ -75,17 +84,17 @@ export default class SignUp extends Component {
       first_name: "",
       last_name: "",
       mac_id: "",
-      program: "a",
-      academic_year: "1",
+      program: "",
+      academic_year: ACADEMIC_YEARS[0],
       graduation: "",
-      first_choice_team: "",
-      second_choice_team: "",
-      third_choice_team: "",
+      first_choice_team: TEAMS[0],
+      second_choice_team: TEAMS[0],
+      third_choice_team: TEAMS[0],
       submitted: false,
     };
   }
 
-  onBlur = e => {
+  onChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
@@ -136,17 +145,28 @@ export default class SignUp extends Component {
       last_name: "",
       mac_id: "",
       program: "",
-      academic_year: "",
+      academic_year: ACADEMIC_YEARS[0],
       graduation: "",
-      first_choice_team: "",
-      second_choice_team: "",
-      third_choice_team: "",
+      first_choice_team: TEAMS[0],
+      second_choice_team: TEAMS[0],
+      third_choice_team: TEAMS[0],
       submitted: true,
-      requirements_met: false,
     });
   };
 
   render() {
+    const {
+      email,
+      first_name,
+      last_name,
+      mac_id,
+      program,
+      academic_year,
+      graduation,
+      first_choice_team,
+      second_choice_team,
+      third_choice_team,
+    } = this.state;
     return (
       <div>
         {this.state.submitted ? (
@@ -163,9 +183,10 @@ export default class SignUp extends Component {
               <div className="w-full md:w-3/4 px-4 mb-8">
                 <InputField
                   name="email"
+                  value={email}
                   label="Email"
                   placeholder="@gmail.com, @mcmaster.ca, etc."
-                  onBlur={this.onBlur}
+                  onChange={this.onChange}
                   required
                 ></InputField>
               </div>
@@ -173,7 +194,8 @@ export default class SignUp extends Component {
                 <InputField
                   name="first_name"
                   label="First name"
-                  onBlur={this.onBlur}
+                  value={first_name}
+                  onChange={this.onChange}
                   required
                 />
               </div>
@@ -181,7 +203,8 @@ export default class SignUp extends Component {
                 <InputField
                   name="last_name"
                   label="Last name"
-                  onBlur={this.onBlur}
+                  value={last_name}
+                  onChange={this.onChange}
                   required
                 />
               </div>
@@ -189,8 +212,9 @@ export default class SignUp extends Component {
                 <InputField
                   name="mac_id"
                   label="Mac ID"
+                  value={mac_id}
                   placeholder="e.g. muske7"
-                  onBlur={this.onBlur}
+                  onChange={this.onChange}
                   required
                 />
               </div>
@@ -198,7 +222,8 @@ export default class SignUp extends Component {
                 <InputField
                   name="program"
                   label="Program"
-                  onBlur={this.onBlur}
+                  value={program}
+                  onChange={this.onChange}
                   required
                 />
               </div>
@@ -206,7 +231,8 @@ export default class SignUp extends Component {
                 <Select
                   name="academic_year"
                   label="Academic year"
-                  onBlur={this.onBlur}
+                  value={academic_year}
+                  onChange={this.onChange}
                   required
                 >
                   {ACADEMIC_YEARS.map(academic_year => (
@@ -218,8 +244,9 @@ export default class SignUp extends Component {
                 <InputField
                   name="graduation"
                   label="Expected graduation"
+                  value={graduation}
                   placeholder="e.g. 2023"
-                  onBlur={this.onBlur}
+                  onChange={this.onChange}
                   required
                 />
               </div>
@@ -230,7 +257,8 @@ export default class SignUp extends Component {
                 <Select
                   name="first_choice_team"
                   label="1st choice"
-                  onBlur={this.onBlur}
+                  value={first_choice_team}
+                  onChange={this.onChange}
                 >
                   {TEAMS.map(team => (
                     <option key={team} value={team}>
@@ -243,7 +271,8 @@ export default class SignUp extends Component {
                 <Select
                   name="second_choice_team"
                   label="2nd choice"
-                  onBlur={this.onBlur}
+                  value={second_choice_team}
+                  onChange={this.onChange}
                 >
                   {TEAMS.map(team => (
                     <option key={team} value={team}>
@@ -256,7 +285,8 @@ export default class SignUp extends Component {
                 <Select
                   name="third_choice_team"
                   label="3rd choice"
-                  onBlur={this.onBlur}
+                  value={third_choice_team}
+                  onChange={this.onChange}
                 >
                   {TEAMS.map(team => (
                     <option key={team} value={team}>
