@@ -1,96 +1,68 @@
 import React, { Component } from "react";
+import cx from "classnames";
 import axios from "axios";
 import Button from "./Button";
 
 const formUrl =
   "https://script.google.com/macros/s/AKfycbxaAM3uyL_avJPMm4SsjXUVs-TqorvKLFohkKy2cP1J2hZ14ZQ3/exec";
 
+const inputClasses = {
+  base: [
+    "input-border-outline",
+    "text-xl",
+    "border-2",
+    "h-12",
+    "p-1",
+    "bg-gray-300",
+    "overflow-hidden",
+    "shadow-lg",
+    "block",
+    "w-full",
+  ],
+};
+const labelClasses = {
+  base: ["text-xl"],
+};
 const ThankYou = () => (
   <div className="big-label">
     Thank You! You will receive an email from us shortly with more details.
   </div>
 );
 
-const BigInputField = ({ name, alt, placeholder = "", func }) => (
-  <label className="big-label">
-    {alt}
-    <span className="red-asterisk"> *</span>
-    <br></br>
-    <input
-      className="big-input"
-      type="text"
-      name={name}
-      alt={alt}
-      placeholder={placeholder}
-      onBlur={func}
-      required
-    />
-  </label>
-);
+const InputField = ({ name, placeholder, onBlur, required, label }) => {
+  return (
+    <div className="w-full">
+      <label className={cx(labelClasses.base)}>{label}</label>
+      {required && <span className="text-red-500 text-xl">*</span>}
+      <input
+        className={cx(inputClasses.base)}
+        type="text"
+        name={name}
+        alt={label}
+        placeholder={placeholder}
+        onBlur={onBlur}
+        required={required}
+      ></input>
+    </div>
+  );
+};
 
-const SmallInputField = ({ name, alt, placeholder = "", func }) => (
-  <label className="small-label">
-    {alt}
-    <span className="red-asterisk"> *</span>
-    <br></br>
-    <input
-      className="small-input"
-      type="text"
-      name={name}
-      alt={alt}
-      placeholder={placeholder}
-      onBlur={func}
-      required
-    />
-  </label>
-);
+const Select = ({ name, label, onBlur, children, required }) => (
+  <div className="w-full">
+    <label className={cx(labelClasses.base)} htmlFor={name}>
+      {label}
+      {required && <span className="text-red-500 text-xl">*</span>}
+    </label>
 
-const ExtraSmallInputField = ({ name, alt, placeholder = "", func }) => (
-  <label className="extra-small-label">
-    {alt}
-    <span className="red-asterisk"> *</span>
-    <br></br>
-    <input
-      className="extra-small-input"
-      type="text"
+    <select
+      className={cx(inputClasses.base)}
       name={name}
-      alt={alt}
-      placeholder={placeholder}
-      onBlur={func}
-      required
-    />
-  </label>
-);
-
-const ExtraSmallTeamSelect = ({ name, alt, func }) => (
-  <label className="extra-small-label" htmlFor="year">
-    {alt}
-    <br></br>
-    <select className="extra-small-input" name={name} alt={alt} onBlur={func}>
-      <option>Choose an option</option>
-      <option>Outreach</option>
-      <option>Marketing & Branding</option>
-      <option>External Relations</option>
-      <option>Workshops & Talks</option>
-      <option>Community & Code</option>
+      alt={label}
+      onBlur={onBlur}
+    >
+      {children}
     </select>
-  </label>
-);
-
-const ExtraSmallYearSelect = ({ name, alt, func }) => (
-  <label className="extra-small-label" htmlFor="year">
-    {alt}
-    <span className="red-asterisk"> *</span>
-    <br></br>
-    <select className="extra-small-input" name={name} alt={alt} onBlur={func}>      
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      <option>Grad school</option>
-    </select>
-  </label>
+  </div>
 );
 
 export default class SignUp extends Component {
@@ -112,7 +84,7 @@ export default class SignUp extends Component {
     };
   }
 
-  onChange = e => {
+  onBlur = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
@@ -132,7 +104,7 @@ export default class SignUp extends Component {
       third_choice_team,
     } = this.state;
 
-    document.getElementById('gform').reset()
+    document.getElementById("gform").reset();
 
     axios({
       method: "get",
@@ -182,71 +154,122 @@ export default class SignUp extends Component {
           <div>
             <h1>Fill out the form to become a general member!</h1>
             <p>No expiry date.</p>
-            <form className="form-color form-props" id="gform" onSubmit={this.onSubmit}>
-              <BigInputField
-                name="email"
-                alt="Email"
-                placeholder="@gmail.com, @mcmaster.ca, etc."
-                func={this.onChange}
-              />
-              <SmallInputField
-                name="first_name"
-                alt="First name"
-                func={this.onChange}
-              />
-              <SmallInputField
-                name="last_name"
-                alt="Last name"
-                func={this.onChange}
-              />
-              <BigInputField
-                name="mac_id"
-                alt="Mac ID"
-                placeholder="e.g. muske7"
-                func={this.onChange}
-              />
-              <ExtraSmallInputField
-                name="program"
-                alt="Program"
-                func={this.onChange}
-              />
-
-              <ExtraSmallYearSelect
-                name="academic_year"
-                alt="Academic year"
-                func={this.onChange}
-              />
-
-              <ExtraSmallInputField
-                name="graduation"
-                alt="Expected graduation"
-                placeholder="e.g. 2023"
-                func={this.onChange}
-              />
-
-              <div className="team-preferences">
+            <form
+              className="form-color form-props"
+              id="gform"
+              onSubmit={this.onSubmit}
+            >
+              <div className="w-full md:w-3/4 px-4 mb-8">
+                <InputField
+                  name="email"
+                  label="Email"
+                  placeholder="@gmail.com, @mcmaster.ca, etc."
+                  onBlur={this.onBlur}
+                  required
+                ></InputField>
+              </div>
+              <div className="w-full md:w-1/2 px-4 mb-8">
+                <InputField
+                  name="first_name"
+                  label="First name"
+                  onBlur={this.onBlur}
+                  required
+                />
+              </div>
+              <div className="w-full md:w-1/2 px-4 mb-8">
+                <InputField
+                  name="last_name"
+                  label="Last name"
+                  onBlur={this.onBlur}
+                  required
+                />
+              </div>
+              <div className="w-full md:w-1/2 px-4 mb-8">
+                <InputField
+                  name="mac_id"
+                  label="Mac ID"
+                  placeholder="e.g. muske7"
+                  onBlur={this.onBlur}
+                  required
+                />
+              </div>
+              <div className="w-full md:w-1/2 px-4 mb-8">
+                <InputField
+                  name="program"
+                  label="Program"
+                  onBlur={this.onBlur}
+                  required
+                />
+              </div>
+              <div className="w-full md:w-1/3 px-4 mb-8">
+                <Select
+                  name="academic_year"
+                  label="Academic year"
+                  onBlur={this.onBlur}
+                  required
+                >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>Grad school</option>
+                </Select>
+              </div>
+              <div className="w-full md:w-1/3 px-4 mb-8">
+                <InputField
+                  name="graduation"
+                  label="Expected graduation"
+                  placeholder="e.g. 2023"
+                  onBlur={this.onBlur}
+                  required
+                />
+              </div>
+              <div className="team-preferences mb-8">
                 <p id="tp-text">Select your top three team preferences</p>
               </div>
-
-              <ExtraSmallTeamSelect
-                name="first_choice_team"
-                alt="1st choice"
-                func={this.onChange}
-              />
-
-              <ExtraSmallTeamSelect
-                name="second_choice_team"
-                alt="2nd choice"
-                func={this.onChange}
-              />
-
-              <ExtraSmallTeamSelect
-                name="third_choice_team"
-                alt="3rd choice"
-                func={this.onChange}
-              />
-              <br></br>
-
+              <div className="w-full md:w-1/3 px-4 mb-8">
+                <Select
+                  name="first_choice_team"
+                  label="1st choice"
+                  onBlur={this.onBlur}
+                >
+                  <option>Choose an option</option>
+                  <option>Outreach</option>
+                  <option>Marketing & Branding</option>
+                  <option>External Relations</option>
+                  <option>Workshops & Talks</option>
+                  <option>Community & Code</option>
+                </Select>
+              </div>
+              <div className="w-full md:w-1/3 px-4 mb-8">
+                <Select
+                  name="second_choice_team"
+                  label="2nd choice"
+                  onBlur={this.onBlur}
+                >
+                  <option>Choose an option</option>
+                  <option>Outreach</option>
+                  <option>Marketing & Branding</option>
+                  <option>External Relations</option>
+                  <option>Workshops & Talks</option>
+                  <option>Community & Code</option>
+                </Select>
+              </div>
+              <div className="w-full md:w-1/3 px-4 mb-8">
+                <Select
+                  name="third_choice_team"
+                  label="3rd choice"
+                  onBlur={this.onBlur}
+                >
+                  <option>Choose an option</option>
+                  <option>Outreach</option>
+                  <option>Marketing & Branding</option>
+                  <option>External Relations</option>
+                  <option>Workshops & Talks</option>
+                  <option>Community & Code</option>
+                </Select>
+              </div>
               <Button bg="green" type="submit" alt="Submit" className="submit">
                 Submit
               </Button>
