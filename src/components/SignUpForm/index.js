@@ -14,11 +14,13 @@ const inputClasses = {
     "border-2",
     "h-12",
     "p-1",
+    "mt-2",
     "bg-gray-300",
     "overflow-hidden",
-    "shadow-lg",
     "block",
     "w-full",
+    "outline-none",
+    "focus:shadow-outline-blue",
   ],
 };
 const labelClasses = {
@@ -40,14 +42,15 @@ const InputField = ({
 }) => {
   return (
     <div className="w-full">
-      <label className={cx(labelClasses.base)}>{label}</label>
-      {required && <span className="text-red-500 text-xl">*</span>}
+      <label className={cx(labelClasses.base)}>
+        {label} {required && <span className="text-red-500 text-xl">*</span>}
+      </label>
+
       <input
         className={cx(inputClasses.base)}
         type="text"
         name={name}
         value={value}
-        alt={label}
         placeholder={placeholder}
         onChange={onChange}
         required={required}
@@ -67,7 +70,6 @@ const Select = ({ name, label, onChange, children, required, value }) => (
       className={cx(inputClasses.base)}
       name={name}
       value={value}
-      alt={label}
       onChange={onChange}
     >
       {children}
@@ -164,18 +166,24 @@ export default class SignUp extends Component {
       first_choice_team,
       second_choice_team,
       third_choice_team,
+      submitted,
     } = this.state;
     return (
       <div>
-        {this.state.submitted ? (
+        {submitted ? (
           <ThankYou />
         ) : (
           <div>
-            <h1>Fill out the form to become a general member!</h1>
-            <p>No expiry date.</p>
+            <h1 className="font-bold">Join us!</h1>
+            <p className="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque lorem mauris, posuere id lectus ut, dapibus porttitor
+              lacus. Cras rhoncus id augue nec rutrum. Nullam tellus sem,
+              pretium et sodales in, convallis sit amet erat. Aliquam erat
+              volutpat.
+            </p>
             <form
-              className="form-color form-props"
-              id="gform"
+              className="flex flex-wrap rounded overflow-hidden shadow-2xl p-4"
               onSubmit={this.onSubmit}
             >
               <div className="w-full md:w-3/4 px-4 mb-8">
@@ -187,6 +195,15 @@ export default class SignUp extends Component {
                   onChange={this.onChange}
                   required
                 ></InputField>
+                {/*
+                <InputField
+                  name="email"
+                  value={email}
+                  label="Email"
+                  placeholder="@gmail.com, @mcmaster.ca, etc."
+                  onChange={this.onChange}
+                  required
+                ></InputField>*/}
               </div>
               <div className="w-full md:w-1/2 px-4 mb-8">
                 <InputField
@@ -248,8 +265,10 @@ export default class SignUp extends Component {
                   required
                 />
               </div>
-              <div className="team-preferences mb-8">
-                <p id="tp-text">Select your top three team preferences</p>
+              <div className="text-xl bg-blue-700 w-full mb-8 text-white">
+                <p className="text-center m-auto p-8">
+                  Select your top three team preferences
+                </p>
               </div>
               <div className="w-full md:w-1/3 px-4 mb-8">
                 <Select
@@ -293,7 +312,7 @@ export default class SignUp extends Component {
                   ))}
                 </Select>
               </div>
-              <Button bg="green" type="submit" alt="Submit" className="submit">
+              <Button bg="green" type="submit" size="lg" className="ml-auto">
                 Submit
               </Button>
             </form>
