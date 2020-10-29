@@ -1,5 +1,5 @@
 import React from "react";
-import SignUp from "../components/SignUp";
+import SignUp from "../components/SignUpForm";
 import Layout from "../layouts";
 import SEO from "../components/seo";
 

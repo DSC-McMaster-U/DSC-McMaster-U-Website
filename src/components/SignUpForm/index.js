@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import cx from "classnames";
 import axios from "axios";
-import Button from "./Button";
+import Button from "../Button";
+import { ACADEMIC_YEARS, TEAMS } from "./config";
 
 const formUrl =
   "https://script.google.com/macros/s/AKfycbxaAM3uyL_avJPMm4SsjXUVs-TqorvKLFohkKy2cP1J2hZ14ZQ3/exec";
@@ -208,12 +209,9 @@ export default class SignUp extends Component {
                   onBlur={this.onBlur}
                   required
                 >
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>Grad school</option>
+                  {ACADEMIC_YEARS.map(academic_year => (
+                    <option key={academic_year}>{academic_year}</option>
+                  ))}
                 </Select>
               </div>
               <div className="w-full md:w-1/3 px-4 mb-8">
@@ -234,12 +232,11 @@ export default class SignUp extends Component {
                   label="1st choice"
                   onBlur={this.onBlur}
                 >
-                  <option>Choose an option</option>
-                  <option>Outreach</option>
-                  <option>Marketing & Branding</option>
-                  <option>External Relations</option>
-                  <option>Workshops & Talks</option>
-                  <option>Community & Code</option>
+                  {TEAMS.map(team => (
+                    <option key={team} value={team}>
+                      {team}
+                    </option>
+                  ))}
                 </Select>
               </div>
               <div className="w-full md:w-1/3 px-4 mb-8">
@@ -248,12 +245,11 @@ export default class SignUp extends Component {
                   label="2nd choice"
                   onBlur={this.onBlur}
                 >
-                  <option>Choose an option</option>
-                  <option>Outreach</option>
-                  <option>Marketing & Branding</option>
-                  <option>External Relations</option>
-                  <option>Workshops & Talks</option>
-                  <option>Community & Code</option>
+                  {TEAMS.map(team => (
+                    <option key={team} value={team}>
+                      {team}
+                    </option>
+                  ))}
                 </Select>
               </div>
               <div className="w-full md:w-1/3 px-4 mb-8">
@@ -262,12 +258,11 @@ export default class SignUp extends Component {
                   label="3rd choice"
                   onBlur={this.onBlur}
                 >
-                  <option>Choose an option</option>
-                  <option>Outreach</option>
-                  <option>Marketing & Branding</option>
-                  <option>External Relations</option>
-                  <option>Workshops & Talks</option>
-                  <option>Community & Code</option>
+                  {TEAMS.map(team => (
+                    <option key={team} value={team}>
+                      {team}
+                    </option>
+                  ))}
                 </Select>
               </div>
               <Button bg="green" type="submit" alt="Submit" className="submit">
