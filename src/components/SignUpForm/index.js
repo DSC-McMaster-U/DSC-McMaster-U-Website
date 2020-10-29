@@ -114,8 +114,6 @@ export default class SignUp extends Component {
       third_choice_team,
     } = this.state;
 
-    document.getElementById("gform").reset();
-
     axios({
       method: "get",
       url:
