@@ -389,3 +389,7 @@ template {
 .border-top-about {
   border-top: 2px solid #ea4335;
 }
+.wiki:focus {
+  outline: none;
+  box-shadow: none;
+}

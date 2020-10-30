@@ -8,7 +8,7 @@ function About_Card() {
   const reqStyle = {
     background: "#FFF",
     transition: "linear 0.1s",
-    "border-radius": "1rem",
+    borderRadius: "1rem",
   };
   const CONTAINER_STYLE = {
     position: "relative",
