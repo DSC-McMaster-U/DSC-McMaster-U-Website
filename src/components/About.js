@@ -6,7 +6,7 @@ import rocket from "../images/rocket.png";
 
 const About = () => {
   return (
-    <section className="grid grid-cols-9 gap-6">
+    <section className="grid grid-cols-10 gap-6">
       <div className="grid grid-rows-5 col-span-3">
         <div className="row-span-1"></div>
         <div className="row-span-1">
@@ -31,22 +31,8 @@ const About = () => {
           />
         </span>
       </div>
-      <div className="col-span-3 py-5">
-        <div className="overflow-hidden shadow-lg rounded-lg">
-          <div className="flex justify-center">
-            <img className="w-1/2 h-1/2 " src={rocket} alt="rocket" />
-          </div>
-          <div className="px-6 py-4">
-            <div className="font-bold text-2xl m-4 flex justify-center">
-              Concept of DSC
-            </div>
-            <p className="body my-4 text-center text-lg leading-normal">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
-          </div>
-        </div>
+      <div className="col-span-4 py-5">
+        <About_Card />
       </div>
     </section>
   );
