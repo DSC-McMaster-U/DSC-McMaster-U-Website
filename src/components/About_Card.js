@@ -13,17 +13,15 @@ function About_Card() {
     position: "relative",
     height: "100%",
     width: "100%",
-    justifyContent: "center",
-    alignItems: "middle",
   };
 
   return (
     <div style={CONTAINER_STYLE}>
-      <ReactCardCarousel autoplay={true} alignment="horizontal">
+      <ReactCardCarousel autoplay={true} spread="wide" alignment="horizontal">
         <div style={reqStyle}>
           <div className="max-w-sm overflow-hidden shadow-lg rounded-lg">
             <div className="flex justify-center">
-              <img className="w-1/2 h-1/2 " src={rocket} alt="rocket" />
+              <img className="w-3/4 h-3/4" src={rocket} alt="rocket" />
             </div>
             <div className="relative px-6 py-4">
               <div className="static font-bold text-2xl m-4 flex justify-center">
@@ -40,7 +38,7 @@ function About_Card() {
         <div style={reqStyle}>
           <div className="max-w-sm overflow-hidden shadow-lg rounded-lg">
             <div className="flex justify-center">
-              <img className="w-1/2 h-1/2 " src={thinking} alt="thinking" />
+              <img className="w-3/4 h-3/4" src={thinking} alt="thinking" />
             </div>
 
             <div className="static px-6 py-4">
@@ -58,7 +56,7 @@ function About_Card() {
         <div style={reqStyle}>
           <div className="max-w-sm overflow-hidden shadow-lg rounded-lg">
             <div className="flex justify-center">
-              <img className="w-1/2 h-1/2 " src={student} alt="student" />
+              <img className="w-3/4 h-3/4" src={student} alt="student" />
             </div>
 
             <div className=" static px-6 py-4">

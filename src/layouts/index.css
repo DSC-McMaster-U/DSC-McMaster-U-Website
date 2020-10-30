@@ -353,3 +353,33 @@ template {
 [hidden] {
   display: none;
 }
+
+/* About section dots */
+.red-dot {
+  height: 20px;
+  width: 20px;
+  background-color: #ea4335;
+  border-radius: 50%;
+  display: inline-block;
+}
+.yellow-dot {
+  height: 20px;
+  width: 20px;
+  background-color: #fbbc04;
+  border-radius: 50%;
+  display: inline-block;
+}
+.blue-dot {
+  height: 20px;
+  width: 20px;
+  background-color: #4285f4;
+  border-radius: 50%;
+  display: inline-block;
+}
+.green-dot {
+  height: 20px;
+  width: 20px;
+  background-color: #34a853;
+  border-radius: 50%;
+  display: inline-block;
+}

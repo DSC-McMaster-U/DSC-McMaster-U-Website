@@ -7,8 +7,13 @@ module.exports = {
   },
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
+    colors: {
+      aboutBorder: "#ea4335",
+      aboutBottomBorder: "#FBBC04",
+    },
     borderRadius: {
       lg: "1rem",
+      md: "0.45rem",
     },
     borderWidth: {
       default: "1px",
