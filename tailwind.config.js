@@ -7,6 +7,9 @@ module.exports = {
   },
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
+    borderRadius: {
+      lg: "1rem",
+    },
     borderWidth: {
       default: "1px",
       0: "0",
