@@ -383,3 +383,9 @@ template {
   border-radius: 50%;
   display: inline-block;
 }
+.border-bottom-about {
+  border-bottom: 2px solid #fbbc04;
+}
+.border-top-about {
+  border-top: 2px solid #ea4335;
+}

@@ -8,6 +8,7 @@ function About_Card() {
   const reqStyle = {
     background: "#FFF",
     transition: "linear 0.1s",
+    "border-radius": "1rem",
   };
   const CONTAINER_STYLE = {
     position: "relative",
@@ -18,13 +19,13 @@ function About_Card() {
   return (
     <div style={CONTAINER_STYLE}>
       <ReactCardCarousel autoplay={true} spread="wide" alignment="horizontal">
-        <div style={reqStyle}>
-          <div className="max-w-sm overflow-hidden shadow-lg rounded-lg">
+        <div className="shadow-lg" style={reqStyle}>
+          <div className="max-w-sm overflow-hidden h-auto">
             <div className="flex justify-center">
-              <img className="w-3/4 h-3/4" src={rocket} alt="rocket" />
+              <img className="block h-auto w-1/2" src={rocket} alt="rocket" />
             </div>
-            <div className="relative px-6 py-4">
-              <div className="static font-bold text-2xl m-4 flex justify-center">
+            <div className="px-2 pb-4">
+              <div className="static font-bold text-2xl mb-4 flex justify-center">
                 Concept of DSC
               </div>
               <p className="relative body my-4 text-center text-lg leading-normal">
@@ -35,17 +36,17 @@ function About_Card() {
             </div>
           </div>
         </div>
-        <div style={reqStyle}>
-          <div className="max-w-sm overflow-hidden shadow-lg rounded-lg">
-            <div className="flex justify-center">
-              <img className="w-3/4 h-3/4" src={thinking} alt="thinking" />
-            </div>
 
-            <div className="static px-6 py-4">
-              <div className="font-bold text-2xl m-4 flex justify-center">
+        <div className="shadow-lg" style={reqStyle}>
+          <div className="max-w-sm overflow-hidden ">
+            <div className="flex justify-center">
+              <img className="block h-auto w-1/2" src={thinking} alt="rocket" />
+            </div>
+            <div className="px-2 pb-4">
+              <div className="static font-bold text-2xl mb-4 flex justify-center">
                 Why DSC?
               </div>
-              <p className="body my-4 text-center text-lg leading-normal">
+              <p className="relative body my-4 text-center text-lg leading-normal">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
                 exercitationem praesentium nihil.
@@ -53,17 +54,16 @@ function About_Card() {
             </div>
           </div>
         </div>
-        <div style={reqStyle}>
-          <div className="max-w-sm overflow-hidden shadow-lg rounded-lg">
+        <div className="shadow-lg" style={reqStyle}>
+          <div className="max-w-sm overflow-hidden">
             <div className="flex justify-center">
-              <img className="w-3/4 h-3/4" src={student} alt="student" />
+              <img className="block h-auto w-1/2" src={student} alt="rocket" />
             </div>
-
-            <div className=" static px-6 py-4">
-              <div className="font-bold text-2xl m-4 flex justify-center">
+            <div className="px-2 pb-4">
+              <div className="static font-bold text-2xl mb-4 flex justify-center">
                 Target Audience
               </div>
-              <p className="body my-4 text-center text-lg leading-normal">
+              <p className="relative body my-4 text-center text-lg leading-normal">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
                 exercitationem praesentium nihil.
