@@ -19,9 +19,11 @@ const About = () => {
           </p>
           <div className="grid grid-cols-3">
             <div className="col-span-2">
-              <button className="wiki bg-transparent text-lg hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-3 px-6 border border-blue-500 hover:border-transparent rounded-md my-5 outline-none">
-                View Wiki
-              </button>
+              <a href="https://www.notion.so/DSC-McMasterU-Wiki-f39c9ea5e7b141fba08cfc01588d92c4">
+                <button className="wiki bg-transparent text-lg hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-3 px-6 border border-blue-500 hover:border-transparent rounded-md my-5 outline-none">
+                  View Wiki
+                </button>
+              </a>
             </div>
           </div>
         </div>
