@@ -3,7 +3,7 @@ import cx from "classnames";
 import axios from "axios";
 import Button from "../Button";
 import { ACADEMIC_YEARS, TEAMS } from "./config";
-
+import TextField from "../TextField";
 const formUrl =
   "https://script.google.com/macros/s/AKfycbxaAM3uyL_avJPMm4SsjXUVs-TqorvKLFohkKy2cP1J2hZ14ZQ3/exec";
 
@@ -21,15 +21,14 @@ const inputClasses = {
     "w-full",
     "outline-none",
     "focus:shadow-outline-blue",
+    "placeholder-gray-600",
   ],
 };
 const labelClasses = {
   base: ["text-xl"],
 };
 const ThankYou = () => (
-  <div className="big-label">
-    Thank You! You will receive an email from us shortly with more details.
-  </div>
+  <p>Thank You! You will receive an email from us shortly with more details.</p>
 );
 
 const InputField = ({
@@ -42,19 +41,18 @@ const InputField = ({
 }) => {
   return (
     <div className="w-full">
-      <label className={cx(labelClasses.base)}>
+      <label className={cx(labelClasses.base)} htmlFor={name}>
         {label} {required && <span className="text-red-500 text-xl">*</span>}
+        <input
+          className={cx(inputClasses.base)}
+          type="text"
+          name={name}
+          value={value}
+          placeholder={placeholder}
+          onChange={onChange}
+          required={required}
+        ></input>
       </label>
-
-      <input
-        className={cx(inputClasses.base)}
-        type="text"
-        name={name}
-        value={value}
-        placeholder={placeholder}
-        onChange={onChange}
-        required={required}
-      ></input>
     </div>
   );
 };
@@ -64,16 +62,16 @@ const Select = ({ name, label, onChange, children, required, value }) => (
     <label className={cx(labelClasses.base)} htmlFor={name}>
       {label}
       {required && <span className="text-red-500 text-xl">*</span>}
-    </label>
 
-    <select
-      className={cx(inputClasses.base)}
-      name={name}
-      value={value}
-      onChange={onChange}
-    >
-      {children}
-    </select>
+      <select
+        className={cx(inputClasses.base)}
+        name={name}
+        value={value}
+        onChange={onChange}
+      >
+        {children}
+      </select>
+    </label>
   </div>
 );
 
@@ -194,16 +192,7 @@ export default class SignUp extends Component {
                   placeholder="@gmail.com, @mcmaster.ca, etc."
                   onChange={this.onChange}
                   required
-                ></InputField>
-                {/*
-                <InputField
-                  name="email"
-                  value={email}
-                  label="Email"
-                  placeholder="@gmail.com, @mcmaster.ca, etc."
-                  onChange={this.onChange}
-                  required
-                ></InputField>*/}
+                />
               </div>
               <div className="w-full md:w-1/2 px-4 mb-8">
                 <InputField
@@ -312,7 +301,12 @@ export default class SignUp extends Component {
                   ))}
                 </Select>
               </div>
-              <Button bg="green" type="submit" size="lg" className="ml-auto">
+              <Button
+                bg="green"
+                type="submit"
+                size="lg"
+                className="ml-auto px-16"
+              >
                 Submit
               </Button>
             </form>
