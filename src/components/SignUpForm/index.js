@@ -3,7 +3,7 @@ import cx from "classnames";
 import axios from "axios";
 import Button from "../Button";
 import { ACADEMIC_YEARS, TEAMS } from "./config";
-import TextField from "../TextField";
+
 const formUrl =
   "https://script.google.com/macros/s/AKfycbxaAM3uyL_avJPMm4SsjXUVs-TqorvKLFohkKy2cP1J2hZ14ZQ3/exec";
 
@@ -21,7 +21,7 @@ const inputClasses = {
     "w-full",
     "outline-none",
     "focus:shadow-outline-blue",
-    "placeholder-gray-600",
+    "placeholder-gray-800",
   ],
 };
 const labelClasses = {
@@ -42,12 +42,12 @@ const InputField = ({
   return (
     <div className="w-full">
       <label className={cx(labelClasses.base)} htmlFor={name}>
-        {label} {required && <span className="text-red-500 text-xl">*</span>}
+        {label} {required && <span className="text-red-800 text-xl">*</span>}
         <input
           className={cx(inputClasses.base)}
           type="text"
-          name={name}
-          value={value}
+          name={name}          
+          value={value}          
           placeholder={placeholder}
           onChange={onChange}
           required={required}
@@ -61,15 +61,14 @@ const Select = ({ name, label, onChange, children, required, value }) => (
   <div className="w-full">
     <label className={cx(labelClasses.base)} htmlFor={name}>
       {label}
-      {required && <span className="text-red-500 text-xl">*</span>}
-
+      {required && <span className="text-red-800 text-xl">*</span>}      
       <select
         className={cx(inputClasses.base)}
-        name={name}
+        name={name}        
         value={value}
         onChange={onChange}
-      >
-        {children}
+      >        
+        {children}        
       </select>
     </label>
   </div>
@@ -212,7 +211,7 @@ export default class SignUp extends Component {
                   required
                 />
               </div>
-              <div className="w-full md:w-1/2 px-4 mb-8">
+              <div className="w-full md:w-3/4 px-4 mb-8">
                 <InputField
                   name="mac_id"
                   label="Mac ID"
@@ -222,7 +221,7 @@ export default class SignUp extends Component {
                   required
                 />
               </div>
-              <div className="w-full md:w-1/2 px-4 mb-8">
+              <div className="w-full md:w-1/3 px-4 mb-8">
                 <InputField
                   name="program"
                   label="Program"
@@ -254,7 +253,7 @@ export default class SignUp extends Component {
                   required
                 />
               </div>
-              <div className="text-xl bg-blue-700 w-full mb-8 text-white">
+              <div className="text-xl bg-blue-700 w-full mb-8 text-white mt-8 mb-12">
                 <p className="text-center m-auto p-8">
                   Select your top three team preferences
                 </p>
@@ -301,11 +300,12 @@ export default class SignUp extends Component {
                   ))}
                 </Select>
               </div>
+              
               <Button
                 bg="green"
                 type="submit"
                 size="lg"
-                className="ml-auto px-16"
+                className="mr-auto w-1/2 px-16 mt-8 mb-2"
               >
                 Submit
               </Button>
