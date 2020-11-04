@@ -45,7 +45,7 @@ const Button = React.forwardRef((props, ref) => {
     md: ["px-5", "py-4", "text-md"],
     lg: ["px-6", "py-4", "text-lg"],
     xl: ["px-6", "py-4", "text-xl"],
-    disabled: ["cursor-not-allowed", "opacity-50"]
+    disabled: ["cursor-not-allowed", "opacity-50"],
   };
 
   return (
@@ -61,7 +61,7 @@ const Button = React.forwardRef((props, ref) => {
         classes[variant],
         classes[size],
         float ? "shadow-lg" : "shadow-none",
-        disabled ? classes["disabled"] : [] 
+        disabled ? classes["disabled"] : []
       )}
     >
       {children}
