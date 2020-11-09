@@ -23,9 +23,10 @@
   },
   "homepage": "https://github.com/DSC-McMaster-U/DSC-McMaster-U-Website#readme",
   "dependencies": {
-    "gatsby": "^2.24.66",
+    "classnames": "^2.2.6",
+    "gatsby": "^2.24.87",
     "gatsby-link": "^2.4.15",
-    "gatsby-plugin-manifest": "^2.4.32",
+    "gatsby-plugin-manifest": "^2.4.35",
     "gatsby-plugin-react-helmet": "^3.3.12",
     "gatsby-plugin-sharp": "^2.6.37",
     "gatsby-source-filesystem": "^2.3.31",
