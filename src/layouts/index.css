@@ -393,3 +393,6 @@ template {
   outline: none;
   box-shadow: none;
 }
+.wiki {
+  transition-duration: 0.5s;
+}
