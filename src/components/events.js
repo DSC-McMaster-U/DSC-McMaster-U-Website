@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 import Button from "./Button";
 import EventData from "../content/events.json";
 
-function Events({ siteTitle }) {
+function Events() {
   const maxEvents = 3;
   const data = useStaticQuery(graphql`
     query EventsImage {
@@ -45,12 +45,12 @@ function Events({ siteTitle }) {
                 />
               </div>
               <div className="py-8 w-full md:w-6/12 md:pl-8">
-                <div className="pl-8">
+                <div className="md:pl-8">
                   <span className="rounded-lg bg-gray-500 text-white py-2 px-2 text-xs">
                     Upcoming Events
                   </span>
                 </div>
-                <ul className="pt-8 pl-8">
+                <ul className="pt-8 md:pl-8">
                   {EventData.filter(event => {
                     return new Date(event.jsDate) > new Date();
                   }).map((event, i) => {
