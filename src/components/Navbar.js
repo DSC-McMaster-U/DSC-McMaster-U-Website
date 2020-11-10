@@ -11,19 +11,18 @@ export default function Navbar(){
     <img className = "Logo" src= {require("../images/DSCLogo.png")} alt= "Logo" />
     </div>
     <div class="block lg:hidden">
-    <button onClick={() => toggleExpansion(!isExpanded)} class="transition duration-700 ease-in-out hover:bg-gray-300 transition duration-700 ease-in-out flex items-center px-3 py-2 border rounded text-gray-700 border-gray-700 hover:text-blacks hover:border-blue">
-      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    <button onClick={() => toggleExpansion(!isExpanded)} class="transition duration-700 ease-in-out hover:bg-gray-300 rounded  flex items-center px-3 py-2 text-gray-700">
+    <svg class="h-4 w-4" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+      <path className= {`${ isExpanded ? `hidden` : `block` }`} stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      <path className= {`${ isExpanded ? `block` : `hidden` }`} stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
     </button>
   </div>
-  <div className= {`${ isExpanded ? `block` : `hidden` } top-navbar border-gray-400 w-full lg:inline-flex lg:w-auto` } id="menu">
-      <nav>
-        <ul className="bg-white lg:flex items-center justify-between text-base text-black pt-4 lg:pt-0">
-          <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent text-gray-900 hover:text-gray-500 transition duration-150 ease-in-out width:1px" href="#">Home</a></li>
-          <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent text-gray-900 hover:text-gray-500 transition duration-150 ease-in-out width:1px" href="#">About</a></li>
-          <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent text-gray-900 hover:text-gray-500 transition duration-150 ease-in-out width:1px" href="#">Team</a></li>
-          <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent text-gray-900 hover:text-gray-500 transition duration-150 ease-in-out width:1px lg:mb-0 mb-2" href="#">Contact</a></li>
-        </ul>
-      </nav>
+  <div className= {`${ isExpanded ? `block` : `hidden` } px-4 pt-2 pb-4 top-navbar border-gray-900 w-full lg:inline-flex lg:w-auto px-2 pt-2 pb-3`} id="menu">
+          <a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px" href="#">Home</a>
+          <a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px" href="#">About</a>
+          <a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px" href="#">Team</a>
+          <a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px" href="#">Contact</a>
     </div>
   </header>
 </div>
