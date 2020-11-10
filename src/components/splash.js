@@ -6,14 +6,14 @@ import Button from './Button';
 import SplashGraph from "./../images/splash.png";
 import color from './../utils/colors';
 
-const Splash = ({ title, subTitle }) => (
+const Splash = ({ subTitle }) => (
     <div className="lg:container md:container sm:container">
 
         {/* first row - splash content */}
         <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-20">
             {/* splash text */}
             <div className="grid grid-rows-3">
-                <div><h1>{title}</h1></div>
+                <div><h1 style={{color: color.indigo}}>McMaster Developer Student Club</h1></div>
                 <div><p>{subTitle}</p></div>
                 <div className="grid grid-cols-2 gap-10">
                     <div>

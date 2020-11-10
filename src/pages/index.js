@@ -10,8 +10,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <h1>Hello World!</h1>
       <p>Welcome to the site.</p>
-      <Splash title="Google Student Club McMaster U"
-              subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor ligula, hendrerit eu turpis id, feugiat mattis nulla. Integer pretium, sem id vestibulum vestibulum, magna est elementum mauris, id sollicitudin eros libero vitae enim."
+      <Splash subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor ligula, hendrerit eu turpis id, feugiat mattis nulla. Integer pretium, sem id vestibulum vestibulum, magna est elementum mauris, id sollicitudin eros libero vitae enim."
       />
     </Layout>
   );
