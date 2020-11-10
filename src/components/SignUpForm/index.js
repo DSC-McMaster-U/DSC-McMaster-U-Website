@@ -46,8 +46,8 @@ const InputField = ({
         <input
           className={cx(inputClasses.base)}
           type="text"
-          name={name}          
-          value={value}          
+          name={name}
+          value={value}
           placeholder={placeholder}
           onChange={onChange}
           required={required}
@@ -61,14 +61,14 @@ const Select = ({ name, label, onChange, children, required, value }) => (
   <div className="w-full">
     <label className={cx(labelClasses.base)} htmlFor={name}>
       {label}
-      {required && <span className="text-red-800 text-xl">*</span>}      
+      {required && <span className="text-red-800 text-xl">*</span>}
       <select
         className={cx(inputClasses.base)}
-        name={name}        
+        name={name}
         value={value}
         onChange={onChange}
-      >        
-        {children}        
+      >
+        {children}
       </select>
     </label>
   </div>
@@ -300,7 +300,7 @@ export default class SignUp extends Component {
                   ))}
                 </Select>
               </div>
-              
+
               <Button
                 bg="green"
                 type="submit"
