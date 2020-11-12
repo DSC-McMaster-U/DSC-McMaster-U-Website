@@ -8,7 +8,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <Splash subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor ligula, hendrerit eu turpis id, feugiat mattis nulla. Integer pretium, sem id vestibulum vestibulum, magna est elementum mauris, id sollicitudin eros libero vitae enim." />
+      <Splash />
       <Events />
     </Layout>
   );

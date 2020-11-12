@@ -5,7 +5,7 @@ import Button from "../Button";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
-const Splash = ({ subTitle }) => {
+const Splash = () => {
   const data = useStaticQuery(graphql`
     query SplashImage {
       image: file(relativePath: { eq: "splash-alt.png" }) {
@@ -31,7 +31,12 @@ const Splash = ({ subTitle }) => {
             <h1 className="text-4xl">McMaster Developer Student Club</h1>
           </div>
           <div>
-            <p>{subTitle}</p>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              tortor ligula, hendrerit eu turpis id, feugiat mattis nulla.
+              Integer pretium, sem id vestibulum vestibulum, magna est elementum
+              mauris, id sollicitudin eros libero vitae enim."
+            </p>
           </div>
           <div className="grid grid-cols-2 gap-10">
             <div>
@@ -68,16 +73,6 @@ const Splash = ({ subTitle }) => {
       </div>
     </div>
   );
-};
-
-Splash.propTypes = {
-  title: PropTypes.string,
-  subTitle: PropTypes.string,
-};
-
-Splash.defaultProps = {
-  title: ``,
-  subTitle: ``,
 };
 
 export default Splash;
