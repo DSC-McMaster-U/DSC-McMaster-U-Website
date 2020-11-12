@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SplashParticle from "./SplashParticle";
-import Button from "./Button";
+import Button from "../Button";
 import { graphql, useStaticQuery } from "gatsby";
-import SplashGraph from "./../images/splash-alt.png";
 import Img from "gatsby-image";
 
 const Splash = ({ subTitle }) => {
