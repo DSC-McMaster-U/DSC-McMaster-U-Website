@@ -28,6 +28,15 @@ module.exports = {
         red,
         yellow,
       },
+      inset: {
+        "-9/8": "-12.5%",
+      },
+      width: {
+        "5/4": "125%",
+      },
+      height: {
+        "5/4": "125%",
+      },
     },
   },
   variants: {},

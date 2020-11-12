@@ -2,10 +2,26 @@ import React from "react";
 import PropTypes from "prop-types";
 import SplashParticle from "./SplashParticle";
 import Button from "./Button";
-
+import { graphql, useStaticQuery } from "gatsby";
 import SplashGraph from "./../images/splash-alt.png";
+import Img from "gatsby-image";
 
 const Splash = ({ subTitle }) => {
+  const data = useStaticQuery(graphql`
+    query SplashImage {
+      image: file(relativePath: { eq: "splash-alt.png" }) {
+        id
+        childImageSharp {
+          fixed(quality: 100) {
+            ...GatsbyImageSharpFixed
+          }
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
   return (
     <div className="lg:container md:container sm:container mt-20">
       {/* first row - splash content */}
@@ -41,11 +57,13 @@ const Splash = ({ subTitle }) => {
         </div>
         {/* splash graphic image */}
         <div className="relative h-full">
-          <div className="z-20 absolute ml-1 mt-0 bg-local h-full w-full">
-            <SplashParticle />
-          </div>
-          <div className="z-10">
-            <img src={SplashGraph} />
+          <SplashParticle />
+          <div className="z-20 relative">
+            <Img
+              fluid={data.image.childImageSharp.fluid}
+              alt=""
+              objectPosition="100% 100%"
+            />
           </div>
         </div>
       </div>
