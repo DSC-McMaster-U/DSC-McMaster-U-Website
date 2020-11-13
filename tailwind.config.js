@@ -5,7 +5,21 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
+  purge: {
+    content: [
+      "./src/**/*.js",
+      "./src/**/*.jsx",
+      "./src/**/*.ts",
+      "./src/**/*.tsx",
+    ],
+    options: {
+      whitelistPatterns: [
+        /(bg|text)-(red|blue|yellow|green)/,
+        /outline-(red|blue|yellow|green)/,
+        /border-(red|blue|yellow|green)/,
+      ],
+    },
+  },
   theme: {
     borderWidth: {
       default: "1px",
