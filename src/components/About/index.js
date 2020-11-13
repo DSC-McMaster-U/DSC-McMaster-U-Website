@@ -1,6 +1,8 @@
 import React from "react";
-import About_Card from "./About_Card";
-
+import AboutCard from "./AboutCard";
+import ReactCardCarousel from "react-card-carousel";
+import Button from "../Button";
+import { cards } from "./config";
 const About = () => {
   const colorTray = ["red", "blue", "green", "yellow"];
   let oneColor = colorTray[Math.floor(Math.random() * colorTray.length)];
@@ -22,19 +24,28 @@ const About = () => {
           </p>
           <div className="grid grid-cols-3">
             <div className="col-span-2">
-              <a href="https://www.notion.so/DSC-McMasterU-Wiki-f39c9ea5e7b141fba08cfc01588d92c4">
-                <button
-                  className={`wiki bg-transparent text-lg text-blue-700 font-semibold hover:text-white hover:bg-${oneColor}-400 py-3 px-6 border border-blue-500 hover:border-transparent rounded-md my-5 outline-none`}
-                >
-                  View Wiki
-                </button>
-              </a>
+              <Button
+                node="a"
+                href="https://www.notion.so/DSC-McMasterU-Wiki-f39c9ea5e7b141fba08cfc01588d92c4"
+              >
+                View Wiki
+              </Button>
             </div>
           </div>
         </div>
 
         <div className="row-span-3 md:col-span-6">
-          <About_Card />
+          <div className="relative h-full w-full">
+            <ReactCardCarousel
+              autoplay={true}
+              spread="wide"
+              alignment="horizontal"
+            >
+              {cards.map(card => {
+                return <AboutCard card={card} />;
+              })}
+            </ReactCardCarousel>
+          </div>
         </div>
       </section>
     </div>
