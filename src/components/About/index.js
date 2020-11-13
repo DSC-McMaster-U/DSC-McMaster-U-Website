@@ -3,6 +3,7 @@ import AboutCard from "./AboutCard";
 import ReactCardCarousel from "react-card-carousel";
 import Button from "../Button";
 import { cards } from "./config";
+import { useViewport } from "../../utils/useViewport";
 const About = () => {
   const colorTray = ["red", "blue", "green", "yellow"];
   let oneColor = colorTray[Math.floor(Math.random() * colorTray.length)];
@@ -31,14 +32,20 @@ const About = () => {
         </div>
 
         <div className="row-span-3 md:col-span-6">
-          <div className="relative h-full w-full">
+          <div className="relative h-full w-full mt-20 md:mt-0 hidden md:block">
             <ReactCardCarousel
               autoplay={true}
               spread="wide"
               alignment="horizontal"
             >
               {cards.map(card => {
-                return <AboutCard card={card} />;
+                return (
+                  <AboutCard
+                    title={card.title}
+                    body={card.body}
+                    image={card.image}
+                  />
+                );
               })}
             </ReactCardCarousel>
           </div>
