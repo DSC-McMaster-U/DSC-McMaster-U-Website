@@ -8,21 +8,17 @@ const About = () => {
   let oneColor = colorTray[Math.floor(Math.random() * colorTray.length)];
 
   return (
-    <div className="border-t-2 border-top-about container mx-auto border-bottom-about my-6">
+    <div className="border-t-4 border-blue-400 container mx-auto border-bottom-about mt-32 pt-32">
       <section className="my-6 grid grid-rows-5 md:grid-rows-1 md:grid-cols-10 py-6">
         <div className="flex flex-col row-span-2 md:col-span-4">
-          <div className="text-5xl flex content-end flex-wrap">About Us</div>
-          <div className="flex flex-row mb-5">
-            <span className="red-dot pr-4 py-2 m-2 ml-0"></span>
-            <span className="yellow-dot pr-4 py-2 m-2"></span>
-            <span className="blue-dot pr-4 py-2 m-2"></span>
-            <span className="green-dot pr-4 py-2 m-2"></span>
+          <div className="text-5xl flex content-end flex-wrap mb-5">
+            About Us
           </div>
-          <p className="mb-2 text-2xl text-gray-600">
+          <p className="mb-2 text-xl text-gray-700 mb-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-5">
             <div className="col-span-2">
               <Button
                 node="a"
