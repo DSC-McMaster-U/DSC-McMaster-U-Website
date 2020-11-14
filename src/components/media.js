@@ -1,13 +1,14 @@
 import React from "react";
 import logo from "../images/icon.png";
+import cx from "classnames";
 
 const socials = [
-  { icon: "fab fa-facebook", url: "#" },
-  { icon: "fab fa-discord", url: "#" },
-  { icon: "fab fa-instagram", url: "#" },
-  { icon: "fab fa-linkedin", url: "#" },
-  { icon: "fab fa-github", url: "#" },
-  { icon: "fab fa-twitter", url: "#" },
+  { icon: "fab fa-facebook", url: "#", color: "text-blue-400" },
+  { icon: "fab fa-discord", url: "#", color: "text-blue-400" },
+  { icon: "fab fa-instagram", url: "#", color: "text-blue-400" },
+  { icon: "fab fa-linkedin", url: "#", color: "text-blue-400" },
+  { icon: "fab fa-github", url: "#", color: "text-blue-400" },
+  { icon: "fab fa-twitter", url: "#", color: "text-blue-400" },
 ];
 
 function Media() {
@@ -35,7 +36,7 @@ function Media() {
               return (
                 <div className="px-10 text-4xl md:text-6xl mb-5 md:mb-0">
                   <a href={social.url}>
-                    <i class={`${social.icon} text-blue-500`}></i>
+                    <i className={cx(social.icon, social.color)}></i>
                   </a>
                 </div>
               );
