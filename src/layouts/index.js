@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "../components/header";
+import Header from "../components/Header";
+
 import "./index.css";
 
 const Layout = ({ children }) => {
@@ -21,7 +22,7 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 1200,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
