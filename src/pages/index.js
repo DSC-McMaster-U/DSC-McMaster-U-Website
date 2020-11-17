@@ -4,6 +4,7 @@ import SEO from "../components/Seo";
 import Media from "../components/Media";
 import Splash from "../components/Splash";
 import Events from "../components/Events";
+import Footer from "../components/Footer";
 
 const IndexPage = () => {
   return (
@@ -12,6 +13,7 @@ const IndexPage = () => {
       <Splash />
       <Events />
       <Media></Media>
+      <Footer />
     </Layout>
   );
 };
