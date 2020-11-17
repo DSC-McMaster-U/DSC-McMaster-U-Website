@@ -38,5 +38,21 @@
     "location": "Virtual",
     "time": "7 PM EDT",
     "jsDate": "2020-11-19T19:00:00"
+  },
+  {
+    "title": "Intro to Linux",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-flutter-development-intermediate-part-5-emoji-app/",
+    "date": "Nov 23, 2020",
+    "location": "Virtual",
+    "time": "5:30 PM EDT",
+    "jsDate": "2020-11-23T17:30:00"
+  },
+  {
+    "title": "Cracking the Co-op Panel",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-flutter-development-intermediate-part-5-emoji-app/",
+    "date": "Nov 25, 2020",
+    "location": "Virtual",
+    "time": "6 PM EDT",
+    "jsDate": "2020-11-19T18:00:00"
   }
 ]
