@@ -1,15 +1,9 @@
 import React from "react";
 
-const socials = [
-  { icon: "fab fa-instagram", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-linkedin", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-github", url: "#", color: "text-blue-400" },
-];
-
 function Footer() {
   return (
     <footer>
-      <div className="table w-full mt-20 mb-10">
+      <div className="table w-full mt-32 mb-10">
         <div className="table-footer-group">
           <div className="table-row text-base text-gray-900 font-semibold">
             <div className="table-cell px-4 py-2">
