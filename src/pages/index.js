@@ -1,7 +1,8 @@
 import React from "react";
 import Layout from "../layouts";
 import SEO from "../components/Seo";
-import Splash from "../components/Splash/";
+import Media from "../components/Media";
+import Splash from "../components/Splash";
 import Events from "../components/Events";
 
 const IndexPage = () => {
@@ -10,6 +11,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Splash />
       <Events />
+      <Media></Media>
     </Layout>
   );
 };
