@@ -13,7 +13,7 @@ const Splash = ({ subTitle }) => (
       {/* splash text */}
       <div className="grid grid-rows-3">
         <div>
-          <h1 className="text-4xl">McMaster Developer Student Club</h1>
+          <h1 className="text-5xl">McMaster Developer Student Club</h1>
         </div>
         <div>
           <p>{subTitle}</p>
