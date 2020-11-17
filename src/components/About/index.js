@@ -3,15 +3,14 @@ import AboutCard from "./AboutCard";
 import ReactCardCarousel from "react-card-carousel";
 import Button from "../Button";
 import { cards } from "./config";
-import { useViewport } from "../../utils/useViewport";
 const About = () => {
   const colorTray = ["red", "blue", "green", "yellow"];
   let oneColor = colorTray[Math.floor(Math.random() * colorTray.length)];
 
   return (
     <div className="border-t-4 border-blue-400 container mx-auto border-bottom-about mt-32 pt-32">
-      <section className="my-6 grid grid-rows-5 md:grid-rows-1 md:grid-cols-10 py-6">
-        <div className="flex flex-col row-span-2 md:col-span-4">
+      <section className="md:my-4 grid flex flex-row md:grid-rows-1 md:grid-cols-10 md:py-6">
+        <div className="flex flex-col md:row-span-2 md:col-span-4">
           <div className="text-5xl flex content-end flex-wrap mb-5">
             About Us
           </div>
@@ -31,8 +30,8 @@ const About = () => {
           </div>
         </div>
 
-        <div className="row-span-3 md:col-span-6">
-          <div className="relative h-full w-full mt-20 md:mt-0 hidden md:block">
+        <div className="row-span-3 md:col-span-6 hidden md:block">
+          <div className="relative h-full w-full mt-20 md:mt-0 hidden md:block ">
             <ReactCardCarousel
               autoplay={true}
               spread="wide"
@@ -50,6 +49,19 @@ const About = () => {
             </ReactCardCarousel>
           </div>
         </div>
+        {cards.map(card => {
+          return (
+            <div className="flex justify-center md:col-span-6 md:hidden">
+              <div className="relative h-full w-11/12 sm:w-8/12  md:w-full mt-20 md:mt-0  md:hidden">
+                <AboutCard
+                  title={card.title}
+                  body={card.body}
+                  image={card.image}
+                />
+              </div>
+            </div>
+          );
+        })}
       </section>
     </div>
   );
