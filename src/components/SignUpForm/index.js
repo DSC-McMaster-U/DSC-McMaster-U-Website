@@ -3,6 +3,10 @@ import cx from "classnames";
 import axios from "axios";
 import Button from "../Button";
 import { ACADEMIC_YEARS, TEAMS } from "./config";
+import Reaptcha from "reaptcha";
+
+// https://github.com/sarneeh/reaptcha
+// https://stackoverflow.com/questions/3232904/using-recaptcha-on-localhost
 
 const formUrl =
   "https://script.google.com/macros/s/AKfycbxaAM3uyL_avJPMm4SsjXUVs-TqorvKLFohkKy2cP1J2hZ14ZQ3/exec";
@@ -46,8 +50,8 @@ const InputField = ({
         <input
           className={cx(inputClasses.base)}
           type="text"
-          name={name}          
-          value={value}          
+          name={name}
+          value={value}
           placeholder={placeholder}
           onChange={onChange}
           required={required}
@@ -61,14 +65,14 @@ const Select = ({ name, label, onChange, children, required, value }) => (
   <div className="w-full">
     <label className={cx(labelClasses.base)} htmlFor={name}>
       {label}
-      {required && <span className="text-red-800 text-xl">*</span>}      
+      {required && <span className="text-red-800 text-xl">*</span>}
       <select
         className={cx(inputClasses.base)}
-        name={name}        
+        name={name}
         value={value}
         onChange={onChange}
-      >        
-        {children}        
+      >
+        {children}
       </select>
     </label>
   </div>
@@ -77,6 +81,8 @@ const Select = ({ name, label, onChange, children, required, value }) => (
 export default class SignUp extends Component {
   constructor(props) {
     super(props);
+
+    this.captcha = null;
 
     this.state = {
       email: "",
@@ -90,8 +96,30 @@ export default class SignUp extends Component {
       second_choice_team: TEAMS[0],
       third_choice_team: TEAMS[0],
       submitted: false,
+      captchaReady: false,
+      notABot: false,
     };
   }
+
+  onLoad = () => {
+    this.setState({
+      captchaReady: true,
+    });
+
+    this.captcha.renderExplicitly();
+  };
+
+  onVerify = () => {
+    this.setState({
+      notABot: true,
+    });
+  };
+
+  onExpire = () => {
+    this.setState({
+      notABot: false,
+    });
+  };
 
   onChange = e => {
     this.setState({ [e.target.name]: e.target.value });
@@ -300,15 +328,27 @@ export default class SignUp extends Component {
                   ))}
                 </Select>
               </div>
-              
+
               <Button
                 bg="green"
                 type="submit"
                 size="lg"
                 className="mr-auto w-1/2 px-16 mt-8 mb-2"
+                disabled={this.state.notABot ? false : true}
               >
                 Submit
               </Button>
+
+              <div className="w-4/9 pr-12 mt-4">
+                <Reaptcha
+                  ref={e => (this.captcha = e)}
+                  sitekey="6LceNOQZAAAAAAkq5YAljpujgj0pujsJ9pnKL6Sw"
+                  onLoad={this.onLoad}
+                  onVerify={this.onVerify}
+                  onExpire={this.onExpire}
+                  explicit
+                />
+              </div>
             </form>
           </div>
         )}
