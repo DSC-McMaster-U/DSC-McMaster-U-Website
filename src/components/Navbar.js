@@ -11,7 +11,7 @@ export default function Navbar(){
     <img className = "Logo" src= {require("../images/DSCLogo.png")} alt= "Logo" />
     </div>
     <div class="block lg:hidden">
-    <button onClick={() => toggleExpansion(!isExpanded)} class="transition duration-700 ease-in-out hover:bg-gray-300 rounded  flex items-center px-3 py-2 text-gray-700">
+    <button onClick={() => toggleExpansion(!isExpanded)} class="transition duration-700 ease-in-out hover:bg-gray-300 rounded flex items-center px-3 py-2 text-gray-700">
     <svg class="h-4 w-4" stroke="currentColor" fill="none" viewBox="0 0 24 24">
       <path className= {`${ isExpanded ? `hidden` : `block` }`} stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       <path className= {`${ isExpanded ? `block` : `hidden` }`} stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
