@@ -34,19 +34,20 @@ const ThankYou = () => (
 
 const FailedSubmission = () => (
   <h1 className="text-red-800 text-xl">
-    Something happened and your application was not submitted. 
-    Please try again or use our old form.
+    Something happened and your application was not submitted. Please try again
+    or use our old form.
     <br></br>
     <br></br>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScjcm8b9ay0-JFcANSH_-A19zO7-KZK40_ppwO2Pno88eTh7A/viewform"
-       className="text-blue-800 text-xl"
-       target="_blank"
-       rel="noopener noreferrer"
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLScjcm8b9ay0-JFcANSH_-A19zO7-KZK40_ppwO2Pno88eTh7A/viewform"
+      className="text-blue-800 text-xl"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       Old form
     </a>
   </h1>
-)
+);
 
 const InputField = ({
   name,
@@ -111,7 +112,7 @@ export default class SignUp extends Component {
       submitted: false,
       captchaReady: false,
       notABot: false,
-      errorFound: false
+      errorFound: false,
     };
   }
 
@@ -176,9 +177,11 @@ export default class SignUp extends Component {
         `&Select your top 3 team preferences. [3rd choice]=${encodeURIComponent(
           third_choice_team
         )}`,
-    }).catch(error => this.setState({
-      errorFound: true
-    }));
+    }).catch(error =>
+      this.setState({
+        errorFound: true,
+      })
+    );
 
     this.setState({
       email: "",
@@ -208,12 +211,12 @@ export default class SignUp extends Component {
       second_choice_team,
       third_choice_team,
       submitted,
-      errorFound
+      errorFound,
     } = this.state;
     return (
       <div>
         {submitted ? (
-          <div>{errorFound ? <FailedSubmission /> : <ThankYou /> }</div>
+          <div>{errorFound ? <FailedSubmission /> : <ThankYou />}</div>
         ) : (
           <div>
             <h1 className="font-bold">Join us!</h1>
