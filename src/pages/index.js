@@ -5,6 +5,7 @@ import SEO from "../components/Seo";
 import Media from "../components/Media";
 import Splash from "../components/Splash";
 import Events from "../components/Events";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const IndexPage = () => {
@@ -16,6 +17,7 @@ const IndexPage = () => {
       <About/>
       <Events/>
       <Media/>
+      <Footer/>
     </Layout>
   );
 };
