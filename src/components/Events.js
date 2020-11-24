@@ -22,7 +22,7 @@ function Events() {
     }
   `);
   return (
-    <section className="relative mt-32 pt-32 container mx-auto border-t-4 border-blue-400">
+    <section id = "Events" className="relative mt-32 pt-32 container mx-auto border-t-4 border-blue-400">
       <div className="flex flex-wrap">
         <div className="md:w-6/12 w-full h-full pt-8">
           <div className="text-5xl">Events & Workshops</div>
