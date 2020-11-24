@@ -1,5 +1,6 @@
 import React from "react";
 
+const colStyle = "mt-8 ml-4";
 const headingStyle = "px-4 py-2 text-lg text-gray-800 font-semibold";
 const linkStyle = "text-gray-600 px-4 py-2 text-sm";
 const iconStyle = "text-xl";
@@ -7,8 +8,8 @@ const iconStyle = "text-xl";
 function Footer() {
   return (
     <footer>
-      <div className="grid grid-cols-1 gap-2 mt-32 text-center sm:grid-cols-3 ">
-        <div className="mt-8">
+      <div className="grid grid-cols-1 gap-2 mt-32 text-center sm:grid-cols-2 md:grid-cols-4 sm:text-left">
+        <div className={colStyle}>
           <span className={headingStyle}>Contact Us</span>
           <div className="grid grid-cols-1">
             <div className={linkStyle}>© 2020 | All rights reserved</div>
@@ -22,20 +23,28 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8">
+        <div className={colStyle}>
           <span className={headingStyle}>Programs</span>
           <div className="grid grid-cols-1">
-            <div className={linkStyle}>Program 1</div>
+            <div className={linkStyle}>Incubator</div>
             <div className={linkStyle}>Program 2</div>
             <div className={linkStyle}>Program 3</div>
           </div>
         </div>
-        <div className="mt-8">
+        <div className={colStyle}>
+          <span className={headingStyle}>Developers</span>
+          <div className="grid grid-cols-1">
+            <div className={linkStyle}>Firebase console</div>
+            <div className={linkStyle}>Google Cloud Platform</div>
+            <div className={linkStyle}>Actions on Google</div>
+          </div>
+        </div>
+        <div className={colStyle}>
           <span className={headingStyle}>External Links</span>
           <div className="grid grid-cols-1">
-            <div className={linkStyle}>External 1</div>
-            <div className={linkStyle}>External 2</div>
-            <div className={linkStyle}>External 3</div>
+            <div className={linkStyle}>MLH Hackathons</div>
+            <div className={linkStyle}>Devpost</div>
+            <div className={linkStyle}>Wiki</div>
           </div>
         </div>
       </div>
