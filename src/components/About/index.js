@@ -8,6 +8,7 @@ const About = () => {
   let oneColor = colorTray[Math.floor(Math.random() * colorTray.length)];
 
   return (
+    <section id = "About">
     <div className="border-t-4 border-blue-400 container mx-auto border-bottom-about mt-32 pt-32">
       <section className="md:my-4 grid flex flex-row md:grid-rows-1 md:grid-cols-10 md:py-6">
         <div className="flex flex-col md:row-span-2 md:col-span-4">
@@ -64,6 +65,7 @@ const About = () => {
         })}
       </section>
     </div>
+    </section>
   );
 };
 
