@@ -7,7 +7,7 @@
 
 .scrollTop {
     position: fixed; 
-    right: -400px;
+    resize: horizontal;
     width: 100%;
     bottom: 20px;
     height: 20px;
