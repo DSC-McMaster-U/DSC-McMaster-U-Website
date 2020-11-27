@@ -22,9 +22,12 @@ function Events() {
     }
   `);
   return (
-    <section id = "Events" className="relative mt-32 pt-32 container mx-auto border-t-4 border-blue-400">
-      <div className="flex flex-wrap">
-        <div className="md:w-6/12 w-full h-full pt-8">
+    <section
+      id="Events"
+      className="relative mt-32 pt-32 container mx-auto border-t-4 border-blue-400"
+    >
+      <div className="flex flex-wrap flex-row-reverse">
+        <div className="md:w-6/12 w-full h-full md:pl-8 md:mb-0 mb-6">
           <div className="text-5xl">Events & Workshops</div>
           <div className="text-2xl py-4">Join us for upcoming workshops!</div>
           <Button node="a" href="https://dsc.community.dev/mcmaster-university">
@@ -34,10 +37,11 @@ function Events() {
             fluid={data.image.childImageSharp.fluid}
             alt=""
             objectPosition="100% 100%"
+            className="md:block hidden"
           />
         </div>
-        <div className="py-8 w-full md:w-6/12 md:pl-8">
-          <div className="md:pl-8">
+        <div className="py-8 w-full md:w-6/12">
+          <div>
             <span className="rounded-lg bg-gray-500 text-white py-2 px-2 text-xs">
               Upcoming Events
             </span>
