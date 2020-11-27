@@ -18,7 +18,7 @@ const Layout = ({ children, pageTitle }) => {
       }
     }
   `);
-
+  console.log(pageTitle != "Home");
   return (
     <div
       style={{
@@ -28,7 +28,7 @@ const Layout = ({ children, pageTitle }) => {
       }}
     >
       <SEO title={pageTitle} />
-      <Navbar />
+      <Navbar disableLinks={pageTitle != "Home"} />
       <main>{children}</main>
       <Footer />
     </div>
