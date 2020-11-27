@@ -1,5 +1,5 @@
 
-import React, { useState } from "react"
+import React, { useState ,useEffect} from "react"
 import "./Navbar.css";
 import { Link, scroll } from "react-scroll";
 import {FaArrowCircleUp} from 'react-icons/fa';
@@ -20,7 +20,13 @@ export default function Navbar(){
       window.scrollTo({top: 0, behavior: 'smooth'});
     };
   
-    window.addEventListener('scroll', checkScrollTop)
+    useEffect(() => {
+      // Listen for window resize and run the debounce resize function above.
+      window.addEventListener(`scroll`, checkScrollTop)
+      // Remove the event listener if resizing stopped.
+      return () => window.removeEventListener(`scroll`, checkScrollTop)
+    }, [])
+    
     return(
 <div>
   <header className="md:px-6 px-6 border-b-2 bg-white flex flex-wrap items-center pt-2">
