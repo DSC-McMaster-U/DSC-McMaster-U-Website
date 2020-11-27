@@ -38,25 +38,20 @@ const Splash = () => {
               mauris, id sollicitudin eros libero vitae enim."
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-10">
-            <div>
-              <Button
-                bg="blue"
-                children="Register Here"
-                size="lg"
-                type="button"
-                variant="fill"
-              />
-            </div>
-            <div>
-              <Button
-                bg="blue"
-                children="contact us..."
-                size="lg"
-                type="button"
-                variant="outline"
-              />
-            </div>
+          <div>
+            <Button
+              bg="blue"
+              size="lg"
+              type="button"
+              variant="fill"
+              className="mr-10"
+            >
+              sign up
+            </Button>
+
+            <Button bg="blue" size="lg" type="button" variant="outline">
+              contact us
+            </Button>
           </div>
         </div>
         {/* splash graphic image */}
