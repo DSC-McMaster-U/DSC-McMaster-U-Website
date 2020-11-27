@@ -5,8 +5,7 @@ import SEO from "../components/Seo";
 
 const FormPage = () => {
   return (
-    <Layout>
-      <SEO title="Sign Up" />
+    <Layout pageTitle="Sign Up">
       <SignUp></SignUp>
     </Layout>
   );
