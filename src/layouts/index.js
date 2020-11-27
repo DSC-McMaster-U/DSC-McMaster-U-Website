@@ -18,7 +18,6 @@ const Layout = ({ children, pageTitle }) => {
       }
     }
   `);
-  console.log(pageTitle != "Home");
   return (
     <div
       style={{
