@@ -24,20 +24,19 @@ const Splash = () => {
   return (
     <div className="lg:container md:container sm:container mt-20">
       {/* first row - splash content */}
-      <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-20">
+      <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-24">
         {/* splash text */}
         <div className="grid grid-rows-3">
-          <div>
-            <h1 className="text-4xl">McMaster Developer Student Club</h1>
-          </div>
-          <div>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              tortor ligula, hendrerit eu turpis id, feugiat mattis nulla.
-              Integer pretium, sem id vestibulum vestibulum, magna est elementum
-              mauris, id sollicitudin eros libero vitae enim."
-            </p>
-          </div>
+          <h1 className="text-5xl">
+            Developer Student
+            <br /> Clubs McMaster U
+          </h1>
+          <p className="text-gray-800">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor
+            ligula, hendrerit eu turpis id, feugiat mattis nulla. Integer
+            pretium, sem id vestibulum vestibulum, magna est elementum mauris,
+            id sollicitudin eros libero vitae enim.
+          </p>
           <div>
             <Button
               bg="blue"
