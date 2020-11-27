@@ -28,8 +28,10 @@ function Events() {
     >
       <div className="flex flex-wrap flex-row-reverse">
         <div className="md:w-6/12 w-full h-full md:pl-8 md:mb-0 mb-6">
-          <div className="text-5xl">Events & Workshops</div>
-          <div className="text-2xl py-4">Join us for upcoming workshops!</div>
+          <div className="text-5xl mb-5">Events & Workshops</div>
+          <div className="text-xl mb-5 text-gray-800">
+            Join us for upcoming workshops!
+          </div>
           <Button node="a" href="https://dsc.community.dev/mcmaster-university">
             View Events
           </Button>

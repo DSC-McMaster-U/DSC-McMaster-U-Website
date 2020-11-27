@@ -22,7 +22,7 @@ const Splash = () => {
     }
   `);
   return (
-    <div className="lg:container md:container sm:container mt-20">
+    <section className="lg:container md:container sm:container mt-20">
       {/* first row - splash content */}
       <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-24">
         {/* splash text */}
@@ -65,7 +65,7 @@ const Splash = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

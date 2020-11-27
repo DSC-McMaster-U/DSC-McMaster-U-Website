@@ -9,8 +9,8 @@ const About = () => {
 
   return (
     <section id="About">
-      <div className="border-t-4 border-blue-400 container mx-auto border-bottom-about mt-32 pt-32">
-        <section className="md:my-4 grid flex flex-row md:grid-rows-1 md:grid-cols-10 md:py-6">
+      <div className="border-t-4 border-blue-400 mx-auto border-bottom-about mt-32 pt-32 pb-1">
+        <div className="md:my-12 grid flex flex-row md:grid-rows-1 md:grid-cols-10 md:py-6">
           <div className="flex flex-col md:row-span-2 md:col-span-4">
             <div className="text-5xl flex content-end flex-wrap mb-5">
               About Us
@@ -63,7 +63,7 @@ const About = () => {
               </div>
             );
           })}
-        </section>
+        </div>
       </div>
     </section>
   );
