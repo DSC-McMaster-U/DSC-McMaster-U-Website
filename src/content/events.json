@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Intro to Web Development",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-intro-to-web-development/",
+    "date": "Oct 28, 2020",
+    "location": "Virtual",
+    "time": "6 PM EDT",
+    "jsDate": "2020-10-28T18:00:00"
+  },
+  {
+    "title": "Flutter Development Intermediate: Part 2 - Currency Exchanger",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-flutter-development-intermediate-part-2-currency-exchanger/",
+    "date": "Oct 29, 2020",
+    "location": "Virtual",
+    "time": "7 PM EDT",
+    "jsDate": "2020-10-29T19:00:00"
+  },
+  {
+    "title": "Flutter Development Intermediate: Part 3 - What’s the Weather?",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-flutter-development-intermediate-part-3-whats-the-weather/",
+    "date": "Nov 5, 2020",
+    "location": "Virtual",
+    "time": "7 PM EDT",
+    "jsDate": "2020-11-05T19:00:00"
+  },
+  {
+    "title": "Flutter Development Intermediate: Part 4 - Chat App!",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-flutter-development-intermediate-part-4-chat-app/",
+    "date": "Nov 12, 2020",
+    "location": "Virtual",
+    "time": "7 PM EDT",
+    "jsDate": "2020-11-30T19:00:00"
+  },
+  {
+    "title": "Flutter Development Intermediate: Part 5 - Emoji App!",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-flutter-development-intermediate-part-5-emoji-app/",
+    "date": "Nov 19, 2020",
+    "location": "Virtual",
+    "time": "7 PM EDT",
+    "jsDate": "2020-11-19T19:00:00"
+  },
+  {
+    "title": "Intro to Linux",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-intro-to-linux/",
+    "date": "Nov 23, 2020",
+    "location": "Virtual",
+    "time": "5:30 PM EDT",
+    "jsDate": "2020-11-23T17:30:00"
+  },
+  {
+    "title": "Cracking the Co-op Panel",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-cracking-the-co-op-panel/",
+    "date": "Nov 25, 2020",
+    "location": "Virtual",
+    "time": "6 PM EDT",
+    "jsDate": "2020-11-19T18:00:00"
+  }
+]
