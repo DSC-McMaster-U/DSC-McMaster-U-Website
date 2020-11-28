@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-import { FaArrowCircleUp } from "react-icons/fa";
+import Scroll from "./Scroll"
 
 export default function Navbar({ disableLinks }) {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -19,11 +19,11 @@ export default function Navbar({ disableLinks }) {
   };
 
   useEffect(() => {
-    // Listen for window resize and run the debounce resize function above.
-    window.addEventListener(`scroll`, checkScrollTop);
-    // Remove the event listener if resizing stopped.
-    return () => window.removeEventListener(`scroll`, checkScrollTop);
-  }, []);
+    if(!showScroll){
+      window.addEventListener(`scroll`, checkScrollTop);
+      return () => window.removeEventListener(`scroll`, checkScrollTop);
+    }
+  });
 
   return (
     <>
@@ -114,11 +114,7 @@ export default function Navbar({ disableLinks }) {
           </div>
         )}
       </header>
-      <FaArrowCircleUp
-        className="scrollTop"
-        onClick={scrollTop}
-        style={{ height: 40, display: showScroll ? "flex" : "none" }}
-      />
+        <Scroll showBelow = {300}/>
     </>
   );
 }
