@@ -27,9 +27,12 @@ const Splash = () => {
       <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-24">
         {/* splash text */}
         <div className="flex flex-col">
-          <h1 className="text-5xl mb-16">
-            Developer Student
-            <br /> Clubs McMaster U
+          <h1 className="md:text-5xl mb-16 text-5xl">
+            <span className="text-red-400">D</span>eveloper{" "}
+            <span className="text-green-400">S</span>tudent{" "}
+            <br className="hidden md:block" />
+            <span className="text-yellow-400">C</span>lubs{" "}
+            <span className="text-blue-400">M</span>cMaster U
           </h1>
           <p className="text-gray-800 text-lg mb-16">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor
