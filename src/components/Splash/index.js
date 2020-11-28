@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import SplashParticle from "./SplashParticle";
 import Button from "../Button";
+import HighlightedChar from "./HighlightedChar";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
@@ -28,11 +29,11 @@ const Splash = () => {
         {/* splash text */}
         <div className="flex flex-col">
           <h1 className="md:text-5xl mb-16 text-5xl">
-            <span className="text-red-400">D</span>eveloper{" "}
-            <span className="text-green-400">S</span>tudent{" "}
+            <HighlightedChar color="red">D</HighlightedChar>eveloper{" "}
+            <HighlightedChar color="green">S</HighlightedChar>tudent{" "}
             <br className="hidden md:block" />
-            <span className="text-yellow-400">C</span>lubs{" "}
-            <span className="text-blue-400">M</span>cMaster U
+            <HighlightedChar color="yellow">C</HighlightedChar>lubs{" "}
+            <HighlightedChar color="blue">M</HighlightedChar>cMaster U
           </h1>
           <p className="text-gray-800 text-lg mb-16">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor
@@ -47,6 +48,7 @@ const Splash = () => {
               type="button"
               variant="fill"
               className="mr-10"
+              float
             >
               sign up
             </Button>
