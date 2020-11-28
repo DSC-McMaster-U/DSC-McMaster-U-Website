@@ -5,6 +5,8 @@ import Button from "../Button";
 import { ACADEMIC_YEARS, TEAMS } from "./config";
 import Reaptcha from "reaptcha";
 
+const discord = { icon: "fab fa-discord", url: "https://discord.com/invite/KxUCq7U", color: "text-blue-400" }
+
 const formUrl =
   "https://script.google.com/macros/s/AKfycbxaAM3uyL_avJPMm4SsjXUVs-TqorvKLFohkKy2cP1J2hZ14ZQ3/exec";
 
@@ -29,7 +31,16 @@ const labelClasses = {
   base: ["text-xl"],
 };
 const ThankYou = () => (
-  <p>Thank You! You will receive an email from us shortly with more details.</p>
+  <div>
+    <p>Thank You! You will receive an email from us shortly with more details.</p>
+    <br></br>
+    <p>Please request acceptance to our community discord channel here.</p>
+    <div className="px-10 text-6xl mb-5 md:mb-0">
+      <a href={discord.url}>
+        <i className={cx(discord.icon, discord.color)}></i>
+      </a>
+    </div>  
+  </div>
 );
 
 const FailedSubmission = () => (
@@ -124,16 +135,20 @@ export default class SignUp extends Component {
     this.captcha.renderExplicitly();
   };
 
-  onVerify = () => {
+  onVerify = () => {  
+
     this.setState({
       notABot: true,
     });
   };
 
   onExpire = () => {
+    this.captcha.reset()
+
+
     this.setState({
       notABot: false,
-    });
+    });    
   };
 
   onChange = e => {
