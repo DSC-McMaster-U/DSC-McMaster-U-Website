@@ -1,6 +1,6 @@
 import React from "react";
 
-const colStyle = "mt-8 ml-4";
+const colStyle = "mt-8 md:ml-4";
 const headingStyle = "px-4 py-2 text-lg text-gray-800 font-semibold";
 const linkStyle = "text-gray-600 px-4 py-2 text-sm";
 const iconStyle = "text-xl";
