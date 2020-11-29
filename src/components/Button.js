@@ -106,7 +106,7 @@ Button.propTypes = {
   /**
    * The element used for the root node.
    */
-  node: PropTypes.node.oneOf(["a"]),
+  node: PropTypes.oneOf(["a"]),
   onClick: PropTypes.func,
 
   /**
