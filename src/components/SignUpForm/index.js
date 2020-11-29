@@ -5,6 +5,7 @@ import Button from "../Button";
 import { ACADEMIC_YEARS, TEAMS } from "./config";
 import Reaptcha from "reaptcha";
 
+
 const discord = { icon: "fab fa-discord", url: "https://discord.com/invite/KxUCq7U", color: "text-blue-400" }
 
 const formUrl =
@@ -15,10 +16,12 @@ const inputClasses = {
     "input-border-outline",
     "text-xl",
     "border-2",
+    "rounded",
     "h-12",
-    "p-1",
+    "pl-4",
     "mt-2",
     "bg-gray-300",
+    "shadow-md",
     "overflow-hidden",
     "block",
     "w-full",
@@ -28,7 +31,7 @@ const inputClasses = {
   ],
 };
 const labelClasses = {
-  base: ["text-xl"],
+  base: ["text-lg"],
 };
 const ThankYou = () => (
   <div>
@@ -39,7 +42,7 @@ const ThankYou = () => (
       <a href={discord.url}>
         <i className={cx(discord.icon, discord.color)}></i>
       </a>
-    </div>  
+    </div>      
   </div>
 );
 
@@ -136,7 +139,6 @@ export default class SignUp extends Component {
   };
 
   onVerify = () => {  
-
     this.setState({
       notABot: true,
     });
@@ -144,7 +146,6 @@ export default class SignUp extends Component {
 
   onExpire = () => {
     this.captcha.reset()
-
 
     this.setState({
       notABot: false,
@@ -242,149 +243,155 @@ export default class SignUp extends Component {
               pretium et sodales in, convallis sit amet erat. Aliquam erat
               volutpat.
             </p>
-            <form
-              className="flex flex-wrap rounded overflow-hidden shadow-2xl p-4"
-              onSubmit={this.onSubmit}
-            >
-              <div className="w-full md:w-3/4 px-4 mb-8">
-                <InputField
-                  name="email"
-                  value={email}
-                  label="Email"
-                  placeholder="@gmail.com, @mcmaster.ca, etc."
-                  onChange={this.onChange}
-                  required
-                />
-              </div>
-              <div className="w-full md:w-1/2 px-4 mb-8">
-                <InputField
-                  name="first_name"
-                  label="First name"
-                  value={first_name}
-                  onChange={this.onChange}
-                  required
-                />
-              </div>
-              <div className="w-full md:w-1/2 px-4 mb-8">
-                <InputField
-                  name="last_name"
-                  label="Last name"
-                  value={last_name}
-                  onChange={this.onChange}
-                  required
-                />
-              </div>
-              <div className="w-full md:w-3/4 px-4 mb-8">
-                <InputField
-                  name="mac_id"
-                  label="Mac ID"
-                  value={mac_id}
-                  placeholder="e.g. muske7"
-                  onChange={this.onChange}
-                  required
-                />
-              </div>
-              <div className="w-full md:w-1/3 px-4 mb-8">
-                <InputField
-                  name="program"
-                  label="Program"
-                  value={program}
-                  onChange={this.onChange}
-                  required
-                />
-              </div>
-              <div className="w-full md:w-1/3 px-4 mb-8">
-                <Select
-                  name="academic_year"
-                  label="Academic year"
-                  value={academic_year}
-                  onChange={this.onChange}
-                  required
-                >
-                  {ACADEMIC_YEARS.map(academic_year => (
-                    <option key={academic_year}>{academic_year}</option>
-                  ))}
-                </Select>
-              </div>
-              <div className="w-full md:w-1/3 px-4 mb-8">
-                <InputField
-                  name="graduation"
-                  label="Expected graduation"
-                  value={graduation}
-                  placeholder="e.g. 2023"
-                  onChange={this.onChange}
-                  required
-                />
-              </div>
-              <div className="text-xl bg-blue-700 w-full mb-8 text-white mt-8 mb-12">
-                <p className="text-center m-auto p-8">
-                  Select your top three team preferences
-                </p>
-              </div>
-              <div className="w-full md:w-1/3 px-4 mb-8">
-                <Select
-                  name="first_choice_team"
-                  label="1st choice"
-                  value={first_choice_team}
-                  onChange={this.onChange}
-                >
-                  {TEAMS.map(team => (
-                    <option key={team} value={team}>
-                      {team}
-                    </option>
-                  ))}
-                </Select>
-              </div>
-              <div className="w-full md:w-1/3 px-4 mb-8">
-                <Select
-                  name="second_choice_team"
-                  label="2nd choice"
-                  value={second_choice_team}
-                  onChange={this.onChange}
-                >
-                  {TEAMS.map(team => (
-                    <option key={team} value={team}>
-                      {team}
-                    </option>
-                  ))}
-                </Select>
-              </div>
-              <div className="w-full md:w-1/3 px-4 mb-8">
-                <Select
-                  name="third_choice_team"
-                  label="3rd choice"
-                  value={third_choice_team}
-                  onChange={this.onChange}
-                >
-                  {TEAMS.map(team => (
-                    <option key={team} value={team}>
-                      {team}
-                    </option>
-                  ))}
-                </Select>
-              </div>
-
-              <Button
-                bg="green"
-                type="submit"
-                size="lg"
-                className="mr-auto w-1/2 px-16 mt-8 mb-2"
-                disabled={this.state.notABot ? false : true}
+            <div className="lg:w-3/4">
+              <form
+                className="flex flex-wrap rounded overflow-hidden shadow-2xl p-4"
+                onSubmit={this.onSubmit}
               >
-                Submit
-              </Button>
+                <div className="w-full md:w-3/4 px-4 mb-8">
+                  <InputField
+                    name="email"
+                    value={email}
+                    label="Email"
+                    placeholder="@gmail.com, @mcmaster.ca, etc."
+                    onChange={this.onChange}
+                    required
+                  />
+                </div>
+                <div className="w-full md:w-1/2 px-4 mb-8">
+                  <InputField
+                    name="first_name"
+                    label="First name"
+                    value={first_name}
+                    onChange={this.onChange}
+                    required
+                  />
+                </div>
+                <div className="w-full md:w-1/2 px-4 mb-8">
+                  <InputField
+                    name="last_name"
+                    label="Last name"
+                    value={last_name}
+                    onChange={this.onChange}
+                    required
+                  />
+                </div>
+                <div className="w-full md:w-3/4 px-4 mb-8">
+                  <InputField
+                    name="mac_id"
+                    label="Mac ID"
+                    value={mac_id}
+                    placeholder="e.g. muske7"
+                    onChange={this.onChange}
+                    required
+                  />
+                </div>
+                <div className="w-full md:w-1/3 px-4 mb-8">
+                  <InputField
+                    name="program"
+                    label="Program"
+                    value={program}
+                    onChange={this.onChange}
+                    required
+                  />
+                </div>
+                <div className="w-full md:w-1/3 px-4 mb-8">
+                  <Select
+                    name="academic_year"
+                    label="Academic year"
+                    value={academic_year}
+                    onChange={this.onChange}
+                    required
+                  >
+                    {ACADEMIC_YEARS.map(academic_year => (
+                      <option key={academic_year}>{academic_year}</option>
+                    ))}
+                  </Select>
+                </div>
+                <div className="w-full md:w-1/3 px-4 mb-8">
+                  <InputField
+                    name="graduation"
+                    label="Expected graduation"
+                    value={graduation}
+                    placeholder="e.g. 2023"
+                    onChange={this.onChange}
+                    required
+                  />
+                </div>
+                <div className="w-full text-xl bg-blue-500 shadow-xl text-white mt-8 mb-12">
+                  <p className="text-center m-auto p-8">
+                    Select your top three team preferences
+                  </p>
+                </div>
+                <div className="w-full md:w-1/3 px-4 mb-16">
+                  <Select
+                    name="first_choice_team"
+                    label="1st choice"
+                    value={first_choice_team}
+                    onChange={this.onChange}
+                  >
+                    {TEAMS.map(team => (
+                      <option key={team} value={team}>
+                        {team}
+                      </option>
+                    ))}
+                  </Select>
+                </div>
+                <div className="w-full md:w-1/3 px-4 mb-16">
+                  <Select
+                    name="second_choice_team"
+                    label="2nd choice"
+                    value={second_choice_team}
+                    onChange={this.onChange}
+                  >
+                    {TEAMS.map(team => (
+                      <option key={team} value={team}>
+                        {team}
+                      </option>
+                    ))}
+                  </Select>
+                </div>
+                <div className="w-full md:w-1/3 px-4 mb-16">
+                  <Select
+                    name="third_choice_team"
+                    label="3rd choice"
+                    value={third_choice_team}
+                    onChange={this.onChange}
+                  >
+                    {TEAMS.map(team => (
+                      <option key={team} value={team}>
+                        {team}
+                      </option>
+                    ))}
+                  </Select>
+                </div>
 
-              <div className="w-4/9 pr-12 mt-4">
-                <Reaptcha
-                  ref={e => (this.captcha = e)}
-                  sitekey="6LceNOQZAAAAAAkq5YAljpujgj0pujsJ9pnKL6Sw"
-                  onLoad={this.onLoad}
-                  onVerify={this.onVerify}
-                  onExpire={this.onExpire}
-                  explicit
-                />
-              </div>
-            </form>
+                <div className="ml-16 w-4/9 mt-4">
+                  <Reaptcha
+                    ref={e => (this.captcha = e)}
+                    sitekey="6LceNOQZAAAAAAkq5YAljpujgj0pujsJ9pnKL6Sw"
+                    onLoad={this.onLoad}
+                    onVerify={this.onVerify}
+                    onExpire={this.onExpire}
+                    explicit
+                  />
+                </div>
+                
+                <Button
+                  bg="green"
+                  type="submit"
+                  size="lg"
+                  className="mr-auto sm:ml-4 w-11/12 md:ml-8 md:w-5/12 lg:w-5/12 xl:w-5/12 px-16 mt-8 mb-2"
+                  disabled={this.state.notABot ? false : true}                  
+                  float
+                >
+                  Submit
+                </Button>
+                
+
+                
+              </form>
+            </div>
           </div>
         )}
       </div>
