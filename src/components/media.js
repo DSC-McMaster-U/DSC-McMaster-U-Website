@@ -3,12 +3,11 @@ import logo from "../images/icon.png";
 import cx from "classnames";
 
 const socials = [
-  { icon: "fab fa-facebook", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-discord", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-instagram", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-linkedin", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-github", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-twitter", url: "#", color: "text-blue-400" },
+  { icon: "fab fa-facebook", url: "https://www.facebook.com/DSCMcMasterU/ ", color: "text-blue-400" },
+  { icon: "fab fa-instagram", url: "https://www.instagram.com/dscmcmasteru/", color: "text-blue-400" },
+  { icon: "fab fa-linkedin", url: "https://ca.linkedin.com/company/dscmcmasteru", color: "text-blue-400" },
+  { icon: "fab fa-github", url: "https://github.com/DSC-McMaster-U/", color: "text-blue-400" },
+  { icon: "fab fa-twitter", url: "https://twitter.com/DSCMcMaster", color: "text-blue-400" },
 ];
 
 function Media() {
@@ -27,7 +26,7 @@ function Media() {
             </div>
           </div>
           {/* Media Handles */}
-          <div className="grid grid-cols-2 md:grid-cols-6">
+          <div className="grid grid-cols-3 md:grid-cols-5">
             {socials.map(social => {
               return (
                 <div className="px-10 text-6xl mb-5 md:mb-0">
