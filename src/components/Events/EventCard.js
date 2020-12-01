@@ -33,12 +33,10 @@ const EventCard = ({
           />
         </div>
         <div className="px-2 pb-4 text-center">
-          {/* <div className="flex flex-row"> */}
           <a href={link} className="pl-2 hover:underline text-blue-400">
             {title}
           </a>
-          {/* </div> */}
-          <div className="flex flex-row pt-2">
+          <div className="flex flex-row pt-2 justify-center">
             <span className="text-gray-700 mr-2 text-xs">
               <i className="fill-current far fa-calendar-alt text-blue-400 fa-lg pt-2 pr-2"></i>
               {date}
@@ -52,7 +50,7 @@ const EventCard = ({
               {location}
             </span>
           </div>
-          <p className="relative body my-4 text-left text-sm leading-normal">
+          <p className="lg:block hidden relative body my-4 text-left text-sm leading-normal">
             {body}
           </p>
         </div>
