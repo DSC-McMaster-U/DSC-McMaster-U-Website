@@ -29,7 +29,7 @@
     "date": "Nov 12, 2020",
     "location": "Virtual",
     "time": "7 PM EDT",
-    "jsDate": "2020-11-30T19:00:00"
+    "jsDate": "2020-11-12T19:00:00"
   },
   {
     "title": "Flutter Development Intermediate: Part 5 - Emoji App!",
@@ -45,7 +45,9 @@
     "date": "Nov 23, 2020",
     "location": "Virtual",
     "time": "5:30 PM EDT",
-    "jsDate": "2020-11-23T17:30:00"
+    "jsDate": "2020-11-23T17:30:00",
+    "body": "Linux is used in almost all disciplines of the software engineering industry. In fact, you are using Linux without even knowing it - Linux is everywhere; on your smartphones, your smartwatches, smart fridge, internet router, your modern car probably, servers on the cloud, satellites, literally everywhere! It's important for all developers and technology enthusiasts to learn a little bit about Linux, what it even is, and how might you come across it in the real world.",
+    "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_150,q_auto:good,w_150/v1/gcs/platform-data-dsc/events/DSCLogoSquare_cbZE6I2.png"
   },
   {
     "title": "Cracking the Co-op Panel",
@@ -53,6 +55,38 @@
     "date": "Nov 25, 2020",
     "location": "Virtual",
     "time": "6 PM EDT",
-    "jsDate": "2020-11-19T18:00:00"
+    "jsDate": "2020-11-25T18:00:00",
+    "body": "Have you ever wondered how a co-op at a large tech company can differ from a co-op at a start-up company? Are you curious about the interview processes for different tech companies? Our panelists are here to answer your questions and give you tips on how to obtain your dream co-op!",
+    "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_150,q_auto:good,w_150/v1/gcs/platform-data-dsc/events/DSCLogoSquare_cbZE6I2.png"
+  },
+  {
+    "title": "Linux and Git Workshop #2",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-introducing-firebase-part-1-hosting-with-firebase/",
+    "date": "Nov 28, 2020",
+    "location": "Virtual",
+    "time": "12:00 PM EDT",
+    "jsDate": "2020-11-28T12:00:00",
+    "body": "Linux is used in almost all disciplines of the software engineering industry. In fact, you are using Linux without even knowing it - Linux is everywhere; on your smartphones, your smartwatches, smart fridge, internet router, your modern car probably, servers on the cloud, satellites, literally everywhere! It's important for all developers and technology enthusiasts to learn a little bit about Linux, what it even is, and how might you come across it in the real world.",
+    "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/Firebase%20Event%20Icon_NAYFyBB.png"
+  },
+  {
+    "title": "Linux and Git Workshop #2",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-linux-and-git-workshop-pt-2/",
+    "date": "Nov 30, 2020",
+    "location": "Virtual",
+    "time": "5:30 PM EDT",
+    "jsDate": "2020-11-30T17:30:00",
+    "body": "This introductory series aims to familiarize you with Firebase and demonstrate all of its incredible tools and services. In this first event, we'll be breaking down Firebase, why we need it, and how we can use it to build incredible apps that scale from our first user to our millionth! Along with the event, we will be providing the opportunity to engage with us by contributing to the mock e-commerce website which we'll be using to demonstrate the concepts we will be covering.",
+    "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/Tux.png"
+  },
+  {
+    "title": "Full Stack Challenge #1",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-full-stack-challenge-1/",
+    "date": "Dec 4, 2020",
+    "location": "Virtual",
+    "time": "5 PM EDT",
+    "jsDate": "2020-12-04T17:00:00",
+    "body": "This series focusses on full stack development around one broad topic every event. Challenges range from learning technologies such as APIs for large scale websites, to developing a simple gifting web-application for Christmas. No experience in full stack development? Don’t worry, our challenges are comprised of easy to expert levels of tasks, as well as walkthroughs for those with little or no knowledge of the technologies in use. ",
+    "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_150,q_auto:good,w_150/v1/gcs/platform-data-dsc/events/DSCLogoSquare_cbZE6I2.png"
   }
 ]

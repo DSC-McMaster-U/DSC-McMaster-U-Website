@@ -1,15 +1,36 @@
 import React from "react";
-import thinking from "../../images/thinking.png";
 
-const EventCard = ({ title, image, body, link, date, location, time }) => {
-  image = thinking;
-  body =
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elitVoluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil.";
+const EventCard = ({
+  title,
+  image,
+  body,
+  link,
+  date,
+  location,
+  time,
+  jsDate,
+}) => {
   return (
     <div className="bg-white rounded-sm px-10 shadow-lg">
-      <div className="max-w-sm overflow-hidden h-auto">
+      <div className="max-w-sm overflow-hidden h-full">
+        <div className="pt-6 pb-2">
+          {new Date(jsDate) >= new Date() && (
+            <span className="rounded-lg bg-blue-400 text-white py-2 px-2 text-xs">
+              Upcoming Event
+            </span>
+          )}
+          {new Date(jsDate) < new Date() && (
+            <span className="rounded-lg bg-gray-500 text-white py-2 px-2 text-xs">
+              Past Event
+            </span>
+          )}
+        </div>
         <div className="flex justify-center">
-          <img className="block h-32 w-auto" src={image} alt="rocket" />
+          <img
+            className="block h-32 w-auto pt-2 pb-2"
+            src={image}
+            alt="rocket"
+          />
         </div>
         <div className="px-2 pb-4 text-center">
           {/* <div className="flex flex-row"> */}
@@ -31,7 +52,7 @@ const EventCard = ({ title, image, body, link, date, location, time }) => {
               {location}
             </span>
           </div>
-          <p className="relative body my-4 text-center text-sm leading-normal">
+          <p className="relative body my-4 text-left text-sm leading-normal">
             {body}
           </p>
         </div>
