@@ -2,8 +2,9 @@ import React from "react";
 import thinking from "../../images/thinking.png";
 
 const EventCard = ({ title, image, body, link, date, location, time }) => {
-  image=thinking
-  body="Lorem ipsum dolor sit amet, consectetur adipisicing elitVoluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil."
+  image = thinking;
+  body =
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elitVoluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil.";
   return (
     <div className="bg-white rounded-sm px-10 shadow-lg">
       <div className="max-w-sm overflow-hidden h-auto">

@@ -30,7 +30,9 @@ function Events() {
     >
       <div className="flex flex-wrap flex-row-reverse">
         <div className="md:w-4/12 w-full h-full md:pl-8 md:mb-0 mb-6">
-          <div className="text-5xl mb-5 flex content-end flex-wrap">Events & Workshops</div>
+          <div className="text-5xl mb-5 flex content-end flex-wrap">
+            Events & Workshops
+          </div>
           <div className="text-xl mb-5 text-gray-800 flex content-end flex-wrap">
             Join us for upcoming workshops!
           </div>
@@ -47,21 +49,45 @@ function Events() {
 
         <div className="md:w-8/12 w-full md:pl-8 md:mb-0 mb-6">
           <div className="relative h-full w-full mt-20 md:mt-0 hidden md:block ">
-          <div className="row-span-3 md:col-span-6 hidden md:block">
-            <ReactCardCarousel
-              autoplay={true}
-              spread="wide"
-              alignment="horizontal"
-            >
-              {EventData.sort((a, b) => b.date - a.date)
-                // .filter(event => {
-                //   return new Date(event.jsDate) > new Date();
-                // })
-                .map((card, i) => {
-                  return (
+            <div className="row-span-3 md:col-span-6 hidden md:block">
+              <ReactCardCarousel
+                autoplay={true}
+                spread="wide"
+                alignment="horizontal"
+              >
+                {EventData.sort((a, b) => b.date - a.date)
+                  // .filter(event => {
+                  //   return new Date(event.jsDate) > new Date();
+                  // })
+                  .map((card, i) => {
+                    return (
+                      <EventCard
+                        title={card.title}
+                        body={"card.body"}
+                        image={card.image}
+                        link={card.link}
+                        date={card.date}
+                        location={card.location}
+                        time={card.time}
+                        jsDate={card.jsDate}
+                      />
+                    );
+                  })}
+              </ReactCardCarousel>
+            </div>
+          </div>
+          {EventData.sort((a, b) => b.jsDate - a.jsDate)
+            // .filter((event, i) => {
+            //   return new Date(event.jsDate) > new Date();
+            // })
+            .map((card, i) => {
+              console.log(card);
+              return (
+                <div className="flex justify-center md:col-span-6 md:hidden">
+                  <div className="relative h-full w-11/12 sm:w-8/12  md:w-full mt-20 md:mt-0  md:hidden">
                     <EventCard
                       title={card.title}
-                      body={'card.body'}
+                      body={"card.body"}
                       image={card.image}
                       link={card.link}
                       date={card.date}
@@ -69,35 +95,11 @@ function Events() {
                       time={card.time}
                       jsDate={card.jsDate}
                     />
-                  );
-                })}
-            </ReactCardCarousel>
-          </div>
-        </div>
-        {EventData.sort((a, b) => b.jsDate - a.jsDate)
-          // .filter((event, i) => {
-          //   return new Date(event.jsDate) > new Date();
-          // })
-          .map((card, i) => {
-            console.log(card)
-            return (
-              <div className="flex justify-center md:col-span-6 md:hidden">
-                <div className="relative h-full w-11/12 sm:w-8/12  md:w-full mt-20 md:mt-0  md:hidden">
-                  <EventCard
-                    title={card.title}
-                    body={'card.body'}
-                    image={card.image}
-                    link={card.link}
-                    date={card.date}
-                    location={card.location}
-                    time={card.time}
-                    jsDate={card.jsDate}
-                  />
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-      </div>
+              );
+            })}
+        </div>
       </div>
       {/* </div> */}
       {/* <ul className="pt-8 md:pl-8">
