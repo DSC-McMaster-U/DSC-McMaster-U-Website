@@ -236,7 +236,7 @@ export default class SignUp extends Component {
     } = this.state;
     return (
       <div>
-        {!submitted ? (
+        {submitted ? (
           <div>{errorFound ? <FailedSubmission /> : <ThankYou />}</div>
         ) : (
           <div>
