@@ -5,10 +5,14 @@ import Button from "../Button";
 import { ACADEMIC_YEARS, TEAMS } from "./config";
 import Reaptcha from "reaptcha";
 
-
-const discord = { icon: "fab fa-discord", url: "https://discord.com/invite/KxUCq7U", color: "text-blue-400" }
+const discord = {
+  icon: "fab fa-discord",
+  url: "https://discord.com/invite/KxUCq7U",
+  color: "text-blue-400",
+};
 
 const formUrl =
+  // Production script
   "https://script.google.com/macros/s/AKfycbxaAM3uyL_avJPMm4SsjXUVs-TqorvKLFohkKy2cP1J2hZ14ZQ3/exec";
 
 const inputClasses = {
@@ -35,14 +39,16 @@ const labelClasses = {
 };
 const ThankYou = () => (
   <div>
-    <p>Thank You! You will receive an email from us shortly with more details.</p>
+    <p>
+      Thank You! You will receive an email from us shortly with more details.
+    </p>
     <br></br>
     <p>Please request acceptance to our community discord channel here.</p>
     <div className="px-10 text-6xl mb-5 md:mb-0">
       <a href={discord.url}>
         <i className={cx(discord.icon, discord.color)}></i>
       </a>
-    </div>      
+    </div>
   </div>
 );
 
@@ -93,7 +99,7 @@ const Select = ({ name, label, onChange, children, required, value }) => (
   <div className="w-full">
     <label className={cx(labelClasses.base)} htmlFor={name}>
       {label}
-      {required && <span className="text-red-800 text-xl">*</span>}
+      {required && <span className="text-red-800 text-xl"> *</span>}
       <select
         className={cx(inputClasses.base)}
         name={name}
@@ -138,18 +144,18 @@ export default class SignUp extends Component {
     this.captcha.renderExplicitly();
   };
 
-  onVerify = () => {  
+  onVerify = () => {
     this.setState({
       notABot: true,
     });
   };
 
   onExpire = () => {
-    this.captcha.reset()
+    this.captcha.reset();
 
     this.setState({
       notABot: false,
-    });    
+    });
   };
 
   onChange = e => {
@@ -376,20 +382,17 @@ export default class SignUp extends Component {
                     explicit
                   />
                 </div>
-                
+
                 <Button
                   bg="green"
                   type="submit"
                   size="lg"
                   className="mr-auto sm:ml-4 w-11/12 md:ml-8 md:w-5/12 lg:w-5/12 xl:w-5/12 px-16 mt-8 mb-2"
-                  disabled={this.state.notABot ? false : true}                  
+                  disabled={this.state.notABot ? false : true}
                   float
                 >
                   Submit
                 </Button>
-                
-
-                
               </form>
             </div>
           </div>
