@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import Scroll from "./Scroll";
+import logo from "../images/dscLogo.png";
 
 export default function Navbar({ disableLinks }) {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -30,11 +31,7 @@ export default function Navbar({ disableLinks }) {
       <header className="md:px-6 px-6 border-b-2 bg-white flex flex-wrap items-center pt-4 pb-3">
         <div className="flex-1 flex justify-between items-center">
           <a href="/">
-            <img
-              className="Logo pb-2"
-              src={require("../images/DSCLogo.png")}
-              alt="Logo"
-            />
+            <img className="h-6 w-auto" src={logo} alt="Logo" />
           </a>
         </div>
         <div class="block md:hidden">
@@ -80,7 +77,7 @@ export default function Navbar({ disableLinks }) {
               offset={50}
               duration={500}
               delay={200}
-              className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px"
+              className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px text-gray-700 tracking-wider rounded-md"
               href="#"
             >
               About
@@ -93,7 +90,7 @@ export default function Navbar({ disableLinks }) {
               offset={50}
               duration={600}
               delay={200}
-              className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px"
+              className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px text-gray-700 tracking-wider rounded-md"
               href="#"
             >
               Events
@@ -106,7 +103,7 @@ export default function Navbar({ disableLinks }) {
               offset={50}
               duration={700}
               delay={200}
-              className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px"
+              className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px text-gray-700 tracking-wider rounded-md"
               href="#"
             >
               Contact
