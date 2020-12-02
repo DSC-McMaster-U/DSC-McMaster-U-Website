@@ -23,9 +23,9 @@ function Footer() {
             <div className="py-2 text-sm">
               {socials.map(social => {
                 return (
-                  <a href={social.url} className={iconStyle}>
+                  <a href={social.url} className={iconStyle} key={social.name}>
                     <i className={social.icon} aria-hidden="true"></i>
-                    <span class="sr-only">{social.name}</span>
+                    <span className="sr-only">{social.name}</span>
                   </a>
                 );
               })}

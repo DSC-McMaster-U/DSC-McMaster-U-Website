@@ -29,13 +29,16 @@ function Media() {
           <div className="flex flex-wrap justify-center md:justify-start">
             {socials.map(social => {
               return (
-                <div className="md:px-10 px-3 text-6xl mb-5 md:mb-0 w-1/3 md:w-1/5 flex justify-center">
+                <div
+                  className="md:px-10 px-3 text-6xl mb-5 md:mb-0 w-1/3 md:w-1/5 flex justify-center"
+                  key={social.name}
+                >
                   <a href={social.url}>
                     <i
                       className={cx(social.icon, social.color, social.hover)}
                       aria-hidden="true"
                     ></i>
-                    <span class="sr-only">{social.name}</span>
+                    <span className="sr-only">{social.name}</span>
                   </a>
                 </div>
               );

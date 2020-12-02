@@ -55,7 +55,10 @@ function Events() {
             }).map((event, i) => {
               return (
                 i < maxEvents && (
-                  <li className={i === 0 ? "mx-auto" : "mx-auto pt-12"}>
+                  <li
+                    className={i === 0 ? "mx-auto" : "mx-auto pt-12"}
+                    key={event.title}
+                  >
                     <div className="flex flex-row">
                       <div>
                         <img

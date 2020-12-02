@@ -35,7 +35,7 @@ export default function Navbar({ disableLinks }) {
             <img className="h-6 w-auto" src={logo} alt="DSC Logo" />
           </a>
         </div>
-        <div class="block md:hidden">
+        <div className="block md:hidden">
           <button
             onClick={() => toggleExpansion(!isExpanded)}
             aria-label="Expand Navigation links"

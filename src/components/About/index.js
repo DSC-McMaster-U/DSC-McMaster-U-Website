@@ -45,6 +45,7 @@ const About = () => {
                       title={card.title}
                       body={card.body}
                       image={card.image}
+                      key={card.title}
                     />
                   );
                 })}
@@ -53,7 +54,10 @@ const About = () => {
           </div>
           {cards.map(card => {
             return (
-              <div className="flex justify-center md:col-span-6 md:hidden">
+              <div
+                className="flex justify-center md:col-span-6 md:hidden"
+                key={card.title}
+              >
                 <div className="relative h-full w-11/12 sm:w-8/12  md:w-full mt-20 md:mt-0  md:hidden">
                   <AboutCard
                     title={card.title}
