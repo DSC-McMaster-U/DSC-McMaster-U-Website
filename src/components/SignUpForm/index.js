@@ -54,18 +54,21 @@ const ThankYou = () => (
 );
 
 const FailedSubmission = () => (
-  <p className="text-gray-700 text-xl leading-loose">
-    Something happened and your application was not submitted. Please try again
-    or use our
-    <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLScjcm8b9ay0-JFcANSH_-A19zO7-KZK40_ppwO2Pno88eTh7A/viewform"
-      className="text-blue-800 underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Old form
-    </a>
-  </p>
+  <>
+    <h1 className="text-5xl mb-5">Oops!</h1>
+    <p className="text-gray-700 leading-relaxed mb-8">
+      Something happened and your application was not submitted. Please refresh
+      and try again or use our{" "}
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLScjcm8b9ay0-JFcANSH_-A19zO7-KZK40_ppwO2Pno88eTh7A/viewform"
+        className="text-blue-800 underline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Old form
+      </a>
+    </p>
+  </>
 );
 
 const InputField = ({
