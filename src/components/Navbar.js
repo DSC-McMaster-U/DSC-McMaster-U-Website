@@ -106,7 +106,7 @@ export default function Navbar({ disableLinks }) {
               className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px text-gray-700 tracking-wider rounded-md"
               href="#"
             >
-              Contact
+              Socials
             </Link>
           </div>
         )}
