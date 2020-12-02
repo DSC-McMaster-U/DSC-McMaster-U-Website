@@ -31,12 +31,13 @@ export default function Navbar({ disableLinks }) {
       <header className="md:px-6 px-6 border-b-2 bg-white flex flex-wrap items-center py-4">
         <div className="flex-1 flex justify-between items-center">
           <a href="/" className="py-3">
-            <img className="h-6 w-auto" src={logo} alt="Logo" />
+            <img className="h-6 w-auto" src={logo} alt="DSC Logo" />
           </a>
         </div>
         <div class="block md:hidden">
           <button
             onClick={() => toggleExpansion(!isExpanded)}
+            aria-label="Expand Navigation links"
             class="transition duration-700 ease-in-out hover:bg-gray-300 rounded flex items-center px-3 py-2 text-gray-700"
           >
             <svg

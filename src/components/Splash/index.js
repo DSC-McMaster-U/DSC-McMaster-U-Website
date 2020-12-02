@@ -71,6 +71,7 @@ const Splash = () => {
           <SplashParticle />
           <div className="z-20 relative">
             <Img
+              alt="team working"
               fluid={data.image.childImageSharp.fluid}
               alt=""
               objectPosition="100% 100%"

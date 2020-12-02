@@ -54,6 +54,7 @@ const Button = React.forwardRef((props, ref) => {
         <button
           {...other}
           disabled={disabled}
+          aria-label={children}
           onClick={onClick}
           ref={ref}
           type={type}

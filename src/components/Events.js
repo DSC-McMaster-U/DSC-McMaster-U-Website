@@ -38,13 +38,14 @@ function Events() {
           <Img
             fluid={data.image.childImageSharp.fluid}
             alt=""
+            alt="Students coding"
             objectPosition="100% 100%"
             className="md:block hidden"
           />
         </div>
         <div className="py-8 w-full md:w-6/12">
           <div>
-            <span className="rounded-lg bg-gray-500 text-white py-2 px-2 text-xs">
+            <span className="rounded-lg bg-gray-700 text-white py-2 px-2 text-xs">
               Upcoming Events
             </span>
           </div>
