@@ -1,5 +1,4 @@
 import React from "react";
-import cx from "classnames";
 
 const highlights = {
   red: { textShadow: "0 0 10px RGBA(234,67,53,0.4)" },
