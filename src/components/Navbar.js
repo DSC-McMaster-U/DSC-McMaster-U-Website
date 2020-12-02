@@ -28,9 +28,9 @@ export default function Navbar({ disableLinks }) {
 
   return (
     <>
-      <header className="md:px-6 px-6 border-b-2 bg-white flex flex-wrap items-center pt-4 pb-3">
+      <header className="md:px-6 px-6 border-b-2 bg-white flex flex-wrap items-center py-4">
         <div className="flex-1 flex justify-between items-center">
-          <a href="/">
+          <a href="/" className="py-3">
             <img className="h-6 w-auto" src={logo} alt="Logo" />
           </a>
         </div>
@@ -66,7 +66,7 @@ export default function Navbar({ disableLinks }) {
           <div
             className={`${
               isExpanded ? `block` : `hidden`
-            } top-navbar border-gray-900 w-full md:inline-flex md:w-auto px-2 pt-2 pb-3`}
+            } top-navbar border-gray-900 w-full md:inline-flex md:w-auto px-2`}
             id="menu"
           >
             <Link
