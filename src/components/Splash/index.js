@@ -35,11 +35,10 @@ const Splash = () => {
             <HighlightedChar color="yellow">C</HighlightedChar>lubs{" "}
             <HighlightedChar color="blue">M</HighlightedChar>cMaster U
           </h1>
-          <p className="text-gray-800 text-lg mb-16">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor
-            ligula, hendrerit eu turpis id, feugiat mattis nulla. Integer
-            pretium, sem id vestibulum vestibulum, magna est elementum mauris,
-            id sollicitudin eros libero vitae enim.
+          <p className="text-gray-700 text-lg mb-16 leading-relaxed">
+            Developer Student Club (DSC) is a Google Developers program for
+            university students to learn web, mobile, and google technologies in
+            a peer-to-peer learning environment.
           </p>
           <div>
             <Button
@@ -49,11 +48,20 @@ const Splash = () => {
               variant="fill"
               className="mr-10"
               float
+              node="a"
+              href="/form"
             >
               sign up
             </Button>
 
-            <Button bg="blue" size="lg" type="button" variant="outline">
+            <Button
+              bg="blue"
+              size="lg"
+              type="button"
+              variant="outline"
+              node="a"
+              href="mailto:dscmcmaster@email.ca"
+            >
               contact us
             </Button>
           </div>

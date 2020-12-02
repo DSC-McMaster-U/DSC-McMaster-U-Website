@@ -6,19 +6,19 @@ export const cards = [
   {
     title: "Concept of DSC",
     body:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elitVoluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil.",
+      "The purpose of DSC is to inspire and empower students through understanding technology and reflecting on it's impact",
     image: rocket,
   },
   {
     title: "Why DSC?",
     body:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elitVoluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil.",
+      "By joining DSC McMaster U, you gain access to numerous workshops, information sessions, and student-community collaborative projects",
     image: thinking,
   },
   {
     title: "Target Audience",
     body:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elitVoluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil.",
+      "The club is open to any undergraduate or graduate student with an interest in growing as a developer",
     image: student,
   },
 ];
