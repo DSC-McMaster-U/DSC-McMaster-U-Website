@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { Link } from "react-scroll";
 import Scroll from "./Scroll";
 import logo from "../images/dscLogo.png";
+import cx from "classnames";
 
 export default function Navbar({ disableLinks }) {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -38,29 +39,24 @@ export default function Navbar({ disableLinks }) {
           <button
             onClick={() => toggleExpansion(!isExpanded)}
             aria-label="Expand Navigation links"
-            class="transition duration-700 ease-in-out hover:bg-gray-300 rounded flex items-center px-3 py-2 text-gray-700"
+            className="transition duration-700 ease-in-out hover:bg-gray-300 rounded flex items-center px-3 py-2 text-gray-700"
           >
-            <svg
-              class="h-4 w-4"
-              stroke="currentColor"
-              fill="none"
-              viewBox="0 0 24 24"
+            <div
+              className={cx({
+                hidden: isExpanded,
+                block: !isExpanded,
+              })}
             >
-              <path
-                className={`${isExpanded ? `hidden` : `block`}`}
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-              <path
-                className={`${isExpanded ? `block` : `hidden`}`}
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+              <i className="fas fa-bars w-4"></i>
+            </div>
+            <div
+              className={cx({
+                hidden: !isExpanded,
+                block: isExpanded,
+              })}
+            >
+              <i className="fas fa-times w-4"></i>
+            </div>
           </button>
         </div>
         {!disableLinks && (
