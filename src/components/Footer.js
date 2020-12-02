@@ -9,7 +9,7 @@ const iconStyle = "text-xl hover:text-gray-800 mr-3 text-gray-600";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="mb-8">
       <div className="grid grid-cols-1 gap-2 mt-32 text-center sm:grid-cols-2 md:grid-cols-4 sm:text-left">
         <div className={colStyle}>
           <div className={headingStyle}>Contact Us</div>

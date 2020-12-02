@@ -23,11 +23,11 @@ const Layout = ({ children, pageTitle }) => {
       style={{
         margin: `0 auto`,
         maxWidth: 1200,
-        padding: `0 1.0875rem 1.45rem`,
+        padding: `0 1.0875rem 0`,
       }}
     >
       <SEO title={pageTitle} />
-      <div className="flex flex-col min-h-screen pb-5">
+      <div className="flex flex-col min-h-screen">
         <Navbar disableLinks={pageTitle != "Home"} />
         <main className="flex-grow">{children}</main>
         <Footer />
