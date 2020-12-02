@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutCard = ({ title, image, body }) => {
   return (
-    <div className="bg-white rounded-sm px-8 shadow-lg">
+    <div className="bg-white rounded-sm px-8 shadow-lg py-4">
       <div className="max-w-sm overflow-hidden h-auto">
         <div className="flex justify-center">
           <img className="block h-32 w-auto" src={image.src} alt={image.alt} />
