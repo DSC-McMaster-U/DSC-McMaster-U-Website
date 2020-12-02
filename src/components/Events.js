@@ -37,7 +37,6 @@ function Events() {
           </Button>
           <Img
             fluid={data.image.childImageSharp.fluid}
-            alt=""
             alt="Students coding"
             objectPosition="100% 100%"
             className="md:block hidden"

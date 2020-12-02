@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import SplashParticle from "./SplashParticle";
 import Button from "../Button";
 import HighlightedChar from "./HighlightedChar";
@@ -73,7 +72,6 @@ const Splash = () => {
             <Img
               alt="team working"
               fluid={data.image.childImageSharp.fluid}
-              alt=""
               objectPosition="100% 100%"
             />
           </div>

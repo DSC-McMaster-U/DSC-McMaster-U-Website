@@ -19,8 +19,6 @@ const Button = React.forwardRef((props, ref) => {
     ...other
   } = props;
 
-  const C = node;
-
   const classes = {
     base: [
       "rounded-sm",
@@ -48,7 +46,7 @@ const Button = React.forwardRef((props, ref) => {
     xl: ["px-6", "py-4", "text-xl"],
     disabled: ["cursor-not-allowed", "opacity-50"],
   };
-  if (node == "a")
+  if (node === "a")
     return (
       <a href={href}>
         <button

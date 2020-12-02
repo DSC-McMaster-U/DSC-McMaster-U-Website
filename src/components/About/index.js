@@ -4,9 +4,6 @@ import ReactCardCarousel from "react-card-carousel";
 import Button from "../Button";
 import { cards } from "./config";
 const About = () => {
-  const colorTray = ["red", "blue", "green", "yellow"];
-  let oneColor = colorTray[Math.floor(Math.random() * colorTray.length)];
-
   return (
     <section id="About">
       <div className="border-t-4 border-blue-400 mx-auto border-bottom-about mt-32 pt-32 pb-1">

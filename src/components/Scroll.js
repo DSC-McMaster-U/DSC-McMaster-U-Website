@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useStyles } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { FaArrowCircleUp } from "react-icons/fa";
 

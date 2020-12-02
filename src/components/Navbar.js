@@ -16,9 +16,6 @@ export default function Navbar({ disableLinks }) {
       setShowScroll(false);
     }
   };
-  const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   useEffect(() => {
     if (!showScroll) {
