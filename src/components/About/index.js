@@ -4,9 +4,6 @@ import ReactCardCarousel from "react-card-carousel";
 import Button from "../Button";
 import { cards } from "./config";
 const About = () => {
-  const colorTray = ["red", "blue", "green", "yellow"];
-  let oneColor = colorTray[Math.floor(Math.random() * colorTray.length)];
-
   return (
     <section id="About">
       <div className="border-t-4 border-blue-400 mx-auto border-bottom-about mt-32 pt-32 pb-1">
@@ -45,6 +42,7 @@ const About = () => {
                       title={card.title}
                       body={card.body}
                       image={card.image}
+                      key={card.title}
                     />
                   );
                 })}
@@ -53,7 +51,10 @@ const About = () => {
           </div>
           {cards.map(card => {
             return (
-              <div className="flex justify-center md:col-span-6 md:hidden">
+              <div
+                className="flex justify-center md:col-span-6 md:hidden"
+                key={card.title}
+              >
                 <div className="relative h-full w-11/12 sm:w-8/12  md:w-full mt-20 md:mt-0  md:hidden">
                   <AboutCard
                     title={card.title}

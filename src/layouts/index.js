@@ -28,7 +28,7 @@ const Layout = ({ children, pageTitle }) => {
     >
       <SEO title={pageTitle} />
       <div className="flex flex-col min-h-screen">
-        <Navbar disableLinks={pageTitle != "Home"} />
+        <Navbar disableLinks={pageTitle !== "Home"} />
         <main className="flex-grow">{children}</main>
         <Footer />
       </div>

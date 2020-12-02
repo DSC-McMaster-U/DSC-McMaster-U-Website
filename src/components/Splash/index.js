@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import SplashParticle from "./SplashParticle";
 import Button from "../Button";
 import HighlightedChar from "./HighlightedChar";
@@ -32,8 +31,8 @@ const Splash = () => {
             <HighlightedChar color="red">D</HighlightedChar>eveloper{" "}
             <HighlightedChar color="green">S</HighlightedChar>tudent{" "}
             <br className="hidden md:block" />
-            <HighlightedChar color="yellow">C</HighlightedChar>lubs{" "}
-            <HighlightedChar color="blue">M</HighlightedChar>cMaster U
+            <HighlightedChar color="blue">C</HighlightedChar>lubs{" "}
+            <HighlightedChar color="yellow">M</HighlightedChar>cMaster U
           </h1>
           <p className="text-gray-700 text-lg mb-16 leading-relaxed">
             Developer Student Club (DSC) is a Google Developers program for
@@ -71,8 +70,8 @@ const Splash = () => {
           <SplashParticle />
           <div className="z-20 relative">
             <Img
+              alt="team working"
               fluid={data.image.childImageSharp.fluid}
-              alt=""
               objectPosition="100% 100%"
             />
           </div>

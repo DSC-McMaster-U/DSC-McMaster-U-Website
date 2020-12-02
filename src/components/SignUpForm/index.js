@@ -240,7 +240,7 @@ export default class SignUp extends Component {
     return (
       <div>
         {!submitted ? (
-          <div>{!errorFound ? <FailedSubmission /> : <ThankYou />}</div>
+          <div>{errorFound ? <FailedSubmission /> : <ThankYou />}</div>
         ) : (
           <div>
             <h1 className="text-5xl mb-5">Join us!</h1>
