@@ -15,6 +15,7 @@ const Button = React.forwardRef((props, ref) => {
     size,
     type,
     variant,
+    href,
     ...other
   } = props;
 
@@ -47,9 +48,30 @@ const Button = React.forwardRef((props, ref) => {
     xl: ["px-6", "py-4", "text-xl"],
     disabled: ["cursor-not-allowed", "opacity-50"],
   };
-
+  if (node == "a")
+    return (
+      <a href={href}>
+        <button
+          {...other}
+          disabled={disabled}
+          onClick={onClick}
+          ref={ref}
+          type={type}
+          className={cx(
+            classes["base"],
+            className,
+            classes[variant],
+            classes[size],
+            float ? "shadow-lg" : "shadow-none",
+            disabled ? classes["disabled"] : []
+          )}
+        >
+          {children}
+        </button>
+      </a>
+    );
   return (
-    <C
+    <button
       {...other}
       disabled={disabled}
       onClick={onClick}
@@ -65,7 +87,7 @@ const Button = React.forwardRef((props, ref) => {
       )}
     >
       {children}
-    </C>
+    </button>
   );
 });
 
@@ -84,7 +106,7 @@ Button.propTypes = {
   /**
    * The element used for the root node.
    */
-  node: PropTypes.node,
+  node: PropTypes.oneOf(["a"]),
   onClick: PropTypes.func,
 
   /**

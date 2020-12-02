@@ -1,15 +1,7 @@
 import React from "react";
 import logo from "../images/icon.png";
 import cx from "classnames";
-
-const socials = [
-  { icon: "fab fa-facebook", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-discord", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-instagram", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-linkedin", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-github", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-twitter", url: "#", color: "text-blue-400" },
-];
+import { socials } from "../content/socials";
 
 function Media() {
   return (
@@ -30,12 +22,14 @@ function Media() {
             </div>
           </div>
           {/* Media Handles */}
-          <div className="grid grid-cols-2 md:grid-cols-6">
+          <div className="flex flex-wrap justify-center md:justify-start">
             {socials.map(social => {
               return (
-                <div className="px-10 text-6xl mb-5 md:mb-0">
+                <div className="md:px-10 px-3 text-6xl mb-5 md:mb-0 w-1/3 md:w-1/5 flex justify-center">
                   <a href={social.url}>
-                    <i className={cx(social.icon, social.color)}></i>
+                    <i
+                      className={cx(social.icon, social.color, social.hover)}
+                    ></i>
                   </a>
                 </div>
               );

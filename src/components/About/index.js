@@ -15,9 +15,10 @@ const About = () => {
             <div className="text-5xl flex content-end flex-wrap mb-5">
               About Us
             </div>
-            <p className="mb-2 text-lg text-gray-700 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className="mb-2 text-lg text-gray-700 mb-5 leading-relaxed">
+              Our club is a space for students to explore new ideas and
+              collaborate. Check out our wiki to learn more about our inclusive
+              environment.
             </p>
             <div className="grid grid-cols-5">
               <div className="col-span-2">
