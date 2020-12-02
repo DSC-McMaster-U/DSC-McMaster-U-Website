@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-import Scroll from "./Scroll"
+import Scroll from "./Scroll";
 
 export default function Navbar({ disableLinks }) {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -19,7 +19,7 @@ export default function Navbar({ disableLinks }) {
   };
 
   useEffect(() => {
-    if(!showScroll){
+    if (!showScroll) {
       window.addEventListener(`scroll`, checkScrollTop);
       return () => window.removeEventListener(`scroll`, checkScrollTop);
     }
@@ -114,7 +114,7 @@ export default function Navbar({ disableLinks }) {
           </div>
         )}
       </header>
-        <Scroll showBelow = {300}/>
+      <Scroll showBelow={300} />
     </>
   );
 }

@@ -13,7 +13,10 @@ const socials = [
 
 function Media() {
   return (
-    <section id = "Media" className="relative mt-32 pt-32 mb-10 border-t-4 border-blue-400">
+    <section
+      id="Media"
+      className="relative mt-32 pt-32 mb-10 border-t-4 border-blue-400"
+    >
       <div className="container mx-auto">
         <div className="flex items-center flex-col">
           <div className="flex md:mb-12 mb-8">
