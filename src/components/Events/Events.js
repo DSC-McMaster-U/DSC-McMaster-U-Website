@@ -5,7 +5,7 @@ import Button from "../Button";
 import EventData from "../../content/events.json";
 import EventItem from "./EventItem";
 import Typography from "../Typography";
-
+import Section from "../Section";
 function Events() {
   const maxEvents = 3;
   const data = useStaticQuery(graphql`
@@ -24,10 +24,7 @@ function Events() {
     }
   `);
   return (
-    <section
-      id="Events"
-      className="relative mt-32 pt-32 container mx-auto border-t-4 border-blue-400"
-    >
+    <Section id="Events">
       <div className="flex flex-wrap flex-row-reverse">
         <div className="md:w-6/12 w-full h-full md:pl-8 md:mb-0 mb-6">
           <div className="text-5xl mb-5">Events & Workshops</div>
@@ -57,7 +54,7 @@ function Events() {
           </ul>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 

@@ -11,7 +11,7 @@ const IndexPage = () => {
       <Splash />
       <About />
       <Events />
-      <Media />
+      <Media last />
     </Layout>
   );
 };

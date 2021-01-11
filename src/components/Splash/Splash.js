@@ -5,6 +5,7 @@ import HighlightedChar from "./HighlightedChar";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import Typography from "../Typography";
+import Section from "../Section";
 
 const Splash = () => {
   const data = useStaticQuery(graphql`
@@ -23,12 +24,12 @@ const Splash = () => {
     }
   `);
   return (
-    <section className="lg:container md:container sm:container mt-20">
+    <Section className="pt-20">
       {/* first row - splash content */}
       <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-24">
         {/* splash text */}
         <div className="flex flex-col">
-          <div className="mb-16">
+          <div className="mb-12">
             <h1 className="md:text-5xl mb-16 text-5xl">
               <HighlightedChar color="red">D</HighlightedChar>eveloper{" "}
               <HighlightedChar color="green">S</HighlightedChar>tudent{" "}
@@ -81,7 +82,7 @@ const Splash = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 
