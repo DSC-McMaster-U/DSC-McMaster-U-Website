@@ -3,6 +3,7 @@ import Card from "./Card";
 import ReactCardCarousel from "react-card-carousel";
 import Button from "../Button";
 import { cards } from "./content";
+import Typography from "../Typography";
 const About = () => {
   return (
     <section id="About">
@@ -12,11 +13,11 @@ const About = () => {
             <div className="text-5xl flex content-end flex-wrap mb-5">
               About Us
             </div>
-            <p className="mb-2 text-lg text-gray-700 mb-5 leading-relaxed">
+            <Typography>
               Our club is a space for students to explore new ideas and
               collaborate. Check out our wiki to learn more about our inclusive
               environment.
-            </p>
+            </Typography>
             <div className="grid grid-cols-5">
               <div className="col-span-2">
                 <Button

@@ -1,4 +1,5 @@
 import React from "react";
+import Typography from "../Typography";
 
 const AboutCard = ({ title, image, body }) => {
   return (
@@ -11,9 +12,7 @@ const AboutCard = ({ title, image, body }) => {
           <div className="static font-bold text-2xl mb-4 flex justify-center">
             {title}
           </div>
-          <p className="relative body my-4 text-center text-lg leading-normal text-gray-700">
-            {body}
-          </p>
+          <Typography className="relative text-center">{body}</Typography>
         </div>
       </div>
     </div>

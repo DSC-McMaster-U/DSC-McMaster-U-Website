@@ -4,6 +4,7 @@ import axios from "axios";
 import Button from "../Button";
 import { ACADEMIC_YEARS, TEAMS } from "./content";
 import Reaptcha from "reaptcha";
+import Typography from "../Typography";
 
 const discord = {
   icon: "fab fa-discord",
@@ -39,10 +40,10 @@ const labelClasses = {
 const ThankYou = () => (
   <div className="mb-10">
     <h1 className="text-5xl mb-5">Thank You!</h1>
-    <p className="text-gray-700 leading-relaxed mb-8">
+    <Typography>
       You will receive an email from us shortly with more details. Please
       request acceptance to our community discord channel here.
-    </p>
+    </Typography>
     <div className="text-6xl md:mb-0">
       <a href={discord.url}>
         <i
@@ -56,7 +57,7 @@ const ThankYou = () => (
 const FailedSubmission = () => (
   <>
     <h1 className="text-5xl mb-5">Oops!</h1>
-    <p className="text-gray-700 leading-relaxed mb-8">
+    <Typography>
       Something happened and your application was not submitted. Please refresh
       and try again or use our{" "}
       <a
@@ -67,7 +68,7 @@ const FailedSubmission = () => (
       >
         Old form
       </a>
-    </p>
+    </Typography>
   </>
 );
 
@@ -243,16 +244,20 @@ export default class SignUpForm extends Component {
           <div>{errorFound ? <FailedSubmission /> : <ThankYou />}</div>
         ) : (
           <div>
-            <h1 className="text-5xl mb-5">Join us!</h1>
-            <p className="mb-16 leading-relaxed text-gray-700">
-              To become a general member, complete and submit the form below. By
-              submitting this form you will indicate which of our 5 teams you
-              prefer to be placed in, and will be invited to join our Discord
-              server. By being a general member, you will get the chance to work
-              with the team behind DSC McMaster U and help organize club events
-              and activities! You'll join a community of about 300 students all
-              with the same passion of technology and coding.
-            </p>
+            <div className="mb-8">
+              <h1 className="text-5xl mb-5">Join us!</h1>
+              <Typography>
+                To become a general member, complete and submit the form below.
+                By submitting this form you will indicate which of our 5 teams
+                you prefer to be placed in, and will be invited to join our
+                Discord server. By being a general member, you will get the
+                chance to work with the team behind DSC McMaster U and help
+                organize club events and activities! You'll join a community of
+                about 300 students all with the same passion of technology and
+                coding.
+              </Typography>
+            </div>
+
             <div className="lg:w-3/4 mx-auto">
               <div className="shadow-2xl px-4 py-8">
                 <h2 className="text-3xl mb-8 px-4">General Member Form</h2>
