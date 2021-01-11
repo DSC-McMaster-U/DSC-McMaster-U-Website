@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import cx from "classnames";
 import axios from "axios";
 import Button from "../Button";
-import { ACADEMIC_YEARS, TEAMS } from "./config";
+import { ACADEMIC_YEARS, TEAMS } from "./content";
 import Reaptcha from "reaptcha";
 
 const discord = {

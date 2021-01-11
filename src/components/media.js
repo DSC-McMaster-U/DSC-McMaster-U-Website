@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/icon.png";
 import cx from "classnames";
-import { socials } from "../content/socials";
+import socials from "../content/socials.json";
 
 function Media() {
   return (

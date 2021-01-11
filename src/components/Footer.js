@@ -1,5 +1,5 @@
 import React from "react";
-import { socials } from "../content/socials";
+import socials from "../content/socials.json";
 
 const colStyle = "mt-8 md:ml-4";
 const headingStyle = " text-lg text-gray-800 font-semibold mb-3";

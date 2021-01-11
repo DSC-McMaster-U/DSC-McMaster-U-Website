@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 import ReactCardCarousel from "react-card-carousel";
 import Button from "../Button";
-import { cards } from "./config";
+import { cards } from "./content";
 const About = () => {
   return (
     <section id="About">

@@ -1,8 +1,9 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import Img from "gatsby-image";
-import Button from "./Button";
-import EventData from "../content/events.json";
+import Button from "../Button";
+import EventData from "../../content/events.json";
+import EventItem from "./EventItem";
 
 function Events() {
   const maxEvents = 3;
@@ -52,40 +53,7 @@ function Events() {
             {EventData.filter(event => {
               return new Date(event.jsDate) > new Date();
             }).map((event, i) => {
-              return (
-                i < maxEvents && (
-                  <li
-                    className={i === 0 ? "mx-auto" : "mx-auto pt-12"}
-                    key={event.title}
-                  >
-                    <div className="flex flex-row">
-                      <div>
-                        <img
-                          src={require("../images/dscIcon.png")}
-                          alt="DSC Icon"
-                        />
-                      </div>
-                      <a href={event.link} className="pl-2 hover:underline">
-                        {event.title}
-                      </a>
-                    </div>
-                    <div className="flex flex-row pl-10 pt-2">
-                      <span className="text-gray-700 mr-2 text-xs">
-                        <i className="fill-current far fa-calendar-alt text-blue-400 fa-lg pt-2 pr-2"></i>
-                        {event.date}
-                      </span>
-                      <span className="text-gray-700 mr-2 text-xs">
-                        <i className="fill-current far fa-clock text-green-400 fa-lg pt-2 pr-2"></i>
-                        {event.time}
-                      </span>
-                      <span className="text-gray-700 mr-2 text-xs">
-                        <i className="fill-current fas fa-map-marker-alt text-red-400 fa-lg pt-2 pr-2"></i>
-                        {event.location}
-                      </span>
-                    </div>
-                  </li>
-                )
-              );
+              return i < maxEvents && <EventItem {...event} />;
             })}
           </ul>
         </div>
