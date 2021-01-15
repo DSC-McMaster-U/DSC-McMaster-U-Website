@@ -79,7 +79,7 @@ help. They should remain focused in scope and avoid containing unrelated
 commits.
 
 **Please ask first** before embarking on any significant pull request (e.g.
-implementing features, refactoring code, porting to a different language),
+implementing features, refactoring code, adding a new dependancy),
 otherwise you risk spending a lot of time working on something that the
 project's developers might not want to merge into the project.
 
