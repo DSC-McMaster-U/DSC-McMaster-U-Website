@@ -12,7 +12,7 @@ Welcome to the DSC McMasterU Website project repository :wave:
 
 Below is a quick overview of the technologies utilized for the website. It is advisable to have a basic understanding of these technologies (at least the first 3) before making code contributions to this project. Each tool has well maintained documentation which is encouraged everyone explores.
 
-- [React] - A declarative, component-based JavaScript library for building web applications
+- [React](https://reactjs.org/) - A declarative, component-based JavaScript library for building web applications
 - [Gatsby](https://www.gatsbyjs.com/) - A React-based, static site generator
 - [Tailwindcss](https://tailwindcss.com/) - A utility-first CSS framework
 - [Firebase](https://firebase.google.com/products/hosting) - Fast and secure web hosting
