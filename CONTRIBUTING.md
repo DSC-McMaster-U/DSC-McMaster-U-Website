@@ -84,7 +84,7 @@ otherwise you risk spending a lot of time working on something that the
 project's developers might not want to merge into the project.
 
 Please adhere to the coding conventions used throughout a project (indentation,
-accurate comments, etc.) and any other requirements (such as test coverage).
+accurate comments, etc.) and any other requirements.
 
 Follow this process if you'd like your work considered for inclusion in the
 project:
