@@ -74,7 +74,7 @@ export default function Navbar({ disableLinks }) {
               to="About"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-150}
               duration={500}
               delay={200}
               className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px text-gray-700 tracking-wider rounded-md"
@@ -87,7 +87,7 @@ export default function Navbar({ disableLinks }) {
               to="Events"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-150}
               duration={600}
               delay={200}
               className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px text-gray-700 tracking-wider rounded-md"
