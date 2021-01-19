@@ -29,7 +29,12 @@ export default function Navbar({ disableLinks }) {
       <header className="md:px-6 px-6 border-b-2 bg-white flex flex-wrap items-center py-4">
         <div className="flex-1 flex justify-between items-center">
           <a href="/" className="py-3">
-            <img className="h-6 w-auto" src={logo} alt="DSC Logo" />
+            <img
+              className="h-6 w-auto"
+              src={logo}
+              alt="DSC Logo"
+              data-aos="fade-right"
+            />
           </a>
         </div>
         <div className="block md:hidden">
@@ -62,6 +67,7 @@ export default function Navbar({ disableLinks }) {
               isExpanded ? `block` : `hidden`
             } top-navbar border-gray-900 w-full md:inline-flex md:w-auto px-2`}
             id="menu"
+            data-aos="fade-left"
           >
             <Link
               activeClass="active"
