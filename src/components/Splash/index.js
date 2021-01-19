@@ -59,7 +59,7 @@ const Splash = () => {
               type="button"
               variant="outline"
               node="a"
-              href="mailto:dscmcmaster@email.ca"
+              href="mailto:dsc.mcmasteru@gmail.com"
             >
               contact us
             </Button>
