@@ -15,7 +15,7 @@ const Layout = ({ children, pageTitle }) => {
     AOS.init({
       delay: 200,
       duration: 1200,
-      once: true,
+      once: false,
     });
     AOS.refresh();
   });
