@@ -378,7 +378,7 @@ export default class SignUp extends Component {
                     </Select>
                   </div>
 
-                  <div className="ml-16 w-4/9 mt-4">
+                  <div className="w-4/9 mt-4">
                     <Reaptcha
                       ref={e => (this.captcha = e)}
                       sitekey="6LceNOQZAAAAAAkq5YAljpujgj0pujsJ9pnKL6Sw"
