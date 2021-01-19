@@ -26,7 +26,10 @@ function Events() {
   return (
     <Section id="Events">
       <div className="flex flex-wrap flex-row-reverse">
-        <div className="md:w-6/12 w-full h-full md:pl-8 md:mb-0 mb-6">
+        <div
+          className="md:w-6/12 w-full h-full md:pl-8 md:mb-0 mb-6"
+          data-aos="fade-left"
+        >
           <div className="text-5xl mb-5">Events & Workshops</div>
           <Typography>Join us for upcoming workshops!</Typography>
           <Button node="a" href="https://dsc.community.dev/mcmaster-university">
