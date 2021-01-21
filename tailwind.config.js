@@ -58,6 +58,9 @@ module.exports = {
         red,
         yellow,
       },
+      minWidth: {
+        12: "3rem",
+      },
       inset: {
         "-9/8": "-12.5%",
       },
