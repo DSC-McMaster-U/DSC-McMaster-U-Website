@@ -19,17 +19,17 @@ const TimelineCard = ({ title, date, leftHand, index }) => {
         className="z-20 sm:flex items-center order-1 shadow-xl w-8 h-8 rounded-full hidden"
         style={{ background: colors[index % colors.length] }}
       >
-        <h1 className="mx-auto text-white font-semibold text-lg">{index}</h1>
+        <p className="mx-auto text-white font-semibold text-lg">{index}</p>
       </div>
       <div className="order-1 bg-white rounded-sm shadow-xl w-2/3 sm:w-5/12 px-10 sm:px-6 px-3 py-4 text-gray-900 z-20">
         <div className="flex">
-          <h3 className="mb-3 font-bold md:text-xl">{title}</h3>
+          <h2 className="mb-3 font-bold md:text-xl">{title}</h2>
           {!finished && (
             <i class="fas fa-check ml-auto text-lg text-green-400"></i>
           )}
         </div>
 
-        <h4 className="text-blue-400">{date}</h4>
+        <p className="text-blue-500">{date}</p>
       </div>
     </div>
   );

@@ -31,7 +31,11 @@ const Incubator = () => {
     <>
       <div className="flex mt-16 flex-wrap md:flex-row-reverse mb-20">
         <div className="md:p-10 h-auto md:w-1/2">
-          <img src={hero} className="h-full w-full object-cover  shadow-md" />
+          <img
+            src={hero}
+            alt="collaborate"
+            className="h-full w-full object-cover  shadow-md"
+          />
         </div>
         <div className="md:pr-8 md:w-1/2 md:text-left text-center">
           <h1 className="text-5xl mb-7 tracking-wide">
