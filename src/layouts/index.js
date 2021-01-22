@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -9,6 +9,17 @@ import SEO from "../components/Seo";
 import "./index.css";
 
 const Layout = ({ children, pageTitle }) => {
+  useEffect(() => {
+    const isBrowser = typeof window !== "undefined";
+    const AOS = isBrowser ? require("aos") : undefined;
+    AOS.init({
+      delay: 200,
+      duration: 1200,
+      once: false,
+    });
+    AOS.refresh();
+  });
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

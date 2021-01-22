@@ -29,7 +29,11 @@ const Splash = () => {
       <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-24">
         {/* splash text */}
         <div className="flex flex-col">
-          <div className="mb-12">
+          <div
+            className="mb-12"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
             <h1 className="md:text-5xl mb-16 text-5xl">
               <HighlightedChar color="red">D</HighlightedChar>eveloper{" "}
               <HighlightedChar color="green">S</HighlightedChar>tudent{" "}

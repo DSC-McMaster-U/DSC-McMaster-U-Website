@@ -10,7 +10,10 @@ const About = () => {
   return (
     <Section id="About">
       <div className="md:my-12 grid flex flex-row md:grid-rows-1 md:grid-cols-10 md:py-6">
-        <div className="flex flex-col md:row-span-2 md:col-span-4">
+        <div
+          className="flex flex-col md:row-span-2 md:col-span-4"
+          data-aos="fade-right"
+        >
           <div className="text-5xl flex content-end flex-wrap mb-5">
             About Us
           </div>

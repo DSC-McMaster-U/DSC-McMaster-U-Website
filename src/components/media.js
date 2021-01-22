@@ -25,11 +25,14 @@ function Media(props) {
           </div>
           {/* Media Handles */}
           <div className="flex flex-wrap justify-center md:justify-start">
-            {socials.map(social => {
+            {socials.map((social, i) => {
               return (
                 <div
                   className="md:px-10 px-3 text-6xl mb-5 md:mb-0 w-1/3 md:w-1/5 flex justify-center"
                   key={social.name}
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-delay={`${100 * i}`}
                 >
                   <a href={social.url}>
                     <i
