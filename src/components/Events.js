@@ -33,7 +33,7 @@ function Events() {
             Join us for upcoming workshops!
           </div>
           <Button node="a" href="https://dsc.community.dev/mcmaster-university">
-            View Events
+            View All Events
           </Button>
           <Img
             fluid={data.image.childImageSharp.fluid}
@@ -48,41 +48,43 @@ function Events() {
               Upcoming Events
             </span>
           </div>
-          <ul className="pt-8 md:pl-8">
+          <ul className="pt-4 flex flex-col">
             {EventData.filter(event => {
               return new Date(event.jsDate) > new Date();
             }).map((event, i) => {
               return (
                 i < maxEvents && (
                   <li
-                    className={i === 0 ? "mx-auto" : "mx-auto pt-12"}
+                    className={
+                      "mr-auto mt-10 shadow-sm hover:shadow-lg cursor-pointer"
+                    }
                     key={event.title}
                   >
-                    <div className="flex flex-row">
-                      <div>
-                        <img
-                          src={require("../images/dscIcon.png")}
-                          alt="DSC Icon"
-                        />
+                    <a href={event.link} className="p-6 block">
+                      <div className="flex flex-row">
+                        <div>
+                          <img
+                            src={require("../images/dscIcon.png")}
+                            alt="DSC Icon"
+                          />
+                        </div>
+                        <p className="pl-2 font-semibold">{event.title}</p>
                       </div>
-                      <a href={event.link} className="pl-2 hover:underline">
-                        {event.title}
-                      </a>
-                    </div>
-                    <div className="flex flex-row pl-10 pt-2">
-                      <span className="text-gray-700 mr-2 text-xs">
-                        <i className="fill-current far fa-calendar-alt text-blue-400 fa-lg pt-2 pr-2"></i>
-                        {event.date}
-                      </span>
-                      <span className="text-gray-700 mr-2 text-xs">
-                        <i className="fill-current far fa-clock text-green-400 fa-lg pt-2 pr-2"></i>
-                        {event.time}
-                      </span>
-                      <span className="text-gray-700 mr-2 text-xs">
-                        <i className="fill-current fas fa-map-marker-alt text-red-400 fa-lg pt-2 pr-2"></i>
-                        {event.location}
-                      </span>
-                    </div>
+                      <div className="flex flex-row pl-10 pt-2">
+                        <span className="text-gray-700 mr-2 text-xs">
+                          <i className="fill-current far fa-calendar-alt text-blue-400 fa-lg pt-2 pr-2"></i>
+                          {event.date}
+                        </span>
+                        <span className="text-gray-700 mr-2 text-xs">
+                          <i className="fill-current far fa-clock text-green-400 fa-lg pt-2 pr-2"></i>
+                          {event.time}
+                        </span>
+                        <span className="text-gray-700 mr-2 text-xs">
+                          <i className="fill-current fas fa-map-marker-alt text-red-400 fa-lg pt-2 pr-2"></i>
+                          {event.location}
+                        </span>
+                      </div>
+                    </a>
                   </li>
                 )
               );
