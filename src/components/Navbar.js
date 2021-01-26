@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import Scroll from "./Scroll";
-import logo from "../images/dscLogo.png";
+import logo from "../images/DSCLogo.png";
 import cx from "classnames";
 
 export default function Navbar({ disableLinks }) {

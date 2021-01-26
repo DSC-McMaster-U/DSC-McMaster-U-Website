@@ -4,7 +4,7 @@
     "link": "https://dsc.community.dev/e/m6qb6s/",
     "date": "Jan 22, 2021",
     "location": "Virtual",
-    "time": "6 PM EDT",
+    "time": "6:00 PM EDT",
     "jsDate": "2021-01-22T18:00:00"
   },
   {
@@ -14,5 +14,29 @@
     "location": "Virtual",
     "time": "10:30 AM EDT",
     "jsDate": "2021-01-20T18:00:00"
+  },
+  {
+    "title": "Code Night #5",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-code-night-5/",
+    "date": "Jan 24, 2021",
+    "location": "Virtual",
+    "time": "5:00 PM EDT",
+    "jsDate": "2021-01-24T18:00:00"
+  },
+  {
+    "title": "VSCode Can Do That!?",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-vscode-can-do-that/",
+    "date": "Jan 27, 2021",
+    "location": "Virtual",
+    "time": "5:30 PM EDT",
+    "jsDate": "2021-01-27T18:00:00"
+  },
+  {
+    "title": "Full Stack Challenge #2",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-full-stack-challenge-2/",
+    "date": "Jan 31, 2021",
+    "location": "Virtual",
+    "time": "5:00 PM EDT",
+    "jsDate": "2021-01-31T18:00:00"
   }
 ]

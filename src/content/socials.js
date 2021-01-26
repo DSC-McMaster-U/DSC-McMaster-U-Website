@@ -34,4 +34,11 @@ export const socials = [
     hover: "hover:text-gray-500",
     name: "github",
   },
+  {
+    icon: "fab fa-youtube",
+    url:"https://www.youtube.com/channel/UCyxVVPDEYRCjL0lcwoX9lzA/videos",
+    color: "text-red-400",
+    hover: "hover:text-gray-500",
+    name:"youtube"
+  }
 ];
