@@ -29,7 +29,7 @@ function Events() {
       <div className="flex flex-wrap flex-row-reverse">
         <div className="md:w-6/12 w-full h-full md:pl-8 md:mb-0 mb-6">
           <div className="text-5xl mb-5">Events & Workshops</div>
-          <div className="text-xl mb-5 text-gray-800">
+          <div className="text-xl mb-5 text-gray-700">
             Join us for upcoming workshops!
           </div>
           <Button node="a" href="https://dsc.community.dev/mcmaster-university">
@@ -37,14 +37,14 @@ function Events() {
           </Button>
           <Img
             fluid={data.image.childImageSharp.fluid}
-            alt=""
+            alt="Students coding"
             objectPosition="100% 100%"
             className="md:block hidden"
           />
         </div>
         <div className="py-8 w-full md:w-6/12">
           <div>
-            <span className="rounded-lg bg-gray-500 text-white py-2 px-2 text-xs">
+            <span className="rounded-lg bg-gray-700 text-white py-2 px-2 text-xs">
               Upcoming Events
             </span>
           </div>
@@ -54,7 +54,10 @@ function Events() {
             }).map((event, i) => {
               return (
                 i < maxEvents && (
-                  <li className={i === 0 ? "mx-auto" : "mx-auto pt-12"}>
+                  <li
+                    className={i === 0 ? "mx-auto" : "mx-auto pt-12"}
+                    key={event.title}
+                  >
                     <div className="flex flex-row">
                       <div>
                         <img

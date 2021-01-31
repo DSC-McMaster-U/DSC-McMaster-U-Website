@@ -1,19 +1,14 @@
 import React from "react";
 import logo from "../images/icon.png";
 import cx from "classnames";
-
-const socials = [
-  { icon: "fab fa-facebook", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-discord", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-instagram", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-linkedin", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-github", url: "#", color: "text-blue-400" },
-  { icon: "fab fa-twitter", url: "#", color: "text-blue-400" },
-];
+import { socials } from "../content/socials";
 
 function Media() {
   return (
-    <section id = "Media" className="relative mt-32 pt-32 mb-10 border-t-4 border-blue-400">
+    <section
+      id="Media"
+      className="relative mt-32 pt-32 mb-10 border-t-4 border-blue-400"
+    >
       <div className="container mx-auto">
         <div className="flex items-center flex-col">
           <div className="flex md:mb-12 mb-8">
@@ -21,18 +16,29 @@ function Media() {
             <div className="w-auto">
               <h1 className="text-5xl mb-2 mt-0 text-center">Follow Us</h1>
               <div className="inline-flex items-center">
-                <img className="inline-block mr-4" src={logo}></img>
+                <img
+                  className="inline-block mr-4"
+                  src={logo}
+                  alt="DSC logo"
+                ></img>
                 <p className="text-gray-700 text-2xl">Get the latest updates</p>
               </div>
             </div>
           </div>
           {/* Media Handles */}
-          <div className="grid grid-cols-2 md:grid-cols-6">
+          <div className="flex flex-wrap justify-center md:justify-start">
             {socials.map(social => {
               return (
-                <div className="px-10 text-6xl mb-5 md:mb-0">
+                <div
+                  className="md:px-10 px-3 text-6xl mb-5 md:mb-0 w-1/3 md:w-1/5 flex justify-center"
+                  key={social.name}
+                >
                   <a href={social.url}>
-                    <i className={cx(social.icon, social.color)}></i>
+                    <i
+                      className={cx(social.icon, social.color, social.hover)}
+                      aria-hidden="true"
+                    ></i>
+                    <span className="sr-only">{social.name}</span>
                   </a>
                 </div>
               );

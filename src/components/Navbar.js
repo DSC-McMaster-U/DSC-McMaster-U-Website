@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-import Scroll from "./Scroll"
+import Scroll from "./Scroll";
+import logo from "../images/dscLogo.png";
+import cx from "classnames";
 
 export default function Navbar({ disableLinks }) {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -14,12 +16,9 @@ export default function Navbar({ disableLinks }) {
       setShowScroll(false);
     }
   };
-  const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   useEffect(() => {
-    if(!showScroll){
+    if (!showScroll) {
       window.addEventListener(`scroll`, checkScrollTop);
       return () => window.removeEventListener(`scroll`, checkScrollTop);
     }
@@ -27,49 +26,41 @@ export default function Navbar({ disableLinks }) {
 
   return (
     <>
-      <header className="md:px-6 px-6 border-b-2 bg-white flex flex-wrap items-center pt-4 pb-3">
+      <header className="md:px-6 px-6 border-b-2 bg-white flex flex-wrap items-center py-4">
         <div className="flex-1 flex justify-between items-center">
-          <a href="/">
-            <img
-              className="Logo pb-2"
-              src={require("../images/DSCLogo.png")}
-              alt="Logo"
-            />
+          <a href="/" className="py-3">
+            <img className="h-6 w-auto" src={logo} alt="DSC Logo" />
           </a>
         </div>
-        <div class="block md:hidden">
+        <div className="block md:hidden">
           <button
             onClick={() => toggleExpansion(!isExpanded)}
-            class="transition duration-700 ease-in-out hover:bg-gray-300 rounded flex items-center px-3 py-2 text-gray-700"
+            aria-label="Expand Navigation links"
+            className="transition duration-700 ease-in-out hover:bg-gray-300 rounded flex items-center px-3 py-2 text-gray-700"
           >
-            <svg
-              class="h-4 w-4"
-              stroke="currentColor"
-              fill="none"
-              viewBox="0 0 24 24"
+            <div
+              className={cx({
+                hidden: isExpanded,
+                block: !isExpanded,
+              })}
             >
-              <path
-                className={`${isExpanded ? `hidden` : `block`}`}
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-              <path
-                className={`${isExpanded ? `block` : `hidden`}`}
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+              <i className="fas fa-bars w-4"></i>
+            </div>
+            <div
+              className={cx({
+                hidden: !isExpanded,
+                block: isExpanded,
+              })}
+            >
+              <i className="fas fa-times w-4"></i>
+            </div>
           </button>
         </div>
         {!disableLinks && (
           <div
             className={`${
               isExpanded ? `block` : `hidden`
-            } top-navbar border-gray-900 w-full md:inline-flex md:w-auto px-2 pt-2 pb-3`}
+            } top-navbar border-gray-900 w-full md:inline-flex md:w-auto px-2`}
             id="menu"
           >
             <Link
@@ -80,7 +71,7 @@ export default function Navbar({ disableLinks }) {
               offset={50}
               duration={500}
               delay={200}
-              className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px"
+              className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px text-gray-700 tracking-wider rounded-md"
               href="#"
             >
               About
@@ -93,7 +84,7 @@ export default function Navbar({ disableLinks }) {
               offset={50}
               duration={600}
               delay={200}
-              className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px"
+              className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px text-gray-700 tracking-wider rounded-md"
               href="#"
             >
               Events
@@ -106,15 +97,15 @@ export default function Navbar({ disableLinks }) {
               offset={50}
               duration={700}
               delay={200}
-              className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px"
+              className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent transition duration-150 hover:bg-gray-100 ease-in-out width:1px text-gray-700 tracking-wider rounded-md"
               href="#"
             >
-              Contact
+              Socials
             </Link>
           </div>
         )}
       </header>
-        <Scroll showBelow = {300}/>
+      <Scroll showBelow={300} />
     </>
   );
 }

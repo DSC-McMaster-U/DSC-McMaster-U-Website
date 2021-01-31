@@ -1,50 +1,73 @@
 import React from "react";
+import { socials } from "../content/socials";
 
-const colStyle = "mt-8 ml-4";
-const headingStyle = "px-4 py-2 text-lg text-gray-800 font-semibold";
-const linkStyle = "text-gray-600 px-4 py-2 text-sm";
-const iconStyle = "text-xl";
+const colStyle = "mt-8 md:ml-4";
+const headingStyle = " text-lg text-gray-800 font-semibold mb-3";
+const linkStyle =
+  "text-gray-700 py-2 text-sm cursor-pointer hover:text-indigo-900";
+const iconStyle = "text-2xl hover:text-gray-800 mr-3 text-gray-600";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="mb-8">
       <div className="grid grid-cols-1 gap-2 mt-32 text-center sm:grid-cols-2 md:grid-cols-4 sm:text-left">
         <div className={colStyle}>
-          <span className={headingStyle}>Contact Us</span>
+          <div className={headingStyle}>Contact Us</div>
           <div className="grid grid-cols-1">
-            <div className={linkStyle}>© 2020 | All rights reserved</div>
+            <div className="text-gray-700 py-2 text-sm">
+              © 2020 | All rights reserved
+            </div>
+            <a className={linkStyle} href="mailto:dscmcmaster@email.ca">
+              Reach out at dscmcmaster@email.ca
+            </a>
+            <div className="py-2 text-sm">
+              {socials.map(social => {
+                return (
+                  <a href={social.url} className={iconStyle} key={social.name}>
+                    <i className={social.icon} aria-hidden="true"></i>
+                    <span className="sr-only">{social.name}</span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+        <div className={colStyle}>
+          <div className={headingStyle}>Programs</div>
+          <div className="grid grid-cols-1">
             <div className={linkStyle}>
-              Reach out to us at dscmcmaster@email.ca
+              <a href="https://forms.gle/wsuNPVfvNYW6PQqN7">Incubator</a>
+            </div>
+          </div>
+        </div>
+        <div className={colStyle}>
+          <div className={headingStyle}>Developers</div>
+          <div className="grid grid-cols-1">
+            <div className={linkStyle}>
+              <a href="https://firebase.google.com/">Firebase console</a>
             </div>
             <div className={linkStyle}>
-              <i className={"fab fa-instagram " + iconStyle}></i>
-              <i className={"fab fa-linkedin px-2 " + iconStyle}></i>
-              <i className={"fab fa-github " + iconStyle}></i>
+              <a href="https://cloud.google.com/">Google Cloud Platform</a>
+            </div>
+            <div className={linkStyle}>
+              <a href="https://news.google.com/">Actions on Google</a>
             </div>
           </div>
         </div>
         <div className={colStyle}>
-          <span className={headingStyle}>Programs</span>
+          <div className={headingStyle}>External Links</div>
           <div className="grid grid-cols-1">
-            <div className={linkStyle}>Incubator</div>
-            <div className={linkStyle}>Program 2</div>
-            <div className={linkStyle}>Program 3</div>
-          </div>
-        </div>
-        <div className={colStyle}>
-          <span className={headingStyle}>Developers</span>
-          <div className="grid grid-cols-1">
-            <div className={linkStyle}>Firebase console</div>
-            <div className={linkStyle}>Google Cloud Platform</div>
-            <div className={linkStyle}>Actions on Google</div>
-          </div>
-        </div>
-        <div className={colStyle}>
-          <span className={headingStyle}>External Links</span>
-          <div className="grid grid-cols-1">
-            <div className={linkStyle}>MLH Hackathons</div>
-            <div className={linkStyle}>Devpost</div>
-            <div className={linkStyle}>Wiki</div>
+            <div className={linkStyle}>
+              <a href="https://mlh.io/">MLH Hackathons</a>
+            </div>
+            <div className={linkStyle}>
+              <a href="https://devpost.com/">Devpost</a>
+            </div>
+            <div className={linkStyle}>
+              <a href="https://www.notion.so/DSC-McMasterU-Wiki-f39c9ea5e7b141fba08cfc01588d92c4">
+                Wiki
+              </a>
+            </div>
           </div>
         </div>
       </div>

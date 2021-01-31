@@ -1,24 +1,24 @@
-import rocket from "../../images/rocket.png";
-import thinking from "../../images/thinking.png";
-import student from "../../images/student.png";
+import rocket from "../../images/rocket.jpg";
+import thinking from "../../images/thinking.jpg";
+import student from "../../images/student.jpg";
 
 export const cards = [
   {
     title: "Concept of DSC",
     body:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elitVoluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil.",
-    image: rocket,
+      "The purpose of DSC is to inspire and empower students through understanding technology and reflecting on it's impact",
+    image: { src: rocket, alt: "rocket" },
   },
   {
     title: "Why DSC?",
     body:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elitVoluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil.",
-    image: thinking,
+      "By joining DSC McMaster U, you gain access to numerous workshops, information sessions, and student-community collaborative projects",
+    image: { src: thinking, alt: "thinking" },
   },
   {
     title: "Target Audience",
     body:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elitVoluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil.",
-    image: student,
+      "The club is open to any undergraduate or graduate student with an interest in growing as a developer",
+    image: { src: student, alt: "student" },
   },
 ];
