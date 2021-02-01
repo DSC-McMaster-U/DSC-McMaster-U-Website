@@ -38,5 +38,21 @@
     "location": "Virtual",
     "time": "5:00 PM EDT",
     "jsDate": "2021-01-31T18:00:00"
+  },
+  {
+    "title": "Code Night #6",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-code-night-6/",
+    "date": "Feb 7, 2021",
+    "location": "Virtual",
+    "time": "5:00 PM EDT",
+    "jsDate": "2021-02-07T17:00:00"
+  },
+  {
+    "title": "Computer Vision for Anyone",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-computer-vision-for-anyone/",
+    "date": "Feb 8, 2021",
+    "location": "Virtual",
+    "time": "6:00 PM EDT",
+    "jsDate": "2021-02-08T18:00:00"
   }
 ]
