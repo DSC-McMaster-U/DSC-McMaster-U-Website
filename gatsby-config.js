@@ -27,9 +27,19 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        manualInit: true,
+        /**
+         * One convention is to place your Netlify CMS customization code in a
+         * `src/cms` directory.
+         */
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-sharp`,    
     `gatsby-plugin-postcss`,
   ],
 };
