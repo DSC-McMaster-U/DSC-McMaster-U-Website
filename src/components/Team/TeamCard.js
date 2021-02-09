@@ -12,7 +12,7 @@ const TeamCard = ({ title, image, body }) => {
           />
         </div>
         <div className="px-2 pb-4">
-          <div className="static font-bold text-2xl mb-2 flex flex-wrap justify-center">
+          <div className="static font-bold text-2xl mb-2 flex flex-wrap justify-center text-center">
             {title}
           </div>
           <p className="relative body text-center text-lg leading-normal text-gray-700">

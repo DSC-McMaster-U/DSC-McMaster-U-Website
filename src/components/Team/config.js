@@ -24,6 +24,7 @@ import Tasneem from "../Team/TeamPictures/Tasneem.jpg";
 import Willie from "../Team/TeamPictures/Willie.jpeg";
 import Yachen from "../Team/TeamPictures/Yachen.jpeg";
 import Yevhen from "../Team/TeamPictures/Yevhen.jpeg";
+import Jason from "../Team/TeamPictures/Jason.jpg";
 
 export const President = [
   {
@@ -154,6 +155,11 @@ export const Marketing = [
     title: "Maanav Dalal",
     body: "Co-Lead",
     image: { src: Maanav, alt: "Maanav" },
+  },
+  {
+    title: "Jason Tran",
+    body: "Co-Lead",
+    image: { src: Jason, alt: "Jason" },
   },
 ];
 export const Web = [

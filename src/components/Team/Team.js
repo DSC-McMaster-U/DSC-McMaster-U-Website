@@ -1,6 +1,16 @@
 import React from "react";
 import TeamCard from "../Team/TeamCard";
-import { President, Admin, Outreach } from "../Team/config";
+import {
+  President,
+  Admin,
+  Outreach,
+  Community,
+  External,
+  Marketing,
+  Workshops,
+  Web,
+  Inc,
+} from "../Team/config";
 const Team = () => {
   return (
     <section id="Team">
@@ -61,7 +71,6 @@ const Team = () => {
           })}
         </div>
         {/*  */}
-        {/*  */}
         <div id="outreach" className="flex justify-center grid grid-cols-2">
           <div className="text-2xl flex justify-center flex-wrap mb-5 col-span-2">
             <div className="border-b-4 border-red-400">Outreach</div>
@@ -85,11 +94,152 @@ const Team = () => {
           })}
         </div>
         {/*  */}
-        <div className="">3</div>
-        <div className="">4</div>
-        <div className="">5</div>
-        <div className="">6</div>
-        <div className="flex justify-center col-span-2 ...">7</div>
+        <div id="community" className="flex justify-center grid grid-cols-2">
+          <div className="text-2xl flex justify-center flex-wrap mb-5 col-span-2">
+            <div className="border-b-4 border-green-400">
+              Community and Code
+            </div>
+          </div>
+
+          {Community.map(member => {
+            return (
+              <div
+                className={
+                  "text-2xl flex justify-center flex-wrap mb-5 col-span-1"
+                }
+              >
+                <TeamCard
+                  title={member.title}
+                  body={member.body}
+                  image={member.image}
+                  key={member.title}
+                />
+              </div>
+            );
+          })}
+        </div>
+        {/*  */}
+        <div id="external" className="flex justify-center grid grid-cols-2">
+          <div className="text-2xl flex justify-center flex-wrap mb-5 col-span-2">
+            <div className="border-b-4 border-green-400">
+              External Relations
+            </div>
+          </div>
+          {External.map(member => {
+            return (
+              <div
+                className={
+                  "text-2xl flex justify-center flex-wrap mb-5 col-span-1"
+                }
+              >
+                <TeamCard
+                  title={member.title}
+                  body={member.body}
+                  image={member.image}
+                  key={member.title}
+                />
+              </div>
+            );
+          })}
+        </div>
+        {/*  */}
+        <div id="inc" className="flex justify-center grid grid-cols-2">
+          <div className="text-2xl flex justify-center flex-wrap mb-5 col-span-2">
+            <div className="border-b-4 border-red-400">Incubator Program</div>
+          </div>
+          {Inc.map((member, index) => {
+            return (
+              <div
+                className={
+                  "text-2xl flex justify-center flex-wrap mb-5 col-span-" +
+                  (Inc.length == index + 1 ? 2 : 1)
+                }
+              >
+                <TeamCard
+                  title={member.title}
+                  body={member.body}
+                  image={member.image}
+                  key={member.title}
+                />
+              </div>
+            );
+          })}
+        </div>
+        {/*  */}
+        <div id="web" className="justify-center grid grid-cols-2">
+          <div className="text-2xl flex justify-center flex-wrap mb-5 col-span-2">
+            <div className="border-b-4 border-red-400">Web Development</div>
+          </div>
+          {Web.map(member => {
+            return (
+              <div
+                className={
+                  "text-2xl flex justify-center flex-wrap mb-5 col-span-1"
+                }
+              >
+                <TeamCard
+                  title={member.title}
+                  body={member.body}
+                  image={member.image}
+                  key={member.title}
+                />
+              </div>
+            );
+          })}
+        </div>
+        {/*  */}
+        {/*  */}
+        <div id="workshops" className="flex justify-center grid grid-cols-2">
+          <div className="text-2xl flex justify-center flex-wrap mb-5 col-span-2">
+            <div className="border-b-4 border-yellow-400">
+              Workshops and Talks
+            </div>
+          </div>
+          {Workshops.map((member, index) => {
+            return (
+              <div
+                className={
+                  "text-2xl flex justify-center flex-wrap mb-5 col-span-" +
+                  (Workshops.length == index + 1 ? 2 : 1)
+                }
+              >
+                <TeamCard
+                  title={member.title}
+                  body={member.body}
+                  image={member.image}
+                  key={member.title}
+                />
+              </div>
+            );
+          })}
+        </div>
+        {/*  */}
+        <div id="marketing" className="justify-center">
+          <div className="grid grid-cols-2">
+            <div className="text-2xl flex justify-center flex-wrap mb-5 col-span-2">
+              <div className="border-b-4 border-yellow-400">
+                Marketing and Branding
+              </div>
+            </div>
+            {Marketing.map(member => {
+              return (
+                <div
+                  className={
+                    "text-2xl flex justify-center flex-wrap mb-5 col-span-1"
+                  }
+                >
+                  <TeamCard
+                    title={member.title}
+                    body={member.body}
+                    image={member.image}
+                    key={member.title}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        {/*  */}
       </div>
     </section>
   );
