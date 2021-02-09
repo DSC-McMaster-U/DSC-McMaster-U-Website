@@ -14,7 +14,7 @@ import {
 const Team = () => {
   return (
     <section id="Team">
-      <div className="grid mt-6 grid-cols-2 gap-6 gap-x-10">
+      <div className="grid mt-6 grid-cols-2 gap-y-20 gap-x-20">
         <div className="text-5xl flex justify-center flex-wrap mb-5 col-span-2">
           Our Team
         </div>
