@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import cx from "classnames";
 import axios from "axios";
-import Button from "../Button";
-import { ACADEMIC_YEARS, TEAMS } from "./content";
+import cx from "classnames";
+import React, { Component } from "react";
 import Reaptcha from "reaptcha";
+import Button from "../Button";
 import Typography from "../Typography";
+import { ACADEMIC_YEARS, TEAMS } from "./content";
 
 const discord = {
   icon: "fab fa-discord",
@@ -25,12 +25,10 @@ const inputClasses = {
     "pl-4",
     "mt-2",
     "bg-gray-300",
-    "shadow-md",
     "overflow-hidden",
     "block",
     "w-full",
     "outline-none",
-    "focus:shadow-outline-blue",
     "placeholder-gray-800",
   ],
 };
@@ -335,7 +333,7 @@ export default class SignUpForm extends Component {
                       required
                     />
                   </div>
-                  <div className="w-full text-xl bg-blue-500 shadow-xl text-white mt-8 mb-12">
+                  <div className="w-full text-xl bg-blue-500 text-white mt-8 mb-12">
                     <p className="text-center m-auto p-8">
                       Select your top three team preferences
                     </p>
