@@ -343,12 +343,19 @@ export default class SignUpForm extends Component {
                       required
                     />
                   </div>
-                  <div className="w-full text-xl bg-blue-500 text-white mt-8 mb-12">
+                  {/* <div className="w-full text-xl bg-blue-500 text-white mt-8 mb-12">
                     <p className="text-center m-auto p-8">
                       Select your top three team preferences
                     </p>
+                  </div> */}
+                  <div class="w-full relative mt-10 h-1 bg-gray-500">
+                    <div class="relative left-0 top-0 flex justify-center w-full -mt-2">
+                      <span class="bg-white px-4 text-lg text-gray-700 uppercase font-semibold">
+                        Select your top three team preferences
+                      </span>
+                    </div>
                   </div>
-                  <div className="w-full md:w-1/3 px-4 mb-16">
+                  <div className="w-full md:w-1/3 px-4 mb-16 pt-12">
                     <Select
                       name="first_choice_team"
                       label="1st choice"
@@ -362,7 +369,7 @@ export default class SignUpForm extends Component {
                       ))}
                     </Select>
                   </div>
-                  <div className="w-full md:w-1/3 px-4 mb-16">
+                  <div className="w-full md:w-1/3 px-4 mb-16 pt-12">
                     <Select
                       name="second_choice_team"
                       label="2nd choice"
@@ -376,7 +383,7 @@ export default class SignUpForm extends Component {
                       ))}
                     </Select>
                   </div>
-                  <div className="w-full md:w-1/3 px-4 mb-16">
+                  <div className="w-full md:w-1/3 px-4 mb-16 pt-12">
                     <Select
                       name="third_choice_team"
                       label="3rd choice"
