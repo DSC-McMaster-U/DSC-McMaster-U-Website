@@ -43,22 +43,7 @@ const labelClasses = {
 };
 
 const ThankYou = () => {
-  const data = useStaticQuery(graphql`
-    query ThankYouImage {
-      image: file(relativePath: { eq: "thankyou.png" }) {
-        id
-        childImageSharp {
-          fixed(quality: 100) {
-            ...GatsbyImageSharpFixed
-          }
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
-
+  const qlImage = GetQuery();
   return (
     <div className="text-center">
       <h1 className="text-5xl mb-5">Thank You!</h1>
@@ -71,10 +56,9 @@ const ThankYou = () => {
         data-aos-anchor-placement="center-bottom"
       >
         <Img
-          fluid={data.image.childImageSharp.fluid}
+          fluid={qlImage.thankyouimage.childImageSharp.fluid}
           alt="Mail Sent"
           objectPosition="100% 100%"
-          className="md:block hidden"
         />
       </div>
       <Typography>
@@ -93,23 +77,71 @@ const ThankYou = () => {
   );
 };
 
-const FailedSubmission = () => (
-  <>
-    <h1 className="text-5xl mb-5">Oops!</h1>
-    <Typography>
-      Something happened and your application was not submitted. Please refresh
-      and try again or use our{" "}
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLScjcm8b9ay0-JFcANSH_-A19zO7-KZK40_ppwO2Pno88eTh7A/viewform"
-        className="text-blue-800 underline"
-        target="_blank"
-        rel="noopener noreferrer"
+const GetQuery = () => {
+  const images = useStaticQuery(graphql`
+    query qlImage {
+      thankyouimage: file(relativePath: { eq: "thankyou.png" }) {
+        id
+        childImageSharp {
+          fixed(quality: 100) {
+            ...GatsbyImageSharpFixed
+          }
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      errorimage: file(relativePath: { eq: "error.png" }) {
+        id
+        childImageSharp {
+          fixed(quality: 100) {
+            ...GatsbyImageSharpFixed
+          }
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+  return images;
+};
+const FailedSubmission = () => {
+  const qlImage = GetQuery();
+  return (
+    <div className="text-center">
+      <h1 className="text-5xl mb-5">Something went wrong!</h1>
+      <div className="mb-8 text-center sm:w-3/4 mx-auto">
+        <Typography>Your application was not submitted.</Typography>
+        <Typography>
+          Please refresh and try again or use our{" "}
+          {
+            <Button
+              size="sm"
+              node="a"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScjcm8b9ay0-JFcANSH_-A19zO7-KZK40_ppwO2Pno88eTh7A/viewform"
+              variant="outline"
+              className="ml-2"
+            >
+              Old Form
+            </Button>
+          }
+        </Typography>
+      </div>
+      <div
+        className="lg:w-6/12 md:w-8/12 w-full h-full object-center mx-auto pb-10"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
       >
-        Old form
-      </a>
-    </Typography>
-  </>
-);
+        <Img
+          fluid={qlImage.errorimage.childImageSharp.fluid}
+          alt="Mail Sent"
+          objectPosition="100% 100%"
+        />
+      </div>
+    </div>
+  );
+};
 
 const InputField = ({
   name,
@@ -279,8 +311,8 @@ export default class SignUpForm extends Component {
     } = this.state;
     return (
       <div>
-        {submitted ? (
-          <div>{errorFound ? <FailedSubmission /> : <ThankYou />}</div>
+        {!submitted ? (
+          <div>{!errorFound ? <FailedSubmission /> : <ThankYou />}</div>
         ) : (
           <div>
             <div className="mb-8 text-center lg:w-3/4 mx-auto">
@@ -447,7 +479,6 @@ export default class SignUpForm extends Component {
                     size="lg"
                     className="mr-auto sm:ml-4 w-11/12 md:ml-8 md:w-5/12 lg:w-5/12 xl:w-5/12 px-16 mt-8 mb-4"
                     disabled={!this.state.notABot}
-                    float
                   >
                     Submit
                   </Button>
