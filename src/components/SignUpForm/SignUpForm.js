@@ -242,7 +242,7 @@ export default class SignUpForm extends Component {
           <div>{errorFound ? <FailedSubmission /> : <ThankYou />}</div>
         ) : (
           <div>
-            <div className="mb-8">
+            <div className="mb-8 text-center lg:w-3/4 mx-auto">
               <h1 className="text-5xl mb-5">Join us!</h1>
               <Typography>
                 To become a general member, complete and submit the form below.
