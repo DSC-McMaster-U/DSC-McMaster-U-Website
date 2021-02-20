@@ -311,8 +311,8 @@ export default class SignUpForm extends Component {
     } = this.state;
     return (
       <div>
-        {!submitted ? (
-          <div>{!errorFound ? <FailedSubmission /> : <ThankYou />}</div>
+        {submitted ? (
+          <div>{errorFound ? <FailedSubmission /> : <ThankYou />}</div>
         ) : (
           <div>
             <div className="mb-8 text-center lg:w-3/4 mx-auto">
@@ -329,7 +329,13 @@ export default class SignUpForm extends Component {
               </Typography>
             </div>
 
-            <div className="lg:w-3/4 mx-auto">
+            <div
+              className="lg:w-3/4 mx-auto"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-offset="-200"
+              data-aos-once="true"
+            >
               <div class="relative top-0 left-0 w-full h-0 flex">
                 <div class="h-3 bg-blue-400 flex-1"></div>
                 <div class="h-3 bg-red-400 flex-1"></div>
