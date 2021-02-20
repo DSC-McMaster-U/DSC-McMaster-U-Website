@@ -24,16 +24,20 @@ const inputClasses = {
     "h-12",
     "pl-4",
     "mt-2",
-    "bg-gray-300",
     "overflow-hidden",
     "block",
     "w-full",
     "outline-none",
-    "placeholder-gray-800",
+    "border-gray-400",
+    "placeholder-gray-500",
+    "focus:outline-none",
+    "focus:ring-4",
+    "focus:border-blue-400",
+    "focus:border-transparent",
   ],
 };
 const labelClasses = {
-  base: ["text-lg"],
+  base: ["text-lg", "text-gray-700"],
 };
 const ThankYou = () => (
   <div className="mb-10">
@@ -81,17 +85,17 @@ const InputField = ({
   return (
     <div className="w-full">
       <label className={cx(labelClasses.base)} htmlFor={name}>
-        {label} {required && <span className="text-red-800 text-xl">*</span>}
-        <input
-          className={cx(inputClasses.base)}
-          type="text"
-          name={name}
-          value={value}
-          placeholder={placeholder}
-          onChange={onChange}
-          required={required}
-        ></input>
+        {label} {required && <span className="text-red-500 text-xl">*</span>}
       </label>
+      <input
+        className={cx(inputClasses.base)}
+        type="text"
+        name={name}
+        value={value}
+        placeholder={placeholder}
+        onChange={onChange}
+        required={required}
+      />
     </div>
   );
 };
@@ -264,21 +268,11 @@ export default class SignUpForm extends Component {
                 <div class="h-3 bg-green-400 flex-1"></div>
               </div>
               <div className="shadow-2xl px-4 py-8">
-                <h2 className="text-3xl mb-8 px-4">General Member Form</h2>
+                <h2 className="text-3xl mb-8 mt-4 px-4">General Member Form</h2>
                 <form
                   className="flex flex-wrap rounded overflow-hidden"
                   onSubmit={this.onSubmit}
                 >
-                  <div className="w-full md:w-3/4 px-4 mb-8">
-                    <InputField
-                      name="email"
-                      value={email}
-                      label="Email"
-                      placeholder="@gmail.com, @mcmaster.ca, etc."
-                      onChange={this.onChange}
-                      required
-                    />
-                  </div>
                   <div className="w-full md:w-1/2 px-4 mb-8">
                     <InputField
                       name="first_name"
@@ -297,7 +291,17 @@ export default class SignUpForm extends Component {
                       required
                     />
                   </div>
-                  <div className="w-full md:w-3/4 px-4 mb-8">
+                  <div className="w-full md:w-1/2 px-4 mb-8">
+                    <InputField
+                      name="email"
+                      value={email}
+                      label="Email"
+                      placeholder="@gmail.com, @mcmaster.ca, etc."
+                      onChange={this.onChange}
+                      required
+                    />
+                  </div>
+                  <div className="w-full md:w-1/2 px-4 mb-8">
                     <InputField
                       name="mac_id"
                       label="Mac ID"
