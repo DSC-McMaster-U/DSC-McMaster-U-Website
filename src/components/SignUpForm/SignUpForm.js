@@ -258,10 +258,10 @@ export default class SignUpForm extends Component {
 
             <div className="lg:w-3/4 mx-auto">
               <div class="relative top-0 left-0 w-full h-0 flex">
-                <div class="h-3 bg-blue-500 flex-1"></div>
-                <div class="h-3 bg-red-500 flex-1"></div>
-                <div class="h-3 bg-yellow-500 flex-1"></div>
-                <div class="h-3 bg-green-500 flex-1"></div>
+                <div class="h-3 bg-blue-400 flex-1"></div>
+                <div class="h-3 bg-red-400 flex-1"></div>
+                <div class="h-3 bg-yellow-400 flex-1"></div>
+                <div class="h-3 bg-green-400 flex-1"></div>
               </div>
               <div className="shadow-2xl px-4 py-8">
                 <h2 className="text-3xl mb-8 px-4">General Member Form</h2>
