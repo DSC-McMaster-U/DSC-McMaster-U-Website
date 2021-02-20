@@ -1,5 +1,7 @@
 import axios from "axios";
 import cx from "classnames";
+import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 import React, { Component } from "react";
 import Reaptcha from "reaptcha";
 import Button from "../Button";
@@ -39,22 +41,57 @@ const inputClasses = {
 const labelClasses = {
   base: ["text-lg", "text-gray-700"],
 };
-const ThankYou = () => (
-  <div className="mb-10">
-    <h1 className="text-5xl mb-5">Thank You!</h1>
-    <Typography>
-      You will receive an email from us shortly with more details. Please
-      request acceptance to our community discord channel here.
-    </Typography>
-    <div className="text-6xl md:mb-0">
-      <a href={discord.url}>
-        <i
-          className={cx(discord.icon, discord.color, "hover:text-blue-600")}
-        ></i>
-      </a>
+
+const ThankYou = () => {
+  const data = useStaticQuery(graphql`
+    query ThankYouImage {
+      image: file(relativePath: { eq: "thankyou.png" }) {
+        id
+        childImageSharp {
+          fixed(quality: 100) {
+            ...GatsbyImageSharpFixed
+          }
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
+  return (
+    <div className="text-center">
+      <h1 className="text-5xl mb-5">Thank You!</h1>
+      <Typography>
+        You will receive an email from us shortly with more details.
+      </Typography>
+      <div
+        className="md:w-6/12 w-full h-full object-center mx-auto pb-10"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
+        <Img
+          fluid={data.image.childImageSharp.fluid}
+          alt="Mail Sent"
+          objectPosition="100% 100%"
+          className="md:block hidden"
+        />
+      </div>
+      <Typography>
+        In the meanwhile, please request to join our community discord channel
+      </Typography>
+      <div className="text-6xl md:mb-0">
+        <a
+          href={discord.url}
+          className={cx(discord.color, "hover:text-blue-600")}
+        >
+          <i className={cx(discord.icon)}></i>
+          <Typography className="text-blue-600">Join Server</Typography>
+        </a>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const FailedSubmission = () => (
   <>
@@ -343,11 +380,6 @@ export default class SignUpForm extends Component {
                       required
                     />
                   </div>
-                  {/* <div className="w-full text-xl bg-blue-500 text-white mt-8 mb-12">
-                    <p className="text-center m-auto p-8">
-                      Select your top three team preferences
-                    </p>
-                  </div> */}
                   <div class="w-full relative mt-10 h-1 bg-gray-500">
                     <div class="relative left-0 top-0 flex justify-center w-full -mt-2">
                       <span class="bg-white px-4 text-lg text-gray-700 uppercase font-semibold">
