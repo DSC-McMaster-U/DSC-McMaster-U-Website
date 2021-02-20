@@ -413,8 +413,8 @@ export default class SignUpForm extends Component {
                     bg="green"
                     type="submit"
                     size="lg"
-                    className="mr-auto sm:ml-4 w-11/12 md:ml-8 md:w-5/12 lg:w-5/12 xl:w-5/12 px-16 mt-8 mb-2"
-                    disabled={this.state.notABot ? false : true}
+                    className="mr-auto sm:ml-4 w-11/12 md:ml-8 md:w-5/12 lg:w-5/12 xl:w-5/12 px-16 mt-8 mb-4"
+                    disabled={!this.state.notABot}
                     float
                   >
                     Submit
