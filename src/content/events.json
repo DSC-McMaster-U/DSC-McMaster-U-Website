@@ -1,18 +1,26 @@
 [
   {
-    "title": "Cracking the Co-op Panel",
-    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-cracking-the-co-op-panel/",
-    "date": "Nov 25, 2020",
+    "title": "Drop the weight of repo management! Introducing: GitHub Actions",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-drop-the-weight-of-repo-management-introducing-github-actions/",
+    "date": "Feb 23, 2021",
     "location": "Virtual",
-    "time": "6 PM EDT",
-    "jsDate": "2020-11-19T18:00:00"
+    "time": "5:30 PM EDT",
+    "jsDate": "2021-02-23T18:00:00"
   },
   {
-    "title": "Full Stack Challenge #1",
-    "link": "https://dsc.community.dev/e/mcth77/",
-    "date": "Dec 4, 2020",
+    "title": "February General Meeting & Solution Challenge Work Session",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-february-general-meeting-solution-challenge-work-session/",
+    "date": "Feb 28, 2021",
     "location": "Virtual",
-    "time": "5 PM EDT",
-    "jsDate": "2020-12-04T18:00:00"
+    "time": "5:00 PM EDT",
+    "jsDate": "2021-02-28T18:00:00"
+  },
+  {
+    "title": "Full Stack Challenge #3",
+    "link": "https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-full-stack-challenge-3/",
+    "date": "Mar 4, 2021",
+    "location": "Virtual",
+    "time": "6:00 PM EDT",
+    "jsDate": "2021-03-04T18:00:00"
   }
 ]
