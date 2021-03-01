@@ -30,18 +30,20 @@ const Layout = ({ children, pageTitle }) => {
     }
   `);
   return (
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 1200,
-        padding: `0 1.0875rem 0`,
-      }}
-    >
-      <SEO title={pageTitle} />
-      <div className="flex flex-col min-h-screen">
-        <Navbar disableLinks={pageTitle !== "Home"} />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+    <div className="w-full overflow-hidden">
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 1200,
+          padding: `0 1.0875rem 0`,
+        }}
+      >
+        <SEO title={pageTitle} />
+        <div className="flex flex-col min-h-screen">
+          <Navbar disableLinks={pageTitle !== "Home"} />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
       </div>
     </div>
   );
