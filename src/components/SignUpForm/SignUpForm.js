@@ -51,7 +51,7 @@ const ThankYou = () => {
         You will receive an email from us shortly with more details.
       </Typography>
       <div
-        className="md:w-6/12 w-full h-full object-center mx-auto pb-10"
+        className="md:w-6/12 w-full h-full object-center mx-auto p-10"
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
       >
@@ -155,16 +155,16 @@ const InputField = ({
     <div className="w-full">
       <label className={cx(labelClasses.base)} htmlFor={name}>
         {label} {required && <span className="text-red-500 text-xl">*</span>}
+        <input
+          className={cx(inputClasses.base)}
+          type="text"
+          name={name}
+          value={value}
+          placeholder={placeholder}
+          onChange={onChange}
+          required={required}
+        />
       </label>
-      <input
-        className={cx(inputClasses.base)}
-        type="text"
-        name={name}
-        value={value}
-        placeholder={placeholder}
-        onChange={onChange}
-        required={required}
-      />
     </div>
   );
 };
@@ -336,11 +336,11 @@ export default class SignUpForm extends Component {
               data-aos-offset="-200"
               data-aos-once="true"
             >
-              <div class="relative top-0 left-0 w-full h-0 flex">
-                <div class="h-3 bg-blue-400 flex-1"></div>
-                <div class="h-3 bg-red-400 flex-1"></div>
-                <div class="h-3 bg-yellow-400 flex-1"></div>
-                <div class="h-3 bg-green-400 flex-1"></div>
+              <div className="relative top-0 left-0 w-full h-0 flex">
+                <div className="h-3 bg-blue-400 flex-1"></div>
+                <div className="h-3 bg-red-400 flex-1"></div>
+                <div className="h-3 bg-yellow-400 flex-1"></div>
+                <div className="h-3 bg-green-400 flex-1"></div>
               </div>
               <div className="shadow-2xl px-4 py-8">
                 <h2 className="text-3xl mb-8 mt-4 px-4">General Member Form</h2>
