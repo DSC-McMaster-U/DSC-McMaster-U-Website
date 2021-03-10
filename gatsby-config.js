@@ -33,8 +33,7 @@ module.exports = {
         /**
          * One convention is to place your Netlify CMS customization code in a
          * `src/cms` directory.
-         */
-        modulePath: `${__dirname}/src/cms/cms.js`,
+         */        
       },
     },
     `gatsby-transformer-sharp`,
