@@ -1,26 +1,31 @@
-import { graphql, useStaticQuery } from "gatsby";
+import { Link, graphql, StaticQuery } from "gatsby";
 import React from "react";
 import Img from "gatsby-image";
 import Button from "./Button";
-import EventData from "../content/events.json";
+import PropTypes from 'prop-types'
+// import { Link, graphql, StaticQuery } from 'gatsby'
+// import EventData from "../content/events.json";
 
-function Events() {
-  const maxEvents = 3;
-  const data = useStaticQuery(graphql`
-    query EventsImage {
-      image: file(relativePath: { eq: "events.png" }) {
-        id
-        childImageSharp {
-          fixed(quality: 100) {
-            ...GatsbyImageSharpFixed
-          }
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+function Events(props) {
+  // const maxEvents = 3;
+
+  const { data } = props.data;
+  const { edges: posts } = data.allMarkdownRemark
+  // const data = useStaticQuery(graphql`
+  //   query EventsImage {
+  //     image: file(relativePath: { eq: "events.png" }) {
+  //       id
+  //       childImageSharp {
+  //         fixed(quality: 100) {
+  //           ...GatsbyImageSharpFixed
+  //         }
+  //         fluid(quality: 100) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
   return (
     <section
       id="Events"
@@ -35,12 +40,12 @@ function Events() {
           <Button node="a" href="https://dsc.community.dev/mcmaster-university">
             View Events
           </Button>
-          <Img
+          {/* <Img
             fluid={data.image.childImageSharp.fluid}
             alt="Students coding"
             objectPosition="100% 100%"
             className="md:block hidden"
-          />
+          /> */}
         </div>
         <div className="py-8 w-full md:w-6/12">
           <div>
@@ -48,7 +53,9 @@ function Events() {
               Upcoming Events
             </span>
           </div>
-          <ul className="pt-8 md:pl-8">
+
+
+          {/* <ul className="pt-8 md:pl-8">
             {EventData.filter(event => {
               return new Date(event.jsDate) > new Date();
             }).map((event, i) => {
@@ -87,11 +94,56 @@ function Events() {
                 )
               );
             })}
-          </ul>
+          </ul> */}
         </div>
       </div>
     </section>
   );
 }
 
-export default Events;
+Events.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.array,
+    }),
+  }),
+}
+
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query EventsQuery {
+        allMarkdownRemark(
+          sort: { order: DESC, fields: [frontmatter___date] }
+          filter: { frontmatter: { templateKey: { eq: "event-post" } } }
+        ) {
+          edges {
+            node {
+              excerpt(pruneLength: 400)
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                templateKey
+                date(formatString: "MMMM DD, YYYY")
+                featuredpost
+                featuredimage {
+                  childImageSharp {
+                    fluid(maxWidth: 120, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={(data, count) => <Events data={data} count={count} />}
+  />
+)
+
+// export default Events;
