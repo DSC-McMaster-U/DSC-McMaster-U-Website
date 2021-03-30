@@ -38,6 +38,4 @@ module.exports = {
     300: "#FEEFC3",
     200: "#FEF7E0",
   },
-
-  indigo: "#5c6ac4",
 };

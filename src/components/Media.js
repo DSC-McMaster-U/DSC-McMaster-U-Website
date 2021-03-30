@@ -1,14 +1,12 @@
 import React from "react";
 import logo from "../images/icon.png";
 import cx from "classnames";
-import { socials } from "../content/socials";
+import socials from "../content/socials.json";
+import Section from "./Section";
 
-function Media() {
+function Media(props) {
   return (
-    <section
-      id="Media"
-      className="relative mt-32 pt-32 mb-10 border-t-4 border-blue-400"
-    >
+    <Section id="Media" {...props}>
       <div className="container mx-auto">
         <div className="flex items-center flex-col">
           <div className="flex md:mb-12 mb-8">
@@ -27,11 +25,14 @@ function Media() {
           </div>
           {/* Media Handles */}
           <div className="flex flex-wrap justify-center md:justify-start">
-            {socials.map(social => {
+            {socials.map((social, i) => {
               return (
                 <div
-                  className="md:px-10 px-3 text-6xl mb-5 md:mb-0 w-1/3 md:w-1/5 flex justify-center"
+                  className="md:px-10 px-3 text-6xl mb-5 md:mb-0 w-1/3 md:w-1/6 flex justify-center"
                   key={social.name}
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-delay={`${100 * i}`}
                 >
                   <a href={social.url}>
                     <i
@@ -46,7 +47,7 @@ function Media() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 

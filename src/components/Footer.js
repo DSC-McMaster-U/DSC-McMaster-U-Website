@@ -1,5 +1,5 @@
 import React from "react";
-import { socials } from "../content/socials";
+import socials from "../content/socials.json";
 
 const colStyle = "mt-8 md:ml-4";
 const headingStyle = " text-lg text-gray-800 font-semibold mb-3";
@@ -17,8 +17,8 @@ function Footer() {
             <div className="text-gray-700 py-2 text-sm">
               © 2020 | All rights reserved
             </div>
-            <a className={linkStyle} href="mailto:dscmcmaster@email.ca">
-              Reach out at dscmcmaster@email.ca
+            <a className={linkStyle} href="mailto:dsc.mcmasteru@gmail.com">
+              Reach out at dsc.mcmasteru@gmail.com
             </a>
             <div className="py-2 text-sm">
               {socials.map(social => {
