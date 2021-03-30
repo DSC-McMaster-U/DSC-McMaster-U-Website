@@ -15,6 +15,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `events`,
+        path: `${__dirname}/_content/events`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Developer Student Club McMaster U",
@@ -36,6 +43,7 @@ module.exports = {
          */        
       },
     },
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,    
     `gatsby-plugin-postcss`,

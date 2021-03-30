@@ -8,9 +8,11 @@ collections:
   - label: "Event"
     name: "event"
     folder: "_content/events"
-    create: true    
+    type: json
+    create: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Link", name: "link", widget: "string"}
-      - {label: "Location", name: "location", widget: "string"}
-      - {label: "jsDate", name: "jsDate", widget: "string"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Date", name: "date", widget: "string" }
+      - { label: "Time", name: "time", widget: "string" }

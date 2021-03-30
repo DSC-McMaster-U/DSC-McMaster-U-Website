@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import Img from "gatsby-image";
 import Button from "./Button";
-import EventData from "../content/events.json";
+import { stringToDate, prettifyDate } from "../utils/parseDate";
 
 function Events() {
   const maxEvents = 3;
@@ -19,8 +19,20 @@ function Events() {
           }
         }
       }
+      allEventsJson {
+        edges {
+          node {
+            title
+            link
+            time
+            location
+            date
+          }
+        }
+      }
     }
   `);
+  const EventData = data.allEventsJson.edges;
   return (
     <section
       id="Events"
@@ -49,9 +61,11 @@ function Events() {
             </span>
           </div>
           <ul className="pt-8 md:pl-8">
-            {EventData.filter(event => {
-              return new Date(event.jsDate) > new Date();
-            }).map((event, i) => {
+            {EventData.filter(edge => {
+              return stringToDate(edge.node.date) > new Date();
+            }).map((edge, i) => {
+              const event = { ...edge.node };
+              console.log(event);
               return (
                 i < maxEvents && (
                   <li
@@ -72,7 +86,7 @@ function Events() {
                     <div className="flex flex-row pl-10 pt-2">
                       <span className="text-gray-700 mr-2 text-xs">
                         <i className="fill-current far fa-calendar-alt text-blue-400 fa-lg pt-2 pr-2"></i>
-                        {event.date}
+                        {prettifyDate(event.date)}
                       </span>
                       <span className="text-gray-700 mr-2 text-xs">
                         <i className="fill-current far fa-clock text-green-400 fa-lg pt-2 pr-2"></i>
