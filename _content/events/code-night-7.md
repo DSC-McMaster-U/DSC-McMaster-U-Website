@@ -1,7 +1,0 @@
----
-title: "Code Night #7"
-link: https://dsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-code-night-7/
-location: Virtual
-date: 2021-04-03
-time: 4:00PM
----
