@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: netlify-cms # Branch to update (optional; defaults to master)
+publish_mode: editorial_workflow
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads"
+collections:
+  - label: "Event"
+    name: "event"
+    folder: "_content/events"
+    format: json
+    extension: json
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Date", name: "date", widget: "string" }
+      - { label: "Time", name: "time", widget: "string" }

@@ -77,7 +77,7 @@ const Splash = () => {
         {/* splash graphic image */}
         <div className="relative h-full">
           <SplashParticle />
-          <div className="z-20 relative">
+          <div className="z-20 relative" style={{ minWidth: "500px" }}>
             <Img
               alt="team working"
               fluid={data.image.childImageSharp.fluid}

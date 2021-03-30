@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../layouts";
 import About from "../components/About";
-import Media from "../components/Media";
+import Media from "../components/media";
 import Splash from "../components/Splash";
 import Events from "../components/Events";
 

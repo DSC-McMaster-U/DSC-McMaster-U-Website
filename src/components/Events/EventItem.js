@@ -1,5 +1,6 @@
 import React from "react";
 import dscIcon from "../../images/dscIcon.png";
+import { prettifyDate } from "../../utils/date";
 const EventItem = ({ title, date, time, location, link }) => {
   return (
     <li className="mx-auto pb-12" key={title}>
@@ -14,7 +15,7 @@ const EventItem = ({ title, date, time, location, link }) => {
       <div className="flex flex-row pl-10 pt-2">
         <span className="text-gray-700 mr-2 text-xs">
           <i className="fill-current far fa-calendar-alt text-blue-400 fa-lg pt-2 pr-2"></i>
-          {date}
+          {prettifyDate(date)}
         </span>
         <span className="text-gray-700 mr-2 text-xs">
           <i className="fill-current far fa-clock text-green-400 fa-lg pt-2 pr-2"></i>
