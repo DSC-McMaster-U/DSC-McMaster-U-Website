@@ -33,7 +33,6 @@ function Events() {
     }
   `);
   const EventData = data.allEventsJson.edges;
-  console.log(EventData);
   return (
     <section
       id="Events"
