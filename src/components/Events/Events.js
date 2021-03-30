@@ -2,10 +2,10 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import Img from "gatsby-image";
 import Button from "../Button";
-import EventData from "../../content/events.json";
+import { stringToDate } from "../../utils/date";
 import EventItem from "./EventItem";
-import Typography from "../Typography";
 import Section from "../Section";
+
 function Events() {
   const maxEvents = 3;
   const data = useStaticQuery(graphql`
@@ -21,17 +21,28 @@ function Events() {
           }
         }
       }
+      allEventsJson {
+        edges {
+          node {
+            title
+            link
+            time
+            location
+            date
+          }
+        }
+      }
     }
   `);
+  const EventData = data.allEventsJson.edges;
   return (
     <Section id="Events">
       <div className="flex flex-wrap flex-row-reverse">
-        <div
-          className="md:w-6/12 w-full h-full md:pl-8 md:mb-0 mb-6"
-          data-aos="fade-left"
-        >
+        <div className="md:w-6/12 w-full h-full md:pl-8 md:mb-0 mb-6">
           <div className="text-5xl mb-5">Events & Workshops</div>
-          <Typography>Join us for upcoming workshops!</Typography>
+          <div className="text-xl mb-5 text-gray-700">
+            Join us for upcoming workshops!
+          </div>
           <Button node="a" href="https://dsc.community.dev/mcmaster-university">
             View Events
           </Button>
@@ -49,10 +60,10 @@ function Events() {
             </span>
           </div>
           <ul className="pt-8 md:pl-8">
-            {EventData.filter(event => {
-              return new Date(event.jsDate) > new Date();
-            }).map((event, i) => {
-              return i < maxEvents && <EventItem {...event} />;
+            {EventData.filter(edge => {
+              return stringToDate(edge.node.date) > new Date();
+            }).map((edge, i) => {
+              return i < maxEvents && <EventItem {...edge.node} />;
             })}
           </ul>
         </div>
