@@ -59,7 +59,7 @@ export const Community = [
     title: "Harrison Ossias",
     body: "Co-Lead",
     image: { src: Harison, alt: "Harison" },
-    link: "dsc.mcmasteru@gmail.com"
+    link: "https://www.linkedin.com/company/dscmcmasteru/mycompany/"
   },
   {
     title: "Willie Pai",
@@ -77,7 +77,7 @@ export const Community = [
     title: "Karthik Thovinakere",
     body: "Jr. Co-Lead",
     image: { src: Karthik, alt: "Karthik" },
-    link: "dsc.mcmasteru@gmail.com"
+    link: "https://www.linkedin.com/company/dscmcmasteru/mycompany/"
   },
 ];
 export const Workshops = [
@@ -118,13 +118,13 @@ export const External = [
     title: "Helen Shelton",
     body: "Co-Lead",
     image: { src: Helen, alt: "Helen" },
-    link: "dsc.mcmasteru@gmail.com"
+    link: "https://www.linkedin.com/company/dscmcmasteru/mycompany/"
   },
   {
     title: "Salman Khalid",
     body: "Co-Lead",
     image: { src: Salman, alt: "Salman" },
-    link: "dsc.mcmasteru@gmail.com"
+    link: "https://www.linkedin.com/company/dscmcmasteru/mycompany/"
   },
   {
     title: "Hamrish Saravanakumar",
@@ -165,7 +165,7 @@ export const Marketing = [
     title: "Daniel Genkin",
     body: "Co-Lead",
     image: { src: Daniel, alt: "Daniel" },
-    link: "dsc.mcmasteru@gmail.com"
+    link: "https://www.linkedin.com/company/dscmcmasteru/mycompany/"
   },
   {
     title: "Pranay Kotian",
