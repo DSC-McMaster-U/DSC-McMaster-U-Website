@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, Transition } from "@headlessui/react";
+import { Menu } from "@headlessui/react";
 import { usePopper } from "react-popper";
 
 const Dropdown = ({ children, button }) => {

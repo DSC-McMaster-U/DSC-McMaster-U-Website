@@ -14,9 +14,7 @@ const About = () => {
           className="flex flex-col md:row-span-2 md:col-span-4"
           data-aos="fade-right"
         >
-          <div className="text-5xl flex content-end flex-wrap mb-5">
-            About Us
-          </div>
+          <Typography variant="h1">About Us</Typography>
           <Typography>
             Our club is a space for students to explore new ideas and
             collaborate. Check out our wiki to learn more about our inclusive

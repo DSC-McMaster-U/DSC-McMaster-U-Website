@@ -5,6 +5,7 @@ import Button from "../Button";
 import { stringToDate } from "../../utils/date";
 import EventItem from "./EventItem";
 import Section from "../Section";
+import Typography from "../Typography";
 
 function Events() {
   const maxEvents = 3;
@@ -39,7 +40,7 @@ function Events() {
     <Section id="Events">
       <div className="flex flex-wrap flex-row-reverse">
         <div className="md:w-6/12 w-full h-full md:pl-8 md:mb-0 mb-6">
-          <div className="text-5xl mb-5">Events & Workshops</div>
+          <Typography variant="h1">Events & Workshops</Typography>
           <div className="text-xl mb-5 text-gray-700">
             Join us for upcoming workshops!
           </div>

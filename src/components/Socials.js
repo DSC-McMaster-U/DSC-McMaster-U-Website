@@ -3,6 +3,7 @@ import logo from "../images/icon.png";
 import cx from "classnames";
 import socials from "../content/socials.json";
 import Section from "./Section";
+import Typography from "./Typography";
 
 function Socials(props) {
   return (
@@ -11,8 +12,8 @@ function Socials(props) {
         <div className="flex items-center flex-col">
           <div className="flex md:mb-12 mb-8">
             {/* Follow Us + Updates*/}
-            <div className="w-auto">
-              <h1 className="text-5xl mb-2 mt-0 text-center">Follow Us</h1>
+            <div className="w-auto text-center">
+              <Typography variant="h1">Follow Us</Typography>
               <div className="inline-flex items-center">
                 <img
                   className="inline-block mr-4"
