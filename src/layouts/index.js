@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -8,7 +7,7 @@ import SEO from "../components/Seo";
 
 import "./index.css";
 
-const Layout = ({ children, page, disableLinks }) => {
+const Layout = ({ children, page }) => {
   useEffect(() => {
     const isBrowser = typeof window !== "undefined";
     // Initialize animation library
@@ -26,7 +25,6 @@ const Layout = ({ children, page, disableLinks }) => {
       <div className="max-w-screen-xl my-0 mx-auto py-0 px-4">
         <SEO title={page} />
         <div className="flex flex-col min-h-screen">
-          <Navbar disableLinks={!disableLinks} />
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>

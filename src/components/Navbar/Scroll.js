@@ -27,7 +27,7 @@ const Scroll = ({ showBelow }) => {
     <div>
       {show && (
         <FaArrowCircleUp
-          className="scrollTop"
+          className="fixed w-full bottom-0 z-20 cursor-pointer right-0 opacity-50 hover:opacity-100"
           onClick={handleClick}
           style={{ height: 40 }}
         />
