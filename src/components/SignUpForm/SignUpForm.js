@@ -4,8 +4,8 @@ import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import React, { Component } from "react";
 import Reaptcha from "reaptcha";
-import Button from "../Button";
-import Typography from "../Typography";
+import Button from "../core/Button";
+import Typography from "../core/Typography";
 import { ACADEMIC_YEARS, TEAMS } from "./content";
 
 const discord = {

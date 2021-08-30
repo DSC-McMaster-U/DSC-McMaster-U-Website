@@ -1,11 +1,11 @@
 import React from "react";
 import SplashParticle from "./SplashParticle";
-import Button from "../Button";
+import Button from "../core/Button";
 import HighlightedChar from "./HighlightedChar";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
-import Typography from "../Typography";
-import Section from "../Section";
+import Typography from "../core/Typography";
+import Section from "../core/Section";
 
 const Splash = () => {
   const data = useStaticQuery(graphql`

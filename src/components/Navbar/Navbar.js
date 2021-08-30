@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import Scroll from "./Scroll";
 import logo from "../../images/DSCLogo.png";
 import PropTypes from "prop-types";
-import Dropdown from "../Dropdown";
+import Dropdown from "../core/Dropdown";
 
 export default function Navbar({ links }) {
   const [showScroll, setShowScroll] = useState(false);

@@ -2,8 +2,8 @@ import React from "react";
 import logo from "../images/icon.png";
 import cx from "classnames";
 import socials from "../content/socials.json";
-import Section from "./Section";
-import Typography from "./Typography";
+import Section from "./core/Section";
+import Typography from "./core/Typography";
 
 function Socials(props) {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "./Card";
 import ReactCardCarousel from "react-card-carousel";
-import Button from "../Button";
+import Button from "../core/Button";
 import { cards } from "./content";
-import Typography from "../Typography";
-import Section from "../Section";
+import Typography from "../core/Typography";
+import Section from "../core/Section";
 
 const About = () => {
   return (

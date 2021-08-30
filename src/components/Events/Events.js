@@ -1,11 +1,11 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import Img from "gatsby-image";
-import Button from "../Button";
+import Button from "../core/Button";
 import { stringToDate } from "../../utils/date";
 import EventItem from "./EventItem";
-import Section from "../Section";
-import Typography from "../Typography";
+import Section from "../core/Section";
+import Typography from "../core/Typography";
 
 function Events() {
   const maxEvents = 3;
