@@ -4,7 +4,7 @@ import Layout from "../layouts";
 
 const FormPage = () => {
   return (
-    <Layout pageTitle="Sign Up">
+    <Layout page="Sign Up">
       <SignUp></SignUp>
     </Layout>
   );

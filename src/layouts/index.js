@@ -8,9 +8,10 @@ import SEO from "../components/Seo";
 
 import "./index.css";
 
-const Layout = ({ children, pageTitle }) => {
+const Layout = ({ children, page, disableLinks }) => {
   useEffect(() => {
     const isBrowser = typeof window !== "undefined";
+    // Initialize animation library
     const AOS = isBrowser ? require("aos") : undefined;
     AOS.init({
       delay: 200,
@@ -20,27 +21,12 @@ const Layout = ({ children, pageTitle }) => {
     AOS.refresh();
   });
 
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
   return (
     <div className="w-full overflow-hidden">
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1200,
-          padding: `0 1.0875rem 0`,
-        }}
-      >
-        <SEO title={pageTitle} />
+      <div className="max-w-screen-xl my-0 mx-auto py-0 px-4">
+        <SEO title={page} />
         <div className="flex flex-col min-h-screen">
-          <Navbar disableLinks={pageTitle !== "Home"} />
+          <Navbar disableLinks={!disableLinks} />
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>
@@ -51,6 +37,11 @@ const Layout = ({ children, pageTitle }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  page: PropTypes.string,
+  disableLinks: PropTypes.bool,
 };
 
+Layout.defaultProps = {
+  disableLinks: true,
+};
 export default Layout;

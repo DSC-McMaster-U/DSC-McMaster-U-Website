@@ -7,7 +7,7 @@ import Events from "../components/Events";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home">
+    <Layout page="Home">
       <Splash />
       <About />
       <Events />
