@@ -1,0 +1,6 @@
+{
+  "ignorePatterns": ["**/vendor/*.js"],
+  "rules": {
+    "jsx-a11y/no-onchange": "off"
+  }
+}
