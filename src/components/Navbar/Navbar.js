@@ -56,7 +56,14 @@ export default function Navbar({ links }) {
               ))}
             </div>
             <div className="block md:hidden">
-              <Dropdown button={<i className="fas fa-bars w-4"></i>}>
+              <Dropdown
+                button={
+                  <i
+                    className="fas fa-bars w-4"
+                    aria-label="navigation menu"
+                  ></i>
+                }
+              >
                 {links.map(link => (
                   <Link
                     activeClass="active"
