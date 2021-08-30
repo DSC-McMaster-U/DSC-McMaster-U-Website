@@ -4,9 +4,9 @@ import cx from "classnames";
 import socials from "../content/socials.json";
 import Section from "./Section";
 
-function Media(props) {
+function Socials(props) {
   return (
-    <Section id="Media" {...props}>
+    <Section id="Socials" {...props}>
       <div className="container mx-auto">
         <div className="flex items-center flex-col">
           <div className="flex md:mb-12 mb-8">
@@ -51,4 +51,4 @@ function Media(props) {
   );
 }
 
-export default Media;
+export default Socials;
