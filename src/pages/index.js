@@ -1,17 +1,20 @@
 import React from "react";
 import Layout from "../layouts";
 import About from "../components/About";
-import Media from "../components/Media";
+import Socials from "../components/Socials";
 import Splash from "../components/Splash";
 import Events from "../components/Events";
+import Navbar from "../components/Navbar";
 
+const links = ["About", "Events", "Socials"];
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home">
+    <Layout page="Home">
+      <Navbar links={links} />
       <Splash />
       <About />
       <Events />
-      <Media last />
+      <Socials last />
     </Layout>
   );
 };

@@ -15,10 +15,10 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-webpack-bundle-analyzer",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        analyzerPort: 3000,
-        production: true,
+        name: `events`,
+        path: `${__dirname}/_content/events`,
       },
     },
     {
@@ -34,8 +34,18 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {        
+        /**
+         * One convention is to place your Netlify CMS customization code in a
+         * `src/cms` directory.
+         */        
+      },
+    },
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sharp`,    
     `gatsby-plugin-postcss`,
   ],
 };

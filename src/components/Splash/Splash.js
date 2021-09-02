@@ -1,11 +1,11 @@
 import React from "react";
 import SplashParticle from "./SplashParticle";
-import Button from "../Button";
+import Button from "../core/Button";
 import HighlightedChar from "./HighlightedChar";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
-import Typography from "../Typography";
-import Section from "../Section";
+import Typography from "../core/Typography";
+import Section from "../core/Section";
 
 const Splash = () => {
   const data = useStaticQuery(graphql`
@@ -35,11 +35,12 @@ const Splash = () => {
             data-aos-anchor-placement="top-bottom"
           >
             <h1 className="md:text-5xl mb-16 text-5xl">
-              <HighlightedChar color="red">D</HighlightedChar>eveloper{" "}
-              <HighlightedChar color="green">S</HighlightedChar>tudent{" "}
-              <br className="hidden md:block" />
-              <HighlightedChar color="blue">C</HighlightedChar>lubs{" "}
-              <HighlightedChar color="yellow">M</HighlightedChar>cMaster U
+              <HighlightedChar color="red" char="D" />
+              eveloper <HighlightedChar color="green" char="S" />
+              tudent <br className="hidden md:block" />
+              <HighlightedChar color="blue" char="C" />
+              lubs <HighlightedChar color="yellow" char="M" />
+              cMaster U
             </h1>
             <Typography>
               Developer Student Club (DSC) is a Google Developers program for

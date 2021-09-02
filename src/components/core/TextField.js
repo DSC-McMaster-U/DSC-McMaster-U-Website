@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import cx from "classnames";
-import idgen from "../utils/idgen";
+import idgen from "../../utils/idgen";
 
 export const TextField = props => {
   const {
