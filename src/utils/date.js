@@ -4,9 +4,11 @@ export const stringToDate = dateString => {
 };
 
 export const prettifyDate = dateString => {
-  const parts = dateString.split("-");
-  const month = monthReducer(parts[1]);
-  return `${month} ${parts[2]}, ${parts[0]}`;
+  const date = new Date(dateString);
+  const month = monthReducer(date.getUTCMonth());
+  const day = date.getUTCDate();
+  const year = date.getUTCFullYear();
+  return `${month} ${day}, ${year}`;
 };
 
 const monthReducer = month => {
