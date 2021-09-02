@@ -2,6 +2,7 @@
 
 Welcome to the DSC McMasterU Website project repository :wave:
 
+![Build](https://github.com/DSC-McMaster-U/DSC-McMaster-U-Website/actions/workflows/deploy.yml/badge.svg)
 ## Table of Contents
 
 - [General Info](#General-Info)
