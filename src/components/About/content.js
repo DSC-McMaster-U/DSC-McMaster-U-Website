@@ -4,13 +4,13 @@ import student from "../../images/student.jpg";
 
 export const cards = [
   {
-    title: "Concept of DSC",
+    title: "Concept of GDSC",
     body:
-      "The purpose of DSC is to inspire and empower students through understanding technology and reflecting on it's impact",
+      "The purpose of GDSC is to inspire and empower students through understanding technology and reflecting on it's impact",
     image: { src: rocket, alt: "rocket" },
   },
   {
-    title: "Why DSC?",
+    title: "Why GDSC?",
     body:
       "By joining DSC McMaster U, you gain access to numerous workshops, information sessions, and student-community collaborative projects",
     image: { src: thinking, alt: "thinking" },

@@ -26,7 +26,7 @@ const Splash = () => {
   return (
     <Section className="pt-20">
       {/* first row - splash content */}
-      <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-24">
+      <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-20">
         {/* splash text */}
         <div className="flex flex-col">
           <div
@@ -34,18 +34,19 @@ const Splash = () => {
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
           >
-            <h1 className="md:text-5xl mb-16 text-5xl">
-              <HighlightedChar color="red" char="D" />
-              eveloper <HighlightedChar color="green" char="S" />
-              tudent <br className="hidden md:block" />
-              <HighlightedChar color="blue" char="C" />
-              lubs <HighlightedChar color="yellow" char="M" />
-              cMaster U
+            <h1 className="mb-16 text-5xl">
+              <HighlightedChar color="red" char="G" />
+              oogle <HighlightedChar color="green" char="D" />
+              eveloper <HighlightedChar color="blue" char="S" />
+              tudent <br className="hidden md:block" />{" "}
+              <HighlightedChar color="yellow" char="C" />
+              lubs <HighlightedChar color="red" char="M" />
+              cMaster <HighlightedChar color="green" char="U" />
             </h1>
             <Typography>
-              Developer Student Club (DSC) is a Google Developers program for
-              university students to learn web, mobile, and google technologies
-              in a peer-to-peer learning environment.
+              Google Developer Student Club (GDSC) is a Google Developers
+              program for university students to learn web, mobile, and google
+              technologies in a peer-to-peer learning environment.
             </Typography>
           </div>
 
