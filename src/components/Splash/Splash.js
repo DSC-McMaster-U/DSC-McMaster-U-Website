@@ -58,7 +58,7 @@ const Splash = () => {
               className="mr-10"
               float
               node="a"
-              href="/form"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScX8DbJz0cJhQnZF-nFe0P_i2uqxvr_e1sya9EREqktJBqsWA/viewform?usp=sf_link"
             >
               sign up
             </Button>
