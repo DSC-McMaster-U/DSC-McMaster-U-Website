@@ -35,7 +35,11 @@ const Button = React.forwardRef((props, ref) => {
     outline: [
       "bg-transparent",
       `hover:bg-${bg}-600`,
-      color ? `text-${color}-500` : `text-${bg}-500`,
+      color
+        ? `text-${color}-500`
+        : bg == `white`
+        ? "text-white"
+        : `text-${bg}-500`,
       `border-${bg}-500`,
       "border",
       "hover:text-white",
@@ -47,7 +51,7 @@ const Button = React.forwardRef((props, ref) => {
     disabled: ["cursor-not-allowed", "opacity-50"],
   };
 
-  const button = (
+  const button = className => (
     <button
       {...other}
       disabled={disabled}
@@ -66,8 +70,13 @@ const Button = React.forwardRef((props, ref) => {
       {children}
     </button>
   );
-  if (node === "a") return <a href={href}>{button}</a>;
-  return button;
+  if (node === "a")
+    return (
+      <a href={href} className={className}>
+        {button()}
+      </a>
+    );
+  return button(className);
 });
 
 Button.propTypes = {
