@@ -8,7 +8,7 @@
   },
   {
     "icon": "fab fa-instagram",
-    "url": "https://www.instagram.com/dscmcmasteru/",
+    "url": "https://www.instagram.com/gdscmcmasteru/",
     "color": "text-pink-600",
     "hover": "hover:text-gray-500",
     "name": "instagram"
@@ -40,5 +40,12 @@
     "color": "text-red-400",
     "hover": "hover:text-gray-500",
     "name": "youtube"
+  },
+  {
+    "icon": "fab fa-mailchimp",
+    "url": "https://dev.us5.list-manage.com/subscribe/post?u=3b2fa7f815202cd2305c5b41e&amp;id=b7c4bf4434",
+    "color": "text-black-400",
+    "hover": "hover:text-gray-500",
+    "name": "mailchimp"
   }
 ]
