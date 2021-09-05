@@ -61,7 +61,7 @@ const Splash = () => {
               node="a"
               href="https://docs.google.com/forms/d/e/1FAIpQLScX8DbJz0cJhQnZF-nFe0P_i2uqxvr_e1sya9EREqktJBqsWA/viewform?usp=sf_link"
             >
-              general member sign up
+              general member application
             </Button>
 
             <Button
