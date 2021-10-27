@@ -10,7 +10,7 @@ import Section from "../core/Section";
 const Splash = () => {
   const data = useStaticQuery(graphql`
     query SplashImage {
-      image: file(relativePath: { eq: "splash-alt.png" }) {
+      image: file(relativePath: { eq: "splash.png" }) {
         id
         childImageSharp {
           fixed(quality: 100) {

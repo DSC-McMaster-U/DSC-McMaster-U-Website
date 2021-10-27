@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import Footer from "../components/Footer";
 import SEO from "../components/Seo";
 
-import "./index.css";
-
 const Layout = ({ children, page }) => {
   useEffect(() => {
     const isBrowser = typeof window !== "undefined";

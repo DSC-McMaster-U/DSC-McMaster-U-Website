@@ -1,5 +1,5 @@
 import React from "react";
-import dscIcon from "../../images/dscIcon.png";
+import dscIcon from "../../../static/images/dscIcon.png";
 import { prettifyDate } from "../../utils/date";
 const EventItem = ({ title, date, time, location, link }) => {
   return (
