@@ -1,6 +1,6 @@
-import rocket from "../../images/rocket.jpg";
-import thinking from "../../images/thinking.jpg";
-import student from "../../images/student.jpg";
+import rocket from "../../../static/images/rocket.jpg";
+import thinking from "../../../static/images/thinking.jpg";
+import student from "../../../static/images/student.jpg";
 
 export const cards = [
   {

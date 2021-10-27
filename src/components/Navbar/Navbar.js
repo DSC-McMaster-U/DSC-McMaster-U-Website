@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import Scroll from "./Scroll";
-import logo from "../../images/DSCLogo.png";
+import logo from "../../../static/images/DSCLogo.png";
 import PropTypes from "prop-types";
 import Dropdown from "../core/Dropdown";
 

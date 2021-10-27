@@ -11,7 +11,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/images`,
       },
     },
     {
@@ -30,22 +30,22 @@ module.exports = {
         background_color: blue[500],
         theme_color: blue[500],
         display: "minimal-ui",
-        icon: "src/images/icon.png", // This path is relative to the root of the site.
+        icon: "static/images/icon.png", // This path is relative to the root of the site.
         crossOrigin: `use-credentials`,
       },
     },
     {
       resolve: `gatsby-plugin-netlify-cms`,
-      options: {        
+      options: {
         /**
          * One convention is to place your Netlify CMS customization code in a
          * `src/cms` directory.
-         */        
+         */
       },
     },
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,    
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
   ],
 };

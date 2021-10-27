@@ -1,9 +1,61 @@
 import React from "react";
-import logo from "../images/icon.png";
+import logo from "../../static/images/icon.png";
 import cx from "classnames";
-import socials from "../content/socials.json";
 import Section from "./core/Section";
 import Typography from "./core/Typography";
+
+export const socials = [
+  {
+    icon: "fab fa-facebook",
+    url: "https://www.facebook.com/DSCMcMasterU/ ",
+    color: "text-blue-800",
+    hover: "hover:text-gray-500",
+    name: "facebook",
+  },
+  {
+    icon: "fab fa-instagram",
+    url: "https://www.instagram.com/gdscmcmasteru/",
+    color: "text-pink-600",
+    hover: "hover:text-gray-500",
+    name: "instagram",
+  },
+  {
+    icon: "fab fa-linkedin",
+    url: "https://ca.linkedin.com/company/dscmcmasteru",
+    color: "text-blue-600",
+    hover: "hover:text-gray-500",
+    name: "linkedin",
+  },
+  {
+    icon: "fab fa-twitter",
+    url: "https://twitter.com/dscmcmasteru",
+    color: "text-blue-400",
+    hover: "hover:text-gray-500",
+    name: "twitter",
+  },
+  {
+    icon: "fab fa-github",
+    url: "https://github.com/DSC-McMaster-U/",
+    color: "text-gray-800",
+    hover: "hover:text-gray-500",
+    name: "github",
+  },
+  {
+    icon: "fab fa-youtube",
+    url: "https://www.youtube.com/channel/UCyxVVPDEYRCjL0lcwoX9lzA/videos",
+    color: "text-red-400",
+    hover: "hover:text-gray-500",
+    name: "youtube",
+  },
+  {
+    icon: "fab fa-mailchimp",
+    url:
+      "https://dev.us5.list-manage.com/subscribe/post?u=3b2fa7f815202cd2305c5b41e&amp;id=b7c4bf4434",
+    color: "text-black-400",
+    hover: "hover:text-gray-500",
+    name: "mailchimp",
+  },
+];
 
 function Socials(props) {
   return (
