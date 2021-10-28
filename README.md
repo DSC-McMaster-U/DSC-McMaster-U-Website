@@ -36,7 +36,7 @@ To start working on the site locally you must correctly setup your git environme
 1. Navigate to the root directory and install the site dependencies:
 
 ```bash
-install npm
+npm install
 ```
 
 2. As previously stated, The site uses the [Gatsby](https://www.gatsbyjs.com/) React framework. To build and serve the site locally, you will need to install Gatsby CLI as shown below:
