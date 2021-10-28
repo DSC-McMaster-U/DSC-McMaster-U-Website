@@ -10,12 +10,12 @@ const links = ["About", "Events", "Socials"];
 const IndexPage = () => {
   return (
     <>
-      <Promotion action="Attend" link="https://gdsc.community.dev/e/m6xdr8/">
+      <Promotion action="Attend" link="https://gdsc.community.dev/e/m6695n/">
         <p className="text-white text-md font-bold ml-5 sm:text-lg">
-          Fall Information Session!
+          Git & Github Bootcamp!
           <span className="font-normal hidden md:inline">
             {" "}
-            - Tues, Sept 14th 6:30pm - 7:30pm
+            - Thur, Nov 4th 6:00pm - 7:00pm
           </span>
         </p>
       </Promotion>
