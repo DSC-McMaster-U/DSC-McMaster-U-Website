@@ -7,6 +7,8 @@ const linkStyle =
   "text-gray-700 py-2 text-sm cursor-pointer hover:text-indigo-900";
 const iconStyle = "text-2xl hover:text-gray-800 mr-3 text-gray-600";
 
+const currYear = `${new Date().getFullYear()}`;
+
 function Footer() {
   return (
     <footer className="mb-8">
@@ -15,7 +17,7 @@ function Footer() {
           <div className={headingStyle}>Contact Us</div>
           <div className="grid grid-cols-1">
             <div className="text-gray-700 py-2 text-sm">
-              © 2020 | All rights reserved
+              © {currYear} | All rights reserved
             </div>
             <a className={linkStyle} href="mailto:dsc.mcmasteru@gmail.com">
               Reach out at dsc.mcmasteru@gmail.com
@@ -24,7 +26,7 @@ function Footer() {
               {socials.map(social => {
                 return (
                   <a href={social.url} className={iconStyle} key={social.name}>
-                    <i className={social.icon} aria-hidden="true"></i>
+                    <i className={social.icon} aria-hidden="true"/>
                     <span className="sr-only">{social.name}</span>
                   </a>
                 );
