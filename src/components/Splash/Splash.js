@@ -56,7 +56,7 @@ const Splash = () => {
               size="lg"
               type="button"
               variant="fill"
-              className="mr-10"
+              className="sm:mr-10 sm:mb-0 mb-4 block"
               float
               node="a"
               href="https://discord.gg/qxFbbd7RMY"

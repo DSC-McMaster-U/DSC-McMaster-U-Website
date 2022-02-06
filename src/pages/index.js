@@ -10,12 +10,15 @@ const links = ["About", "Events", "Socials"];
 const IndexPage = () => {
   return (
     <>
-      <Promotion action="Attend" link="https://gdsc.community.dev/e/m6695n/">
+      <Promotion
+        action="Attend"
+        link="https://gdsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-building-robots-with-robot-operating-system-ros/"
+      >
         <p className="text-white text-md font-bold ml-5 sm:text-lg">
-          Git & Github Bootcamp!
+          Building robots with Robot Operating System (ROS)
           <span className="font-normal hidden md:inline">
             {" "}
-            - Thur, Nov 4th 6:00pm - 7:00pm
+            - Sat, Feb 12th 5:00pm - 7:00pm
           </span>
         </p>
       </Promotion>
