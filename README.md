@@ -17,6 +17,7 @@ Below is a quick overview of the technologies utilized for the website. It is ad
 - [Gatsby](https://www.gatsbyjs.com/) - A React-based, static site generator
 - [Tailwindcss](https://tailwindcss.com/) - A utility-first CSS framework
 - [Firebase](https://firebase.google.com/products/hosting) - Fast and secure web hosting
+- [netlifycms](https://www.netlifycms.org/) - Open source content management for Git workflows
 
 If you are interested in our teams branching model, this [blog post](https://nvie.com/posts/a-successful-git-branching-model/) by Vincent Driessen does a great job of explaining gitflow.
 
@@ -31,7 +32,7 @@ review the [guidelines for contributing](CONTRIBUTING.md).
 
 ## Installation
 
-To start working on the site locally you must correctly setup your git environment. To do this, please follow the instructions outlined in the [guidelines for contributing](CONTRIBUTING.md) document. Once you have successfully forked, cloned, and configured your repository follow the steps below to deploy the site locally.
+To start working on the site locally you must correctly setup your dev environment. To do this, please follow the instructions outlined in the [guidelines for contributing](CONTRIBUTING.md) document. Once you have successfully forked, cloned, and configured your repository follow the steps below to deploy the site locally.
 
 1. Navigate to the root directory and install the site dependencies:
 
