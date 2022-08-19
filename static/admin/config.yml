@@ -2,6 +2,8 @@ backend:
   name: github
   repo: DSC-McMaster-U/DSC-McMaster-U-Website
   branch: master
+  base_url: https://us-central1-dsc-mcmaster-u-website.cloudfunctions.net
+  auth_endpoint: /oauth/auth
 publish_mode: editorial_workflow
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads"
