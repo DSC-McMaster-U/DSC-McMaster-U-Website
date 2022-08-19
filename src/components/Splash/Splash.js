@@ -56,12 +56,12 @@ const Splash = () => {
               size="lg"
               type="button"
               variant="fill"
-              className="mr-10 mb-5 md:mb-0 block"
+              className="md:mr-10 mb-5 md:mb-0 block mr-0"
               float
               node="a"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScX8DbJz0cJhQnZF-nFe0P_i2uqxvr_e1sya9EREqktJBqsWA/viewform?usp=sf_link"
+              href="https://discord.gg/qxFbbd7RMY"
             >
-              general member application
+              Join Our Discord
             </Button>
 
             <Button

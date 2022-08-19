@@ -10,15 +10,20 @@ const links = ["About", "Events", "Socials"];
 const IndexPage = () => {
   return (
     <>
-      <Promotion action="Attend" link="https://gdsc.community.dev/e/m6xdr8/">
-        <p className="text-white text-md font-bold ml-5 sm:text-lg">
-          Fall Information Session!
-          <span className="font-normal hidden md:inline">
-            {" "}
-            - Tues, Sept 14th 6:30pm - 7:30pm
-          </span>
-        </p>
-      </Promotion>
+      {false && (
+        <Promotion
+          action="Attend"
+          link="https://gdsc.community.dev/events/details/developer-student-clubs-mcmaster-university-presents-building-robots-with-robot-operating-system-ros/"
+        >
+          <p className="text-white text-md font-bold ml-5 sm:text-lg">
+            Building robots with Robot Operating System (ROS)
+            <span className="font-normal hidden md:inline">
+              {" "}
+              - Sat, Feb 12th 5:00pm - 7:00pm
+            </span>
+          </p>
+        </Promotion>
+      )}
       <Layout page="Home">
         <Navbar links={links} />
         <Splash />
