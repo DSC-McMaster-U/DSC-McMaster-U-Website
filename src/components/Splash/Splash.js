@@ -50,13 +50,13 @@ const Splash = () => {
             </Typography>
           </div>
 
-          <div>
+          <div className="md:flex">
             <Button
               bg="blue"
               size="lg"
               type="button"
               variant="fill"
-              className="sm:mr-10 sm:mb-0 mb-4 block"
+              className="md:mr-10 mb-5 md:mb-0 block mr-0"
               float
               node="a"
               href="https://discord.gg/qxFbbd7RMY"
