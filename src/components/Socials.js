@@ -72,7 +72,7 @@ function Socials(props) {
                   src={logo}
                   alt="DSC logo"
                 ></img>
-                <p className="text-gray-700 text-2xl">Get the latest updates</p>
+                <p className="text-gray-600 text-2xl">Get the latest updates</p>
               </div>
             </div>
           </div>

@@ -34,7 +34,7 @@ const Splash = () => {
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
           >
-            <h1 className="mb-16 text-5xl">
+            <h1 className="mb-16 text-5xl leading-tight">
               <HighlightedChar color="red" char="G" />
               oogle <HighlightedChar color="green" char="D" />
               eveloper <HighlightedChar color="blue" char="S" />

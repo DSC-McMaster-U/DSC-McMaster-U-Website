@@ -6,6 +6,8 @@ import Splash from "../components/Splash";
 import Events from "../components/Events";
 import Navbar from "../components/Navbar";
 import Promotion from "../components/Promotion";
+import Seo from "../components/Seo";
+
 const links = ["About", "Events", "Socials"];
 const IndexPage = () => {
   return (
@@ -35,4 +37,5 @@ const IndexPage = () => {
   );
 };
 
+export const Head = () => <Seo />;
 export default IndexPage;

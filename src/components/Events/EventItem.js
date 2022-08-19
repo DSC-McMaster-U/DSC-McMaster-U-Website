@@ -13,15 +13,15 @@ const EventItem = ({ title, date, time, location, link }) => {
         </a>
       </div>
       <div className="flex flex-row pl-10 pt-2">
-        <span className="text-gray-700 mr-2 text-xs">
+        <span className="text-gray-600 mr-2 text-xs">
           <i className="fill-current far fa-calendar-alt text-blue-400 fa-lg pt-2 pr-2"></i>
           {prettifyDate(date)}
         </span>
-        <span className="text-gray-700 mr-2 text-xs">
+        <span className="text-gray-600 mr-2 text-xs">
           <i className="fill-current far fa-clock text-green-400 fa-lg pt-2 pr-2"></i>
           {time}
         </span>
-        <span className="text-gray-700 mr-2 text-xs">
+        <span className="text-gray-600 mr-2 text-xs">
           <i className="fill-current fas fa-map-marker-alt text-red-400 fa-lg pt-2 pr-2"></i>
           {location}
         </span>

@@ -34,9 +34,9 @@ export const TextField = props => {
     focus ? `border-${focusColor}-500` : "border-gray-500"
   } py-2 flex-col`;
   const selectClasses =
-    "appearance-none bg-transparent border-none w-full text-gray-700 py-1 pl-1 pr-8 leading-tight focus:outline-none";
+    "appearance-none bg-transparent border-none w-full text-gray-600 py-1 pl-1 pr-8 leading-tight focus:outline-none";
   const postfixClasses = `pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 ${
-    focus ? `text-${focusColor}-500` : "text-gray-700"
+    focus ? `text-${focusColor}-500` : "text-gray-600"
   }`;
 
   return (

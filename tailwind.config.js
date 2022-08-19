@@ -5,24 +5,24 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: {
-    content: [
-      "./src/**/*.js",
-      "./src/**/*.jsx",
-      "./src/**/*.ts",
-      "./src/**/*.tsx",
-    ],
-    options: {
-      whitelistPatterns: [
-        /(bg|text)-(red|blue|yellow|green)/,
-        /outline-(red|blue|yellow|green)/,
-        /border-(red|blue|yellow|green)/,
-      ],
+
+  content: [
+    "./src/**/*.js",
+    "./src/**/*.jsx",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+  ],
+
+  safelist: [
+    {
+      pattern: /(bg|text|outline|border)-(red|green|blue|yellow)/,
+      variants: ["hover", "focus", "active", "group-hover"],
     },
-  },
+  ],
+
   theme: {
     borderWidth: {
-      default: "1px",
+      DEFAULT: "1px",
       0: "0",
       "three-halves": "1.5px",
       2: "2px",

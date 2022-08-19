@@ -41,7 +41,7 @@ function Events() {
       <div className="flex flex-wrap flex-row-reverse">
         <div className="md:w-6/12 w-full h-full md:pl-8 md:mb-0 mb-6">
           <Typography variant="h1">Events & Workshops</Typography>
-          <div className="text-xl mb-5 text-gray-700">
+          <div className="text-xl mb-5 text-gray-600">
             Join us for upcoming workshops!
           </div>
           <Button node="a" href="https://dsc.community.dev/mcmaster-university">
@@ -56,7 +56,7 @@ function Events() {
         </div>
         <div className="py-8 w-full md:w-6/12">
           <div>
-            <span className="rounded-lg bg-gray-700 text-white py-2 px-2 text-xs">
+            <span className="rounded-lg bg-gray-600 text-white py-2 px-2 text-xs">
               Upcoming Events
             </span>
           </div>

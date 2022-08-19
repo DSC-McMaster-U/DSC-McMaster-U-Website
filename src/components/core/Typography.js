@@ -6,7 +6,7 @@ const Typography = ({ children, className, variant }) => {
     h1: "text-5xl mb-5",
     h2: "text-4xl mb-4",
     h3: "text-3xl mb-3",
-    p: "text-lg text-gray-700 mb-5",
+    p: "text-lg text-gray-600 mb-5",
   };
 
   const Root = variant;

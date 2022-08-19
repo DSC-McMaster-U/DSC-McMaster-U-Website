@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import Footer from "../components/Footer";
-import SEO from "../components/Seo";
 
 const Layout = ({ children, page }) => {
   useEffect(() => {
@@ -19,7 +18,6 @@ const Layout = ({ children, page }) => {
   return (
     <div className="w-full overflow-hidden">
       <div className="max-w-screen-xl my-0 mx-auto py-0 px-4">
-        <SEO title={page} />
         <div className="flex flex-col min-h-screen">
           <main className="flex-grow">{children}</main>
           <Footer />
