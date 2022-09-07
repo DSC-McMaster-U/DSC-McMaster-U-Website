@@ -7,7 +7,7 @@ import Typography from "./core/Typography";
 export const socials = [
   {
     icon: "fab fa-facebook",
-    url: "https://www.facebook.com/DSCMcMasterU/ ",
+    url: "https://www.facebook.com/GDSCMcMasterU",
     color: "text-blue-800",
     hover: "hover:text-gray-500",
     name: "facebook",
@@ -21,7 +21,7 @@ export const socials = [
   },
   {
     icon: "fab fa-linkedin",
-    url: "https://ca.linkedin.com/company/dscmcmasteru",
+    url: "https://www.linkedin.com/company/gdscmcmasteru/",
     color: "text-blue-600",
     hover: "hover:text-gray-500",
     name: "linkedin",
@@ -49,8 +49,7 @@ export const socials = [
   },
   {
     icon: "fab fa-mailchimp",
-    url:
-      "https://dev.us5.list-manage.com/subscribe/post?u=3b2fa7f815202cd2305c5b41e&amp;id=b7c4bf4434",
+    url: "https://dev.us5.list-manage.com/subscribe/post?u=3b2fa7f815202cd2305c5b41e&amp;id=b7c4bf4434",
     color: "text-black-400",
     hover: "hover:text-gray-500",
     name: "mailchimp",
