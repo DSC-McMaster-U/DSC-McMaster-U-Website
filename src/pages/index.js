@@ -6,6 +6,7 @@ import Splash from "../components/Splash";
 import Events from "../components/Events";
 import Navbar from "../components/Navbar";
 import Promotion from "../components/Promotion";
+import Sponsors from "../components/Sponsors";
 import Seo from "../components/Seo";
 
 const links = ["About", "Events", "Socials"];
@@ -31,6 +32,7 @@ const IndexPage = () => {
         <Splash />
         <About />
         <Events />
+        <Sponsors />
         <Socials last />
       </Layout>
     </>
