@@ -36,6 +36,7 @@ function Events() {
     }
   `);
   const EventData = data.allEventsJson.edges;
+  //console.log(EventData);
   return (
     <Section id="Events">
       <div className="flex flex-wrap flex-row-reverse">
