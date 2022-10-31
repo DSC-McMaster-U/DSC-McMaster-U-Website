@@ -50,6 +50,7 @@ export default function Navbar({ links }) {
                   delay={200}
                   className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent width:1px text-gray-600 tracking-wider rounded-md"
                   href="#"
+                  key={link}
                 >
                   {link}
                 </Link>
@@ -75,6 +76,7 @@ export default function Navbar({ links }) {
                     delay={200}
                     className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent width:1px text-gray-600 tracking-wider rounded-md"
                     href="#"
+                    key={link}
                   >
                     {link}
                   </Link>

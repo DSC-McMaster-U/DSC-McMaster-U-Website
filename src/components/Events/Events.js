@@ -64,7 +64,7 @@ function Events() {
             {EventData.filter(edge => {
               return stringToDate(edge.node.date) > new Date();
             }).map((edge, i) => {
-              return i < maxEvents && <EventItem {...edge.node} />;
+              return i < maxEvents && <EventItem {...edge.node} key={i} />;
             })}
           </ul>
         </div>
