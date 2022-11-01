@@ -53,7 +53,7 @@ function Events() {
       link: "www.google.ca",
     },
     {
-      title: "Test Event7",
+      title: "Test Event X",
       date: "2022-12-1",
       time: "6:00PM",
       location: "Virtual",
