@@ -30,8 +30,8 @@ const IndexPage = () => {
       <Layout page="Home">
         <Navbar links={links} />
         <Splash />
-        <About />
         <Events />
+        <About />
         <Sponsors />
         <Socials last />
       </Layout>
