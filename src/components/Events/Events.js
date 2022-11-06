@@ -89,6 +89,7 @@ function Events() {
   ("");
 
   const EventData = data.allEventsJson.edges;
+  console.log(EventData);
   return (
     <Section id="Events">
       <div className="h-full md:h-1/2">
