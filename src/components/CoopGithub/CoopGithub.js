@@ -3,7 +3,7 @@ import Section from "../core/Section";
 import Typography from "../core/Typography";
 import Github_Logo from "../../../static/images/GitHub_Logo.png";
 
-export default function CoopGithub({ links }) {
+export default function CoopGithub() {
   return (
     <Section id="CoopGithub">
       <div className="flex items-center flex-col">

@@ -52,7 +52,7 @@ export default function Navbar({ links }) {
                   href="#"
                   key={link}
                 >
-                  {link}
+                  {link == "CoopGithub" ? "Looking for a co-op?" : link}
                 </Link>
               ))}
             </div>

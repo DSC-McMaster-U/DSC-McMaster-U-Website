@@ -10,7 +10,7 @@ import Sponsors from "../components/Sponsors";
 import Seo from "../components/Seo";
 import CoopGithub from "../components/CoopGithub";
 
-const links = ["About", "Events", "Socials"];
+const links = ["About", "Events", "Socials", "CoopGithub"];
 const IndexPage = () => {
   return (
     <>
