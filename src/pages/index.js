@@ -8,6 +8,7 @@ import Navbar from "../components/Navbar";
 import Promotion from "../components/Promotion";
 import Sponsors from "../components/Sponsors";
 import Seo from "../components/Seo";
+import CoopGithub from "../components/CoopGithub";
 
 const links = ["About", "Events", "Socials"];
 const IndexPage = () => {
@@ -32,6 +33,7 @@ const IndexPage = () => {
         <Splash />
         <Events />
         <About />
+        <CoopGithub />
         <Sponsors />
         <Socials last />
       </Layout>
