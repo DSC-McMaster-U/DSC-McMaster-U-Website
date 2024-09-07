@@ -9,8 +9,9 @@ import Promotion from "../components/Promotion";
 import Sponsors from "../components/Sponsors";
 import Seo from "../components/Seo";
 import CoopGithub from "../components/CoopGithub";
+import Newsletter from "../components/NewsletterSection";
 
-const links = ["About", "Events", "Socials", "CoopGithub"];
+const navbarItems = [{link: "/newsletter", title: "Newsletter"}];
 const IndexPage = () => {
   return (
     <>
@@ -29,8 +30,9 @@ const IndexPage = () => {
         </Promotion>
       )}
       <Layout page="Home">
-        <Navbar links={links} />
+        <Navbar items={navbarItems} />
         <Splash />
+        <Newsletter />
         <Events />
         <About />
         <CoopGithub />

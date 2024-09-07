@@ -1,7 +1,7 @@
 const { blue } = require("./src/utils/colors");
 module.exports = {
   siteMetadata: {
-    title: `McMaster Developer Student Club`,
+    title: `GDSC McMaster U`,
     description: `McMaster Student Developer Club, an inclusive and collaborative environment that helps students bridge the gap between theory and practice.`,
     author: `McMaster DSC`,
   },
@@ -18,6 +18,13 @@ module.exports = {
       options: {
         name: `events`,
         path: `${__dirname}/_content/events`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `newsletters`,
+        path: `${__dirname}/_content/newsletters`, // Specify the folder for your Markdown files
       },
     },
     {
@@ -45,5 +52,6 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
   ],
 };

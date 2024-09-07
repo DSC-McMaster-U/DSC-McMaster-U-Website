@@ -1,0 +1,26 @@
+/* newsletter.css */
+.newsletter-content h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  .newsletter-content h2 {
+    font-size: 2rem;
+    color: #3498db;
+    margin-top: 1.5rem;
+  }
+  
+  .newsletter-content p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .newsletter-content ul {
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+
+  
+  
