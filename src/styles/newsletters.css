@@ -85,3 +85,12 @@
   color: #888;
   font-size: 1rem;
 }
+
+.newsletter-content a {
+  color: #4285F4; /* Google Blue */
+  text-decoration: none;
+}
+
+.newsletter-content a:hover {
+  text-decoration: underline;
+}

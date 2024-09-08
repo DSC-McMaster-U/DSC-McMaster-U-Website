@@ -5,7 +5,7 @@ subtitle: "A welcome to GDSC McMaster U, applications are live!"
 slug: "september-2024"
 ---
 
-# What & Who We Are?
+## What & Who We Are?
 
 Welcome to the Google Developer Student Club (GDSC) at McMaster University. We're a dynamic community of tech enthusiasts, innovators, and problem-solvers, dedicated to empowering students with the skills, knowledge, and network needed to thrive in the tech world. Whether you're a coding newbie or a seasoned developer, join us to collaborate on real-world projects and learn from industry experts. Let's build, learn, and grow together :)
 
@@ -17,7 +17,7 @@ The general breakdown of the club is as follows:
 - **Marketing & Branding:** Manage social media and promote events with engaging graphics.
 - **Open Source:** Develop end-to-end applications using industry tech stacks in a collaborative environment.
 
-*(The detailed description is on the third page, but it depends if we want to keep it, due to space constraints.)*
+<!-- *(The detailed description is on the third page, but it depends if we want to keep it, due to space constraints.)* -->
 
 ## Featured Events from the Past Year
 
@@ -55,16 +55,13 @@ Gemma 2 is the next generation of the Gemma models, bringing significant improve
 **Major Updates in iOS 18:**
 
 - **Advanced AI Integration:** Significant improvements in AI and machine learning features, including enhanced predictive text and advanced photo editing capabilities powered by on-device AI.
-- **Upgraded Multitasking Experience:** Multitasking capabilities have been enhanced with more efficient app switching and split-screen options, allowing for a more seamless workflow and improved productivity.
-
+- **Upgraded Multitasking Experience:** Multitasking capabilities have been enhanced with more efficient app switching and split-screen options, allowing for a more seamless workflow and improved productivity.  
 [More updates found here](https://www.apple.com/ca/ios/ios-18-preview/)
 
 ### Microsoft:  
 **Microsoft Copilot Updates:**
 
-- **Copilot Integration with Windows 11:**  
-Microsoft has introduced Copilot directly into Windows 11, allowing users to leverage AI for tasks like summarizing documents, generating content, and providing contextual recommendations across various applications.
+- **Copilot Integration with Windows 11:** Microsoft has introduced Copilot directly into Windows 11, allowing users to leverage AI for tasks like summarizing documents, generating content, and providing contextual recommendations across various applications.
 
-- **Copilot in Microsoft 365:**  
-Copilot is now embedded within Microsoft 365 apps like Word, Excel, and PowerPoint, helping users automate repetitive tasks, generate drafts, and even analyze data in real-time, significantly enhancing productivity and creativity.  
+- **Copilot in Microsoft 365:** Copilot is now embedded within Microsoft 365 apps like Word, Excel, and PowerPoint, helping users automate repetitive tasks, generate drafts, and even analyze data in real-time, significantly enhancing productivity and creativity.  
 [More info here](https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/)
