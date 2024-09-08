@@ -14,7 +14,7 @@ export default function NewsletterSection() {
         </div>
         <div className="text-xl text-center md:mb-0 mb-5 text-gray-600">
           <Link to="/newsletters"> {/* Use Gatsby's Link component */}
-            <Button node="a">Latest newsletter</Button>
+            <Button node="a">View newsletters</Button>
           </Link>
         </div>
       </div>
