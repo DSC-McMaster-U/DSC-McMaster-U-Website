@@ -1,0 +1,87 @@
+.title {
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+.date {
+  font-size: 1.25rem;
+}
+
+.newsletter-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.newsletter-content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+.newsletter-content h2 {
+  font-size: 2rem;
+  color: #4285F4;
+  margin-top: 2rem;
+}
+
+.newsletter-content h3 {
+  color: #0F9D58;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.newsletter-content h4 {
+  color: #DB4437;
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.newsletter-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.newsletter-content ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+  
+.newsletter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.newsletter-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.newsletter-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content h2 {
+  text-align: start;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-content h3 {
+  text-align: start;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  text-align: start;
+  color: #888;
+  font-size: 1rem;
+}

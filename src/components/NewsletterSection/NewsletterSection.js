@@ -13,7 +13,7 @@ export default function NewsletterSection() {
             Stay up to date with the latest news and events!
         </div>
         <div className="text-xl text-center md:mb-0 mb-5 text-gray-600">
-          <Link to="/newsletter"> {/* Use Gatsby's Link component */}
+          <Link to="/newsletters"> {/* Use Gatsby's Link component */}
             <Button node="a">Latest newsletter</Button>
           </Link>
         </div>

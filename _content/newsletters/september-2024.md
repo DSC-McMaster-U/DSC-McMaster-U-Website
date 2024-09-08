@@ -1,13 +1,15 @@
 ---
-title: "September GDSC Newsletter"
-date: "2024-09-07"
+title: "What & Who Are We?"
+date: "2024-09-08"
+subtitle: "A welcome to GDSC McMaster U, applications are live!"
+slug: "september-2024"
 ---
 
 ## What & Who We Are?
 
 Welcome to the Google Developer Student Club (GDSC) at McMaster University. We're a dynamic community of tech enthusiasts, innovators, and problem-solvers, dedicated to empowering students with the skills, knowledge, and network needed to thrive in the tech world. Whether you're a coding newbie or a seasoned developer, join us to collaborate on real-world projects and learn from industry experts. Let's build, learn, and grow together :)
 
-### The general breakdown of the club is as follows:
+### Club Breakdown
 - **Admin**: Lead and manage the club, plan high-level events, handle finances, and foster partnerships.
 - **Community**: Organize and host tech and community events while collaborating with other organizations.
 - **Conferences**: Coordinate participation in major tech events and equip students with the necessary skills and experience.
@@ -37,11 +39,12 @@ With the rapid pace of innovation, it's crucial to stay updated on new trends, t
 
 ## General Current Tech Updates:
 
-### Google:
+### Google
 
-**Gemma Overview**: Gemma is a family of lightweight, open-source AI models developed by Google. These models are designed to be efficient and easy to use for a wide range of applications, such as generating text, understanding images, and answering questions based on visual content. The models in the Gemma family are built using the same research and technology as Google's Gemini models, which are known for their advanced AI capabilities.
+#### Gemma Overview
+Gemma is a family of lightweight, open-source AI models developed by Google. These models are designed to be efficient and easy to use for a wide range of applications, such as generating text, understanding images, and answering questions based on visual content. The models in the Gemma family are built using the same research and technology as Google's Gemini models, which are known for their advanced AI capabilities.
 
-**What's New with Gemma 2**:  
+#### What's New with Gemma 2
 Gemma 2 is the next generation of the Gemma models, bringing significant improvements in performance and efficiency. Key updates include:
 - **Smaller but Powerful**: Gemma 2 can do more with less computational power.
 - **Cost-Efficient Deployment**: As Gemma 2 is more efficient, it can be deployed on less expensive hardware, reducing costs for developers.
@@ -49,9 +52,9 @@ Gemma 2 is the next generation of the Gemma models, bringing significant improve
 
 For more details, visit [Google Blog](https://developers.googleblog.com/en/).
 
-### Apple:
+### Apple
 
-**Major Updates in iOS 18**
+#### Major Updates in iOS 18
 
 1. **Advanced AI Integration**:  
    Significant improvements in AI and machine learning features, including enhanced predictive text and advanced photo editing capabilities powered by on-device AI.
@@ -61,9 +64,9 @@ For more details, visit [Google Blog](https://developers.googleblog.com/en/).
 
 More updates can be found [here](https://www.apple.com/ca/ios/ios-18-preview/).
 
-### Microsoft:
+### Microsoft
 
-**Microsoft Copilot Updates**  
+#### Microsoft Copilot Updates
 
 1. **Copilot Integration with Windows 11**:  
    Microsoft has introduced Copilot directly into Windows 11, allowing users to leverage AI for tasks like summarizing documents, generating content, and providing contextual recommendations across various applications.

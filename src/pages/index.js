@@ -11,7 +11,7 @@ import Seo from "../components/Seo";
 import CoopGithub from "../components/CoopGithub";
 import Newsletter from "../components/NewsletterSection";
 
-const navbarItems = [{link: "/newsletter", title: "Newsletter"}];
+const navbarItems = [{link: "/newsletters", title: "Newsletters"}];
 const IndexPage = () => {
   return (
     <>
