@@ -44,6 +44,8 @@ With the rapid pace of innovation, it's crucial to stay updated on new trends, t
 **Gemma Overview:**  
 Gemma is a family of lightweight, open-source AI models developed by Google. These models are designed to be efficient and easy to use for a wide range of applications, such as generating text, understanding images, and answering questions based on visual content. The models in the Gemma family are built using the same research and technology as Google's Gemini models, known for their advanced AI capabilities.
 
+![Google Gemma](./images/gemma.webp)
+
 **What's New with Gemma 2:**  
 Gemma 2 is the next generation of the Gemma models, bringing significant improvements in performance and efficiency. Key updates include:  
 - **Smaller but Powerful:** Gemma 2 can do more with less computational power.
@@ -54,12 +56,16 @@ Gemma 2 is the next generation of the Gemma models, bringing significant improve
 ### Apple:  
 **Major Updates in iOS 18:**
 
+![Apple iOS 18](./images/ios-18.webp)
+
 - **Advanced AI Integration:** Significant improvements in AI and machine learning features, including enhanced predictive text and advanced photo editing capabilities powered by on-device AI.
 - **Upgraded Multitasking Experience:** Multitasking capabilities have been enhanced with more efficient app switching and split-screen options, allowing for a more seamless workflow and improved productivity.  
 [More updates found here](https://www.apple.com/ca/ios/ios-18-preview/)
 
 ### Microsoft:  
 **Microsoft Copilot Updates:**
+
+![Microsoft Copilot](./images/copilot.jpg)
 
 - **Copilot Integration with Windows 11:** Microsoft has introduced Copilot directly into Windows 11, allowing users to leverage AI for tasks like summarizing documents, generating content, and providing contextual recommendations across various applications.
 

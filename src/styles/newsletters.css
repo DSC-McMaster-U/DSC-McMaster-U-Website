@@ -94,3 +94,19 @@
 .newsletter-content a:hover {
   text-decoration: underline;
 }
+
+.newsletter-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.newsletter-content figure {
+  text-align: center; 
+  margin: 2rem 0;
+}
+
+.newsletter-content figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}

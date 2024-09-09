@@ -33,6 +33,7 @@
     "gatsby-plugin-manifest": "^4.21.0",
     "gatsby-plugin-netlify-cms": "^6.21.0",
     "gatsby-plugin-sharp": "^4.21.0",
+    "gatsby-remark-images": "^7.13.2",
     "gatsby-source-filesystem": "^4.25.0",
     "gatsby-transformer-json": "^4.21.0",
     "gatsby-transformer-remark": "^5.25.1",
