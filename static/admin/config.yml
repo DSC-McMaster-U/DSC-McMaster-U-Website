@@ -4,19 +4,35 @@ backend:
   branch: master
   base_url: https://us-central1-dsc-mcmaster-u-website.cloudfunctions.net
   auth_endpoint: /oauth/auth
+
 publish_mode: editorial_workflow
-media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
+
 collections:
-  - label: "Event"
-    name: "event"
-    folder: "_content/events"
-    format: json
-    extension: json
+  # - label: "Event"
+  #   name: "event"
+  #   folder: "_content/events"
+  #   format: json
+  #   extension: json
+  #   create: true
+  #   fields:
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Link", name: "link", widget: "string" }
+  #     - { label: "Location", name: "location", widget: "string" }
+  #     - { label: "Date", name: "date", widget: "string" }
+  #     - { label: "Time", name: "time", widget: "string" }
+
+  - label: "Newsletters"
+    name: "newsletters"
+    folder: "_content/newsletters"
     create: true
+    format: "frontmatter"
+    slug: "{{slug}}"  # Will use the slug field for folder names
+    path: "{{slug}}/index"  # Save the content as index.md in the folder
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Link", name: "link", widget: "string" }
-      - { label: "Location", name: "location", widget: "string" }
-      - { label: "Date", name: "date", widget: "string" }
-      - { label: "Time", name: "time", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

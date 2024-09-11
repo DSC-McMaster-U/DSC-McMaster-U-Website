@@ -1,0 +1,112 @@
+.title {
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+.date {
+  font-size: 1.25rem;
+}
+
+.newsletter-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.newsletter-content h1 {
+    font-size: 2.5rem;
+    color: #4285F4;
+  }
+
+.newsletter-content h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #0F9D58;
+}
+
+.newsletter-content h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: #DB4437;
+}
+
+.newsletter-content h4 {
+  color: #FBBC04;
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.newsletter-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.newsletter-content ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+  
+.newsletter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.newsletter-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.newsletter-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content h2 {
+  text-align: start;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-content h3 {
+  text-align: start;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  text-align: start;
+  color: #888;
+  font-size: 1rem;
+}
+
+.newsletter-content a {
+  color: #4285F4; /* Google Blue */
+  text-decoration: none;
+}
+
+.newsletter-content a:hover {
+  text-decoration: underline;
+}
+
+.newsletter-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.newsletter-content figure {
+  text-align: center; 
+  margin: 2rem 0;
+}
+
+.newsletter-content figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}

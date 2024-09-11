@@ -1,31 +1,32 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
-import Scroll from "./Scroll";
+import React from "react";
 import logo from "../../../static/images/DSCLogo.png";
 import PropTypes from "prop-types";
 import Dropdown from "../core/Dropdown";
+import { Link } from "gatsby";
+import { SiInstagram, SiDiscord, SiLinkedin } from "react-icons/si";
 
-export default function Navbar({ links }) {
-  const [showScroll, setShowScroll] = useState(false);
-
-  const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 400) {
-      setShowScroll(true);
-    } else if (showScroll && window.pageYOffset <= 400) {
-      setShowScroll(false);
-    }
-  };
-
-  useEffect(() => {
-    if (!showScroll) {
-      window.addEventListener(`scroll`, checkScrollTop);
-      return () => window.removeEventListener(`scroll`, checkScrollTop);
-    }
-  });
+export default function Navbar({ items }) {
+  const socialMedia = [
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/gdscmcmasteru/",
+      icon: <SiInstagram />,
+    },
+    {
+      name: "Discord",
+      url: "https://discord.gg/XtYqWmJmh7",
+      icon: <SiDiscord />,
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.instagram.com/gdscmcmasteru/",
+      icon: <SiLinkedin />,
+    },
+  ];
 
   return (
     <>
-      <header className="md:px-6 px-6 border-b-2 bg-white flex flex-wrap items-center py-4">
+      <header className="md:px-6 px-6 border-b-2 bg-white flex flex-wrap items-center py-4 gap-x-8">
         <div className="flex-1 flex justify-between items-center">
           <a href="/" className="py-3">
             <img
@@ -36,23 +37,16 @@ export default function Navbar({ links }) {
             />
           </a>
         </div>
-        {links && (
+        {items && (
           <>
             <div className="hidden md:flex">
-              {links.map(link => (
+              {items.map(item => (
                 <Link
-                  activeClass="active"
-                  to={link}
-                  spy
-                  smooth
-                  offset={-150}
-                  duration={500}
-                  delay={200}
-                  className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent width:1px text-gray-600 tracking-wider rounded-md"
-                  href="#"
-                  key={link}
+                  to={item.link}
+                  className="block border-b-2 border-transparent width:1px text-gray-600 tracking-wider rounded-md"
+                  key={item.link}
                 >
-                  {link == "CoopGithub" ? "Looking for a co-op?" : link}
+                  {item.title}
                 </Link>
               ))}
             </div>
@@ -65,28 +59,33 @@ export default function Navbar({ links }) {
                   ></i>
                 }
               >
-                {links.map(link => (
+                {items.map(item => (
                   <Link
-                    activeClass="active"
-                    to={link}
-                    spy
-                    smooth
-                    offset={-150}
-                    duration={500}
-                    delay={200}
                     className="md:p-4 pl-2 py-3 px-0 block border-b-2 border-transparent width:1px text-gray-600 tracking-wider rounded-md"
-                    href="#"
-                    key={link}
+                    to={item.link}
+                    key={item.link}
                   >
-                    {link}
+                    {item.title}
                   </Link>
                 ))}
               </Dropdown>
             </div>
           </>
         )}
+        <div className="flex flex-row px-4 gap-x-4">
+          {socialMedia.map(({ name, url, icon }) => (
+            <a
+              href={url}
+              key={name}
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-600"
+            >
+              {icon}
+            </a>
+          ))} 
+        </div>
       </header>
-      <Scroll showBelow={300} />
     </>
   );
 }
