@@ -1,5 +1,5 @@
 ---
-title: What & Who Are We?
+title: GDSC September Newsletter
 subtitle: A welcome to GDSC McMaster U, applications are live!
 date: 2024-09-09T03:06:51.210Z
 slug: september-2024
