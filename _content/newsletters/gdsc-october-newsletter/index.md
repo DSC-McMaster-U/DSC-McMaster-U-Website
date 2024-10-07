@@ -33,8 +33,6 @@ Mark your calendars! We’re bringing up an exciting hackathon this November. Ke
 * For a much more detailed information, visit <https://blog.cloudflare.com/how-cloudflare-auto-mitigated-world-record-3-8-tbps-ddos-attack/> 
 * If you want to learn more about DDoS attacks, visit <https://www.cloudflare.com/en-gb/learning/ddos/what-is-a-ddos-attack/> 
 
-
-
 ## Boost Your Projects: ChatGPT’s Canvas Feature Takes Coding to the Next Level!
 
 * The “canvas” interface opens a separate window, beside the normal chat window, with a workspace for cool projects. Users will be able to generate and write code directly in that space
@@ -44,9 +42,7 @@ Mark your calendars! We’re bringing up an exciting hackathon this November. Ke
 * Users can also use the UI to request the chatbot to add comments , review code and explain parts of the code highlighted by the user.
 * To learn more about this new feature, visit <https://openai.com/index/introducing-canvas/> 
 
-
-
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeA5L1zweCkmN_Ywco4wIFHiGs-u4UXeiOy0CaW0dTFtu3Cegx6BR7ay9jlZ2bdnDwo093Pxnjn9Xa478rIiRcNXM7sh2UBMWA-qIDnbb292O_WOSp5dN52dmLUn5ABZXEqJlwBspjQgRkGIGkRq9RirJRD?key=R4n66UhiyMa4KuEKoEEcTA)
+![Different Browser Logos Image](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeA5L1zweCkmN_Ywco4wIFHiGs-u4UXeiOy0CaW0dTFtu3Cegx6BR7ay9jlZ2bdnDwo093Pxnjn9Xa478rIiRcNXM7sh2UBMWA-qIDnbb292O_WOSp5dN52dmLUn5ABZXEqJlwBspjQgRkGIGkRq9RirJRD?key=R4n66UhiyMa4KuEKoEEcTA "Browser Logos")
 
 ## Chrome Dominates: But Is It the Right Choice for You?
 
@@ -57,21 +53,15 @@ Mark your calendars! We’re bringing up an exciting hackathon this November. Ke
 * Arc: Designed for productivity, Arc features a dashboard-like sidebar and a split-screen layout, making multitasking more efficient.
 * Check out more on the best browser here: <https://zapier.com/blog/best-web-browser/> 
 
-
-
 ## Game Dev Made Easy: NVIDIA's New AI Tool is a Game-Changer!
 
 Revolutionizing Game Development: 
 
 NVIDIA is leveraging Retrieval-Augmented Generation (RAG) to enhance AI in game development, making the process more efficient and accurate.
 
-
-
 What is RAG?: 
 
 This innovative software architecture combines large language models (LLMs) with specific data sources to provide contextual and domain-specific responses without the need for costly model retraining.
-
-
 
 Applications of RAG:
 
@@ -82,4 +72,4 @@ Applications of RAG:
 
 Source: <https://developer.nvidia.com/blog/evolving-ai-powered-game-development-with-retrieval-augmented-generation/> 
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcOBtLzTmDbJSlqr019Qu0ngf9PoNzKGKKhxe0pj8P7fL3XeGJzn-sgkXHU3rmVJJraNeHZfMrkh7YFNR3cx7QByQvGzW54BlR9_MGli-Z8fvILq1wQ7uvHXpQz-LGsNhMdOnd3nDRkZ-ELZXVGff0ABYw?key=R4n66UhiyMa4KuEKoEEcTA)
+![ROC Game Dev Image](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcOBtLzTmDbJSlqr019Qu0ngf9PoNzKGKKhxe0pj8P7fL3XeGJzn-sgkXHU3rmVJJraNeHZfMrkh7YFNR3cx7QByQvGzW54BlR9_MGli-Z8fvILq1wQ7uvHXpQz-LGsNhMdOnd3nDRkZ-ELZXVGff0ABYw?key=R4n66UhiyMa4KuEKoEEcTA "ROC Game Dev")
