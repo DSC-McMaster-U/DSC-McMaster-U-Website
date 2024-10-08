@@ -48,9 +48,9 @@ Mark your calendars! We’re bringing up an exciting hackathon this November. Ke
 
 * As the browser battle heats up, Google Chrome emerges as the best overall choice for its speed, user-friendly design, and extensive extensions. However, alternatives like Microsoft Edge and Mozilla Firefox offer impressive features worth exploring for a more personalized browsing experience
 * Key qualities for the best browser would include having fast loading and response times, a clean and intuitive user interface, strong security measures and more
-* Google Chrome: Known for its overall performance, Chrome boasts a vast library of third-party extensions that enhance user experience and functionality.
-* Safari: Best suited for Apple device users, Safari offers seamless integration across iPhone, iPad, and Mac, ensuring a consistent browsing experience.
-* Arc: Designed for productivity, Arc features a dashboard-like sidebar and a split-screen layout, making multitasking more efficient.
+* **Google Chrome:** Known for its overall performance, Chrome boasts a vast library of third-party extensions that enhance user experience and functionality.
+* **Safari:** Best suited for Apple device users, Safari offers seamless integration across iPhone, iPad, and Mac, ensuring a consistent browsing experience.
+* **Arc:** Designed for productivity, Arc features a dashboard-like sidebar and a split-screen layout, making multitasking more efficient.
 * [Check out more on the best browser here](https://zapier.com/blog/best-web-browser/)
 
 ## Game Dev Made Easy: NVIDIA's New AI Tool is a Game-Changer!\
