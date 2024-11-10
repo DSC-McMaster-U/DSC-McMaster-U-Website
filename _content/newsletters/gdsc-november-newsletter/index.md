@@ -1,40 +1,37 @@
 ---
 title: GDSC November Newsletter
 subtitle: Diving into October with GDSC McMaster U!
-date: 2024-11-10T22:10:00.318Z
-slug: october-2024
+date: 2024-11-12T13:00:00.000Z
+slug: november-2024
 ---
 # **General Club Updates**
 
-![](gdsc-chapter-logo-1.png)
+![](gdsc-logo.png)
 
-## **The GDSC Team is all set for 2024-25 :)**
+### Upcoming Event – DevFest 2024 (November 11th, 5:30 PM - 9:30 PM)
 
-We’re thrilled to announce that our team hiring for the 2024-25 term is complete! We’re excited to welcome all new sub-team members aboard and look forward to working with you to bring even more value to the GDSC McMaster community. Let’s make this year the best one yet!
+Ready to dive into the future of tech? #DevFest2024 is here at McMaster! Connect with fellow developers, explore the latest in tech, and level up your skills through workshops and networking! The location is JHE A101 and all attendees will be provided with a free dinner!! Bubble tea will also be available! [RSVP here](<https://gdg.community.dev/events/details/google-gdg-on-campus-mcmaster-university-hamilton-canada-presents-devfest-2024-mcmasteru/>) to attend! [](https://gdg.community.dev/events/details/google-gdg-on-campus-mcmaster-university-hamilton-canada-presents-devfest-2024-mcmasteru/) 
 
-### Upcoming Event – Resume Roast (October 29th, 6 PM - 8 PM):
+This event is open to all Post-secondary students!
 
-Get your resumes ready! We’re hosting a Resume Roast event where recruiters from different companies will provide live, anonymous critiques of submitted resumes. This is a fantastic opportunity to improve your resume and make professional connections that could help with future job applications. Hope to see you there :)
-
-### Open Source Team Update
+### Upcoming Event - 1P13 Python Review Session (November 28th, 6:45 PM - 8:30 PM)
 
 The Open Source team has already hit the ground running and started working on four exciting projects! We can’t wait for them to showcase their progress, and we’re excited to see what they create. Stay tuned for more updates!
 
-### Hackathons? DEVFEST
 
-Mark your calendars! We’re bringing up an exciting hackathon this November. Keep an eye out for details on team sign-ups and prize announcements soon. This is a great opportunity to put your coding skills to the test, network, and build some amazing projects.
 
 # Current Tech Updates:
 
-## “Internet Saved! Cloudflare Defends World’s Largest DDoS Attack!”
+## “Meta working on a robotic hand that allows AI models to feel and interact with things”
 
-![](cloudflare-logo.webp)
+![](meta-robotic-arm.png)
 
-* Cloudflare recently thwarted the **largest ever DDoS** (Distributed Denial of Service) **attack** which peaked at 3.8 Tbps (Terabits per second)
-* DDoS attacks aim to disrupt the normal traffic of a targeted server, network or service by flooding them with internet traffic. This attack can prevent the actual users of these servers and networks from accessing them during the attack, which may be severely detrimental to the user and/or the business.
-* Most of these attacks **targeted organizations in the financial, internet, and telecommunication industries**. The devices that were infected were spread around the world, but many of them were located in Russia, Vietnam, the United States, Brazil, and Spain.
-* The main attack which **peaked at 3.8 Tbps**, lasted 65 seconds and was mitigated autonomously by Cloudflare. This defence provided Cloudflare with the record for defending against the largest volumetric DDoS attack ever, which Microsoft previously held for defending against a DDoS attack of 3.47 Tbps.
-* [For much more detailed information on this issue, visit here](https://blog.cloudflare.com/how-cloudflare-auto-mitigated-world-record-3-8-tbps-ddos-attack/)
+* Meta recently announced that they are working to deliver tactile sensors for AI.
+* This AI-powered robotic hand is made to feel and interact with physical objects just as a human would. The goal is to create a hand that can perform delicate tasks with accuracy, such as holding an egg without breaking or adjusting its grip based on feedback from sensors.
+* These devices however are not designed for consumers but are instead for scientists so that they can train AI to interact with the environment and exist in a safe manner with humans.
+  Meta says that it worked with GelSight to make “Digit360” and Meta will publicly release the code and design for Digit 360 so that it might help in the development for a more realistic virtual environment.
+* GelSight will be in charge of manufacturing and distribution which will be available sometime next year.
+* ﻿For much more detailed information on thisd
 * [Learn more about DDoS attacks here](https://www.cloudflare.com/en-gb/learning/ddos/what-is-a-ddos-attack/)
 
 ## Boost Your Projects: ChatGPT’s Canvas Feature Takes Coding to the Next Level!
