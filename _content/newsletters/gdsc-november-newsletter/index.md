@@ -18,6 +18,16 @@ This event is open to all Post-secondary students!
 
 The Open Source team has already hit the ground running and started working on four exciting projects! We can’t wait for them to showcase their progress, and we’re excited to see what they create. Stay tuned for more updates!
 
+# Question of the Month: November
+
+G﻿DSC McMasterU is starting a new initiative, where we will be asking you a question in each month's newsletter, and will provide you with a chance to win a prize from GDSC.
+
+T﻿his month's question is as follows:
+
+***Q﻿uestion:*** Name 4 out of the 7 roasters from the Resume Roast
+
+P﻿lease submit this form with your answer for a chance to win a prize from GDSC. 
+
 # Current Tech Updates:
 
 ## “Meta working on a robotic hand that allows AI models to feel and interact with things”
