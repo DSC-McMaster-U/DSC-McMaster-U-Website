@@ -10,7 +10,7 @@ slug: november-2024
 
 ### Upcoming Event – DevFest 2024 (November 11th, 5:30 PM - 9:30 PM)
 
-Ready to dive into the future of tech? #DevFest2024 is here at McMaster! Connect with fellow developers, explore the latest in tech, and level up your skills through workshops and networking! The location is JHE A101 and all attendees will be provided with a free dinner!! Bubble tea will also be available! [RSVP here](<https://gdg.community.dev/events/details/google-gdg-on-campus-mcmaster-university-hamilton-canada-presents-devfest-2024-mcmasteru/>) to attend! [](https://gdg.community.dev/events/details/google-gdg-on-campus-mcmaster-university-hamilton-canada-presents-devfest-2024-mcmasteru/) 
+Ready to dive into the future of tech? #DevFest2024 is here at McMaster! Connect with fellow developers, explore the latest in tech, and level up your skills through workshops and networking! The location is JHE A101 and all attendees will be provided with a free dinner!! Bubble tea will also be available! [RSVP here](https://gdg.community.dev/events/details/google-gdg-on-campus-mcmaster-university-hamilton-canada-presents-devfest-2024-mcmasteru/) to attend! [](https://gdg.community.dev/events/details/google-gdg-on-campus-mcmaster-university-hamilton-canada-presents-devfest-2024-mcmasteru/) 
 
 This event is open to all Post-secondary students!
 
@@ -18,63 +18,40 @@ This event is open to all Post-secondary students!
 
 The Open Source team has already hit the ground running and started working on four exciting projects! We can’t wait for them to showcase their progress, and we’re excited to see what they create. Stay tuned for more updates!
 
-
-
 # Current Tech Updates:
 
 ## “Meta working on a robotic hand that allows AI models to feel and interact with things”
 
 ![](meta-robotic-arm.png)
 
-* Meta recently announced that they are working to deliver tactile sensors for AI.
+* Meta recently announced that they are working to deliver **tactile sensors** for AI.
 * This AI-powered robotic hand is made to feel and interact with physical objects just as a human would. The goal is to create a hand that can perform delicate tasks with accuracy, such as holding an egg without breaking or adjusting its grip based on feedback from sensors.
-* These devices however are not designed for consumers but are instead for scientists so that they can train AI to interact with the environment and exist in a safe manner with humans.
-  Meta says that it worked with GelSight to make “Digit360” and Meta will publicly release the code and design for Digit 360 so that it might help in the development for a more realistic virtual environment.
+* These devices however are not designed for consumers but are instead for scientists so that they can **train AI** to interact with the environment and exist in a safe manner with humans.
+  Meta says that it worked with GelSight to make “**Digit360**” and Meta will publicly release the code and design for Digit 360 so that it might help in the development for a more realistic virtual environment.
 * GelSight will be in charge of manufacturing and distribution which will be available sometime next year.
-* ﻿For much more detailed information on thisd
-* [Learn more about DDoS attacks here](https://www.cloudflare.com/en-gb/learning/ddos/what-is-a-ddos-attack/)
+* ﻿[For much more detailed information on this development, visit here](https://indianexpress.com/article/technology/artificial-intelligence/meta-working-on-a-robotic-hand-that-can-feel-your-touch-9649728/)
+* [If you want to learn more about Meta news, visit here](https://about.fb.com/news/)
 
-## Boost Your Projects: ChatGPT’s Canvas Feature Takes Coding to the Next Level!
+## GitHub Copilot will support models from Anthropic, Google, and OpenAI
 
-![](chatgpt-canvas.webp)
+![](github-copilot.png)
 
-* The **“canvas”** interface opens a separate window, beside the normal chat window, with a workspace for cool projects. Users will be able to generate and write code directly in that space
-* It will initially be rolled out in **beta** to ChatGPT Plus and Teams users, followed by the **Enterprise** and **Edu** users next week.
-* ChatGPT and other AI chatbots are unable to create large projects based on a single prompt, however, they do **provide a good starting point**.
-* Using the “canvas” feature, users will be able to **store their current code** and provide the chatbot with more prompts to improve the result. The canvas will also allow users to **correct some mistakes** in the code that the model has developed. This methodology will mitigate the need to be very explicit with the chatbot to prevent it from making that mistake, which may result in a **completely new code**.
-* Users can also use the **UI** to request the chatbot to add comments, review code and explain parts of the code highlighted by the user.
-* [Learn more about this new feature here](https://openai.com/index/introducing-canvas/)
+* GitHub is enabling developers to choose **AI models** from Anthropic, Google, and OpenAI in Copilot, enhancing **flexibility** and model selection.
+* GitHub introduced Spark, an AI tool for building web apps using **natural language prompts**, offering live previews and the ability for both novices and experienced developers to create and adjust code.
+* Enhanced Copilot Features: Updates include **multi-file editing** in VS Code, Copilot Extensions in 2025, a new code review feature, and a public preview of Copilot for Xcode.
+* Model Options: GitHub Copilot users will soon be able to select models like Claude 3.5, Gemini 1.5 Pro, and multiple **OpenAI models** (GPT-4o, o1-preview, o1-mini) and switch models during conversations.
+* **Spark** aligns with GitHub’s goal to empower a billion developers by **lowering entry barriers and enabling users to create and share apps directly on GitHub**.
+* [Learn more about this new feature here](https://openai.com/index/introducing-canvas/)[F﻿or much more detailed information, visit here.](https://www.theverge.com/2024/10/29/24282544/github-copilot-multi-model-anthropic-google-open-ai-github-spark-announcement)
+* [F﻿or more GitHub news, visit here](https://github.blog/)
 
-## Chrome Dominates: But Is It the Right Choice for You?
+## Visual Intelligence Unleashed: NVIDIA’s New AI Blueprint Revolutionizes Video Search
 
-![Different Browser Logos Image](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeA5L1zweCkmN_Ywco4wIFHiGs-u4UXeiOy0CaW0dTFtu3Cegx6BR7ay9jlZ2bdnDwo093Pxnjn9Xa478rIiRcNXM7sh2UBMWA-qIDnbb292O_WOSp5dN52dmLUn5ABZXEqJlwBspjQgRkGIGkRq9RirJRD?key=R4n66UhiyMa4KuEKoEEcTA "Browser Logos")
+![Nvidia Logo](nvidia-logo.png "Nvidia Logo")
 
-* As the browser battle heats up, Google Chrome emerges as the best overall choice for its speed, user-friendly design, and extensive extensions. However, alternatives like Microsoft Edge and Mozilla Firefox offer impressive features worth exploring for a more personalized browsing experience
-* Key qualities for the best browser would include having fast loading and response times, a clean and intuitive user interface, strong security measures and more
-* **Google Chrome:** Known for its overall performance, Chrome boasts a vast library of third-party extensions that enhance user experience and functionality.
-* **Safari:** Best suited for Apple device users, Safari offers seamless integration across iPhone, iPad, and Mac, ensuring a consistent browsing experience.
-* **Arc:** Designed for productivity, Arc features a dashboard-like sidebar and a split-screen layout, making multitasking more efficient.
-* [Check out more on the best browser here](https://zapier.com/blog/best-web-browser/)
-
-## Game Dev Made Easy: NVIDIA's New AI Tool is a Game-Changer!\
-
-![A green 3D polygon connected with a computer via a wire.](nvidia-rag-image.png "NVIDIA RAG")
-
-**Revolutionizing Game Development:** 
-
-NVIDIA is leveraging Retrieval-Augmented Generation (RAG) to enhance AI in game development, making the process more efficient and accurate.
-
-**What is RAG?:** 
-
-This innovative software architecture combines large language models (LLMs) with specific data sources to provide contextual and domain-specific responses without the need for costly model retraining.
-
-**Applications of RAG:**
-
-* **Enhanced Documentation Access:** Quickly find answers about engine features and scripting.
-* **Intelligent Code Assistance:** Context-aware code suggestions improve coding efficiency.
-* **Rapid Prototyping:** Generate placeholder content for quicker iterations during development.
-* **Automated Bug Resolution:** Help troubleshoot issues by retrieving solutions from documentation and forums.
-
-[Learn more about RAG here](https://developer.nvidia.com/blog/evolving-ai-powered-game-development-with-retrieval-augmented-generation/)
-
-![ROC Game Dev Image](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcOBtLzTmDbJSlqr019Qu0ngf9PoNzKGKKhxe0pj8P7fL3XeGJzn-sgkXHU3rmVJJraNeHZfMrkh7YFNR3cx7QByQvGzW54BlR9_MGli-Z8fvILq1wQ7uvHXpQz-LGsNhMdOnd3nDRkZ-ELZXVGff0ABYw?key=R4n66UhiyMa4KuEKoEEcTA "ROC Game Dev")
+* NVIDIA announced a new AI Blueprint for video search and summarization, designed to help developers create AI agents that can analyze and summarize video data at scale
+* **What’s an AI Agent?** Think of it as a “digital assistant” trained to watch, interpret, and summarize video footage. In fields like traffic management, security, and retail, these agents help by tracking specific events or details from vast hours of video.
+* **The Blueprint:** NVIDIA’s AI Blueprint is a toolkit that guides developers in building these powerful agents. It combines NVIDIA’s advanced Metropolis software with easy, natural language commands, so even non-experts can create agents that understand and respond to custom instructions.
+* **Metropolis Integration:** As part of NVIDIA’s Metropolis platform, the Blueprint enables video insights to improve everything from city infrastructure to industrial safety. Developers can deploy these solutions on-site (edge), in the cloud, or through large-scale data centers.
+* **Why it Matters:** Video data is everywhere, but it’s challenging to make sense of it all. With this Blueprint, organizations can use video data more efficiently, responding faster to needs or potential problems.
+* **See it Live:** NVIDIA will showcase this tech at Smart Cities Expo, demonstrating real-world applications in urban monitoring, security, and public safety.
+* [Check out more on the best browser here](https://blogs.nvidia.com/blog/video-search-summarization-ai-agents/)L﻿earn more about this AI blueprint here
