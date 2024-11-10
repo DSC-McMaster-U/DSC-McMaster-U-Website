@@ -51,7 +51,7 @@ P﻿lease submit this form with your answer for a chance to win a prize from GDS
 * Enhanced Copilot Features: Updates include **multi-file editing** in VS Code, Copilot Extensions in 2025, a new code review feature, and a public preview of Copilot for Xcode.
 * Model Options: GitHub Copilot users will soon be able to select models like Claude 3.5, Gemini 1.5 Pro, and multiple **OpenAI models** (GPT-4o, o1-preview, o1-mini) and switch models during conversations.
 * **Spark** aligns with GitHub’s goal to empower a billion developers by **lowering entry barriers and enabling users to create and share apps directly on GitHub**.
-* [Learn more about this new feature here](https://openai.com/index/introducing-canvas/)[F﻿or much more detailed information, visit here.](https://www.theverge.com/2024/10/29/24282544/github-copilot-multi-model-anthropic-google-open-ai-github-spark-announcement)
+* [Learn more about this new feature here](https://openai.com/index/introducing-canvas/)[.](https://www.theverge.com/2024/10/29/24282544/github-copilot-multi-model-anthropic-google-open-ai-github-spark-announcement)
 * [F﻿or more GitHub news, visit here](https://github.blog/)
 
 ## Visual Intelligence Unleashed: NVIDIA’s New AI Blueprint Revolutionizes Video Search
