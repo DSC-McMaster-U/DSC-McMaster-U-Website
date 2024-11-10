@@ -54,4 +54,5 @@ The Open Source team has already hit the ground running and started working on f
 * **Metropolis Integration:** As part of NVIDIA’s Metropolis platform, the Blueprint enables video insights to improve everything from city infrastructure to industrial safety. Developers can deploy these solutions on-site (edge), in the cloud, or through large-scale data centers.
 * **Why it Matters:** Video data is everywhere, but it’s challenging to make sense of it all. With this Blueprint, organizations can use video data more efficiently, responding faster to needs or potential problems.
 * **See it Live:** NVIDIA will showcase this tech at Smart Cities Expo, demonstrating real-world applications in urban monitoring, security, and public safety.
-* [Check out more on the best browser here](https://blogs.nvidia.com/blog/video-search-summarization-ai-agents/)L﻿earn more about this AI blueprint here
+* [L﻿earn more about this AI blueprint here](https://blogs.nvidia.com/blog/video-search-summarization-ai-agents/)
+* [F﻿or more NVIDIA news, visit here](https://nvidianews.nvidia.com/news/latest)
