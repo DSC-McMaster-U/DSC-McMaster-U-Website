@@ -26,7 +26,7 @@ T﻿his month's question is as follows:
 
 ***Q﻿uestion:*** Name 4 out of the 7 roasters from the Resume Roast
 
-P﻿lease submit this form with your answer for a chance to win a prize from GDSC. 
+P﻿lease submit this [form](https://forms.gle/Q27g6K4kngsJ3SRL7) with your answer for a chance to win a prize from GDSC. 
 
 # Current Tech Updates:
 
