@@ -12,6 +12,23 @@ slug: december-2024
 
 ![](mac-a-thon_save_the_date_instagram_post_2.png)
 
+🚀 **Ready to create, innovate, and hack your way to success?** Join us for **Mac-a-thon 2024**, a multi-day hackathon from **January 31st to February 2nd**, right here at McMaster!
+
+Collaborate with like-minded individuals, tackle exciting challenges, and bring your ideas to life. Whether you're a seasoned coder or just starting out, this is your chance to **level up your skills, meet new friends, and make an impact**.
+
+📍 **Location**: TBA\
+🍕 **Perks**: Free meals, swag, and prizes for the best projects!
+
+Mark your calendars, and stay tuned for the RSVP link—don’t miss the action! 🖥️✨
+
+### That's A Wrap on the 1P13 Python Help Session!
+
+Thank you to everyone who joined us and participated. If you missed it or want to revisit the session, **check out the event page for the slides and recording**—a great resource as you prep for your coding midterms!
+
+Stay tuned for more events coming your way soon! �
+
+
+
 # Current Tech Updates:
 
 ## “Apple working on new AI-powered Siri to take on rivals ChatGPT”
@@ -25,8 +42,6 @@ slug: december-2024
 * Introduced nearly 13 years ago, Siri is entering a new phase driven by AI advancements. In June, Apple highlighted AI's role in ushering in a new era for the digital assistant.
 * For much more detailed information, visit <https://indianexpress.com/article/technology/artificial-intelligence/apple-new-ai-powered-siri-report-9683108/#:~:text=The%20revamped%20version%20of%20Siri,Siri%20handle%20more%20sophisticated%20requests>.
 * If you want to learn more about Meta news, visit <https://www.apple.com/ca/newsroom/>
-
-
 
 ## "How RTX AI PCs Unlock AI Agents That Solve Complex Problems Autonomously With Generative AI"
 
@@ -47,8 +62,6 @@ Description: At the heart of these innovations are NVIDIA RTX AI PCs. They bring
 Description: Dive into a vibrant hub of creators and tech enthusiasts! The AnythingLLM community is a treasure trove of shared prompts, custom commands, and advanced skills that help you innovate faster and smarter. Collaborate, learn, and lead the way in AI development.
 
 Link: https://blogs.nvidia.com/blog/ai-decoded-agents-anythingllm-rtx-ai/
-
-
 
 ## **“Nvidia Jumps Into AI Music Space With New Audio Generator Fugatto”**
 
