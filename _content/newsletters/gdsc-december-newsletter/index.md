@@ -23,11 +23,9 @@ Mark your calendars, and stay tuned for the RSVP link—don’t miss the action!
 
 ### That's A Wrap on the 1P13 Python Help Session!
 
-Thank you to everyone who joined us and participated. If you missed it or want to revisit the session, **check out the event page for the slides and recording**—a great resource as you prep for your coding midterms!
+Thank you to everyone who joined us and participated. If you missed it or want to revisit the session, **check out the event page [here](https://gdg.community.dev/events/details/google-gdg-on-campus-mcmaster-university-hamilton-canada-presents-1p131p10-python-review-session/) for the slides and recording**—a great resource as you prep for your coding midterms!
 
-Stay tuned for more events coming your way soon! �
-
-
+Stay tuned for more events coming your way soon! 
 
 # Current Tech Updates:
 
